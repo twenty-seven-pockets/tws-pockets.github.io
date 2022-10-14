@@ -33,12 +33,14 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+    
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    '@nuxtjs/i18n',
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content

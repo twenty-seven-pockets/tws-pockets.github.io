@@ -18,8 +18,8 @@
 <script>
 export default {
   name: 'InspirePage',
-  asyncData({isDev, route, store, env, params, query, req, res, redirect, error, $content}) {
-    return {content : $content.get('hello')}
+async  asyncData({isDev, route, store, env, params, query, req, res, redirect, error, $content}) {
+    return {content : await $content('hello').fetch()}
   },
 }
 </script>

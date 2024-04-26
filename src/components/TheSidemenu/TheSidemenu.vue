@@ -1,16 +1,21 @@
 <template>
   <v-navigation-drawer
     location="start"
-    permanent
-    :style="{ position: 'fixed'}"
+    :permanent="!$vuetify.display.mobile"
+    :temporary="$vuetify.display.mobile"
+    
+    :rail="rail"
+    @mousehover="rail = !rail"
+    
+    
     class="bg-menuBackground"
   >
     <v-row
       class="header-and-main flex-column fill-height ma-0 pa-0"
       justify="space-between"
     >
-      <v-col
-        class="px-0 pt-0"
+      <v-col 
+        class="px-0 pt-0 fill-height"
       >
         <slot name="header">
           <v-row
@@ -52,10 +57,11 @@
           </v-col>
         </v-row>
       </v-col>
-      <v-col
-      class="pa-0 ma-0"
+      <v-col 
+      class="pa-0 ma-0 fill-height"
+      
       > 
-      <v-row>
+      <!-- <v-row>
         <v-col>
           <router-link :to="'/'">
 
@@ -63,7 +69,7 @@
           </router-link>
 
             </v-col>
-          </v-row>
+          </v-row> -->
         <v-row
           class="sidemenu__footer pa-0 ma-0"
           justify="center"
@@ -107,6 +113,7 @@ export default {
   },
   data() {
     return {
+      rail : false,
       lists: {
         default: [],
         prepend: [],

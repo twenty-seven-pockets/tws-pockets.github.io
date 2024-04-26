@@ -2,7 +2,7 @@
   <v-card flat class="bg-background" align="center">
     <v-card-title>{{$t("faq")}}</v-card-title>
     <v-card-text>
-      <v-data-iterator :search="search" :items="questions" :placeholder="$t('search')">
+      <v-data-iterator :search="search" :items="questions" :placeholder="$t('search')" :custom-filter="customFilter">
         <template #header>
           <v-row justify="center">
             <v-col v-bind="{md : 6}">
@@ -27,11 +27,24 @@
 </template>
 
 <script>
+
   export default {
     name : "FAQView",
+    data() {
+      return {
+        search : ""
+      }
+    },
     computed: {
       questions(){return this.$store.getters['faqs']}
     },
+    methods : {
+      customFilter(a,needle,item){
+        const title = this.$t(`faqs.${item.raw}.title`);
+        const text = this.$t(`faqs.${item.raw}.text`);
+        return title.includes(needle) ||  text.includes(needle)
+      }
+    }
   }
 </script>
 

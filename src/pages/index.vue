@@ -16,7 +16,7 @@
           </v-row>
         </v-col>
         <v-col cols="auto" class="text-h1 border-t-lg border-b-lg my-5 border-logoBorder" align="start">
-          {{ $t("company.names.0") }}
+          {{ $t("company.names.0") }}a
         </v-col>
              </v-row>
             </v-card-title>

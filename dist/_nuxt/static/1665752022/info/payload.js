@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/info", (function(a){return {data:[{content:{slug:"info",toc:[],body:{type:"root",children:[]},dir:"\u002F",path:"\u002Finfo",extension:".md",createdAt:a,updatedAt:a}}],fetch:{},mutations:void 0}}("2022-10-14T12:52:55.946Z")));

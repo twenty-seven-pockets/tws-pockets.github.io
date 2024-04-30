@@ -1,10 +1,13 @@
 <template>
-  <ContainerOfArticles :category="$route.params.category"/>
+  <v-container grid-list-xs>
+
+    
+  </v-container>
 </template>
 
 <script>
   export default {
-    name : "DefaultArticleWrapper",
+    name : "ExperienceView"
     
   }
 </script>

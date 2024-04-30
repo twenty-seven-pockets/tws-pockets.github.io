@@ -1,4 +1,8 @@
 export default () => ({
+  error : "{error} - Fehler",
+  errors : {
+    404 : "Der Pfad {route} existiert nicht."
+  },
   faq : "Häufig gestellte Fragen",
   faqs : {
     when : {

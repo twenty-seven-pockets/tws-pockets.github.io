@@ -3,20 +3,15 @@
     location="start"
     :permanent="!$vuetify.display.mobile"
     :temporary="$vuetify.display.mobile"
-    
     :rail="rail"
     @mousehover="rail = !rail"
-    
-    
     class="bg-menuBackground"
   >
     <v-row
       class="header-and-main flex-column fill-height ma-0 pa-0"
       justify="space-between"
     >
-      <v-col 
-        class="px-0 pt-0 fill-height"
-      >
+      <v-col class="px-0 pt-0 ">
         <slot name="header">
           <v-row
             v-if="$slots.header"
@@ -57,22 +52,11 @@
           </v-col>
         </v-row>
       </v-col>
-      <v-col 
-      class="pa-0 ma-0 fill-height"
-      
-      > 
-      <!-- <v-row>
-        <v-col>
-          <router-link :to="'/'">
+      <v-col cols="auto" class="pa-0 ma-0 bg-red">
 
-              <v-img src="@/assets/logo.png"/>
-          </router-link>
-
-            </v-col>
-          </v-row> -->
         <v-row
           class="sidemenu__footer pa-0 ma-0"
-          justify="center"
+          justify="center" 
         >
           <v-col
             class="pa-0 ma-0"
@@ -82,11 +66,17 @@
             <v-btn
               width="100%"
               :to="item.to"
-              icon tile flat
+              icon
+              tile
+              flat
               color="menuBackground"
               :size="item.size"
             >
-              <v-icon :color="item.color" :size="item.size">{{ item.icon }}</v-icon>
+              <v-icon
+                :color="item.color"
+                :size="item.size"
+                >{{ item.icon }}</v-icon
+              >
               <v-tooltip
                 v-if="item?.tooltip"
                 v-bind="
@@ -113,7 +103,7 @@ export default {
   },
   data() {
     return {
-      rail : false,
+      rail: false,
       lists: {
         default: [],
         prepend: [],

@@ -16,7 +16,7 @@
           </v-row>
         </v-col>
         <v-col cols="auto" class="text-h1 border-t-lg border-b-lg my-5 border-logoBorder" align="start">
-          {{ $t("company.names.0") }}a
+          {{ $t("company.names.0") }}
         </v-col>
              </v-row>
             </v-card-title>
@@ -29,9 +29,10 @@
     <v-card-title align="center" class="my-5"
       ><v-btn
         size="x-large"
-        to="/experiences"
+        :to="{name : 'experience'}"
         color="secondaryButtonIconColor"
         append-icon="mdi-arrow-right"
+        rounded="xl"
         >{{ $t("company.slogans.1") }}</v-btn
       >
     </v-card-title>

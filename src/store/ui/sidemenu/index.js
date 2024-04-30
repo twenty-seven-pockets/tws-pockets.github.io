@@ -4,7 +4,7 @@ export default {
     items: [
       {
         title: "menu.items.aboutUs.title",
-        to: "/about",
+        to: {name : "our-story"},
         prependIcon: "mdi-information-outline",
         'base-color': "menuInactive",
         color: "menuButton",

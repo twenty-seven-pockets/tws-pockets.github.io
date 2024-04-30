@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import routes from 'vue-auto-routing'
 import { createRouterLayout } from 'vue-router-layout'
+import Error404 from '@/components/ErrorView.vue'
 const RouterLayout = createRouterLayout(layout => {
   return import('./layouts/' + layout + '.vue')
 })
@@ -11,8 +12,13 @@ const router = createRouter({
     {
       path: '/',
       component: RouterLayout,
-      children: routes
-    }
+      children: [...routes, 
+        {
+          path: '/:pathMatch(.*)*',
+          component: Error404
+        },
+      ]
+    },
   ]
 })
 

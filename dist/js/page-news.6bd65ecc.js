@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkKussy"]=self["webpackChunkKussy"]||[]).push([[814],{1183:function(n,u,e){e.r(u),e.d(u,{default:function(){return i}});var r=e(6768);function s(n,u,e,s,t,a){return(0,r.uX)(),(0,r.CE)("div",null," Ankündigung 1 ")}var t={name:"NewsView"},a=e(1241);const c=(0,a.A)(t,[["render",s]]);var i=c}}]);
+//# sourceMappingURL=page-news.6bd65ecc.js.map

@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkKussy"]=self["webpackChunkKussy"]||[]).push([[471],{9675:function(e,n,r){r.r(n),r.d(n,{default:function(){return f}});var u=r(6768),s=r(3813);function t(e,n,r,t,c,i){return(0,u.uX)(),(0,u.Wv)(s.I,{"grid-list-xs":""})}var c={name:"ExperienceView"},i=r(1241);const a=(0,i.A)(c,[["render",t]]);var f=a}}]);
+//# sourceMappingURL=page-experience.8f903064.js.map

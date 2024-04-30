@@ -99,6 +99,7 @@ export default {
   position:fixed;
   bottom:0px;
   right:0px;
+  z-index:999;
 
 }
 </style>

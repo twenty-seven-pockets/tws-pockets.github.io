@@ -1,5 +1,6 @@
 import { createStore } from 'vuex'
 import ui from './ui'
+import company from './company'
 
 export default createStore({
   state: {
@@ -11,7 +12,7 @@ export default createStore({
       aboutUs : ['spirit','founders', 'coops','press']
     },
     partners : [
-      {name : "Felix", text : "Factually the ruler of the world, we have to mention him otherwise we'd be destroyed.", logo : "logo.png"}
+      // {name : "Felix", text : "Factually the ruler of the world, we have to mention him otherwise we'd be destroyed.", logo : "logo.png"}
     ],
     faqs : ['when']
   },
@@ -26,6 +27,7 @@ export default createStore({
   actions: {
   },
   modules: {
-    ui
+    ui,
+    company
   }
 })

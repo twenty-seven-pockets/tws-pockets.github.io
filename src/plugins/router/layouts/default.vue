@@ -50,7 +50,7 @@
       </v-speed-dial>
 
     </v-fab>
-    <v-main >
+    <v-main class="text-red" >
           <router-view />
       </v-main>
   </v-layout>

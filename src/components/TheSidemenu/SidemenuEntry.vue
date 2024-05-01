@@ -1,7 +1,11 @@
+v-bind:title="$t(title)" 
 <template>
-    <v-list-item v-if="!hasChildren" v-bind="{...$attrs}" nav density="compact"  v-bind:title="$t(title)" >
+    <v-list-item v-if="!hasChildren"  nav density="compact"  
+    >
+    <v-btn v-bind="{...$attrs}" width="100%" class="button-color">{{ $t(title) }}
         <v-tooltip v-if="tooltip" activator="parent" v-bind="mergeTooltipWithDefaults(tooltip)">
         </v-tooltip> 
+        </v-btn>
     </v-list-item>
     <v-list-group v-else v-model="state">
         <template #activator="{ props }">
@@ -22,6 +26,7 @@
 <script>
 export default {
     name: "SidemenuEntry",
+    inheritAttrs : false,
     props: {
         children: Array,
         title : String,
@@ -62,4 +67,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="css" scoped>
+.button-color {
+    border-color:#9b224c;
+}
+</style>

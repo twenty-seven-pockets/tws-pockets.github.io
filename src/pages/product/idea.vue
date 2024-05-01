@@ -1,6 +1,6 @@
 <template>
-  <v-card flat class="text-productText">
-    <v-card-title>
+  <v-card flat class="bg-cardBackground text-text">
+    <v-card-title align="center">
       {{$t("productIdea")}}
     </v-card-title>
     <v-card-text >

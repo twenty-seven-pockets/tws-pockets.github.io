@@ -1,20 +1,21 @@
 <template>
-  <v-card flat  class="text-productText">
-    <v-card-title>
+  <v-card flat  class="bg-cardBackground text-text">
+    <v-card-title align="center">
       {{ $t("contents.card.title") }}
     </v-card-title>
-    <v-card>
+    <v-card-text align="center">
           <v-data-table
-            class="text-productText"
+            class="text-text bg-cardBackground"
             :items-per-page="-1"
             :items="items"
             :headers="headers"
             :style="{'width' : '50%'}"
+
           >
             <template #bottom></template>
           </v-data-table>
   
-    </v-card>
+    </v-card-text>
 
   </v-card>
 </template>

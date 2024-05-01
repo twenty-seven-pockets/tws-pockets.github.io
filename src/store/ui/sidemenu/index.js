@@ -7,6 +7,7 @@ export default {
         to: {name : "our-story"},
         prependIcon: "mdi-information-outline",
         'base-color': "menuInactive",
+         class : "rounded-xl ",
         color: "menuButton",
       },
       {
@@ -14,12 +15,15 @@ export default {
         prependIcon: "mdi-bottle-tonic",
         to: "/product",
         'base-color': "menuInactive",
+         class : "rounded-xl ",
+
         color: "menuButton",
       },
       {
         title: "menu.items.tests.title",
         to: "/certifications",
         prependIcon: "mdi-file-document",
+         class : "rounded-xl ",
         'base-color': "menuInactive",
         color: "menuButton",
       },
@@ -29,6 +33,8 @@ export default {
         to: "/additional",
         'base-color': "menuInactive",
         color: "menuButton",
+         class : "rounded-xl ",
+
       },
       {
         title: "menu.items.conservation.title",
@@ -36,6 +42,9 @@ export default {
         prependIcon: "mdi-leaf",
         'base-color': "menuInactive",
         color: "menuButton",
+         class : "rounded-xl ",
+         variant : "outlined"
+
       },
       {
         title: "menu.items.news.title",
@@ -44,6 +53,8 @@ export default {
         'base-color': "menuInactive",
         to: "/news",
         color: "menuButton",
+         class : "rounded-xl ",
+        
       },
       // {
       //   title: "menu.items.future.title",

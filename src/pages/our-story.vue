@@ -5,7 +5,7 @@
   >
     <v-row>
       <v-col>
-        <v-card class="bg-surface">
+        <v-card class="bg-cardBackground">
           <v-card-title>
             {{ $t("company.spirit.title") }}
           </v-card-title>
@@ -17,7 +17,7 @@
     >
     <v-row>
       <v-col>
-        <v-card class="bg-secondary">
+        <v-card class="bg-cardBackground" elevation="10">
           <v-card-title>
             {{ $t("company.founders.title") }}
           </v-card-title>
@@ -27,11 +27,12 @@
                 {{ $t("company.founders.text") }}
               </v-col>
               <v-col>
-                <v-img
+                <!-- <v-img
                   class="founder-imgs"
                   src="@/assets/founder-henrik.jpg"
-                ></v-img
-              ></v-col>
+                  >
+                ></v-img -->
+              </v-col>
             </v-row>
           </v-card-text>
         </v-card>
@@ -39,7 +40,7 @@
     </v-row>
     <v-row>
       <v-col>
-        <v-card class="bg-secondary">
+        <v-card class="bg-cardBackground">
           <v-card-title>
             {{ $t("company.cooperation.title") }}
           </v-card-title>

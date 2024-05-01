@@ -1,9 +1,20 @@
 <template>
   <v-container >
+    <v-row>
+      <v-col>
+
+        <idea/>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col>
+        <contents/>
+
+      </v-col>
+    </v-row>
+
     <v-col cols="12" justify='center' align='center'>
 
-      <idea/>
-      <contents/>
       
     </v-col>
   </v-container>

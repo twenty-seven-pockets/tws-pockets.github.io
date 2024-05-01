@@ -1,5 +1,5 @@
 <template>
-  <v-card flat class="bg-background text-productText">
+  <v-card flat class="bg-cardBackground text-text">
 
   <v-card-title>
     {{$t('sustainability.enviroment.title')}}

@@ -22,14 +22,18 @@ export default createVuetify({
           logoBorder : "#000000",
           primary: colors.red.darken1, // #E53935
           secondary: colors.red.lighten4, // #FFCDD2
-          background: "#d8c0c8", 
-          menuButton : "#80193b",
+          background: "#f9ebeb", // webseiten hintergrund
+          menuBackground : "#d8c0c8", // menu background
+          menuButton : "#ea95b2", 
+          menuButtonBorder : "#9b224c",
           menuInactive : "#951d45",
-          secondaryButtonIconColor : "#b95b7c",
-          menuBackground : "#d8c0c8",
-          languageButton : "#9b224c",
+
+          secondaryButtonIconColor : "#b95b7c", // social media, gemainsame erlebnisse, icon buttons im footer
+          languageButton : "#9b224c", // 
+
           productText : "#9b224c",
-          text : "#aa0000"
+          text : "#9b224c",
+          cardBackground : "#d8c0c8"
         },
         variations: {
           colors: ['primary', 'secondary'],

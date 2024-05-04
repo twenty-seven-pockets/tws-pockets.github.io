@@ -17,13 +17,13 @@
               <v-col>
 
               <v-card-title class="mb-4">
-                {{ $t("errors.title", { error: 404 }) }}
+                {{ $t("errors.title", { error: "Navigations" }) }}
               </v-card-title>
               </v-col>
               <v-col>
 
               <v-card-text>
-                {{ $t("errors.404", { route: $route.fullPath }) }}
+                {{ $t("errors.underConstruction", { route: $route.fullPath }) }}
               </v-card-text>
               </v-col>
               <v-col>

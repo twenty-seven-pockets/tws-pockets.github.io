@@ -4,7 +4,7 @@ export default {
     items: [
       {
         title: "ui.menu.items.aboutUs.title",
-        to: {name : "our-story"},
+        to: {name : "our"},
         prependIcon: "mdi-information-outline",
         'base-color': "menuInactive",
          class : "rounded-xl ",
@@ -66,7 +66,7 @@ export default {
         footer: true,
         title: "ui.menu.items.faq.title",
         tooltip: "ui.menu.items.faq.tooltip",
-        to: "/additional/faq",
+        to: {name : 'faqs'},
         size: "large",
         tile: true,
         icon: "mdi-help-circle-outline",
@@ -79,7 +79,7 @@ export default {
 
         title: "ui.menu.items.about.title",
         tooltip: "ui.menu.items.about.tooltip",
-        to: "/impressum",
+        to: {name : "impressum"},
         icon: "mdi-information-outline",
         color: "secondaryButtonIconColor",
       },

@@ -2,7 +2,6 @@ import company from "./de/company";
 import errors from "./de/errors";
 import ui from "./de/ui";
 
-const listToObject = arr => Object.fromEntries(arr.map((e,i) => [i,e]))
 export default () => ({
   ui,
   errors,

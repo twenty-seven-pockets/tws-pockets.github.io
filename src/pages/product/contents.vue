@@ -1,14 +1,9 @@
 <template>
-  <v-card flat  class="bg-cardBackground text-text">
-    <v-card-title align="center">
-      {{ $t("contents.card.title") }}
-    </v-card-title>
-    <v-card-subtitle align="center" class="">
-    </v-card-subtitle>
-    <v-card-text align="center">
+  <i18n-card :path="i18nPath">
+    <template #default="{i18nBody}">
       <v-row justify="center">
         <v-col cols="auto">
-          Die Inhaltsstoffe von Kussy-Lips werden achtsam und sorgfältig in einer deutschen Manufaktur hergestellt. 
+         {{i18nBody.disclaimer}}
         </v-col>
       </v-row>
       <v-row>
@@ -16,8 +11,8 @@
           <v-data-table
             class="text-text bg-cardBackground"
             :items-per-page="-1"
-            :items="items"
-            :headers="headers"
+            :items="i18nBody.table.items"
+            :headers="i18nBody.table.headers"
             :style="{'width' : '50%'}"
   
           >
@@ -25,46 +20,14 @@
           </v-data-table>
         </v-col>
         </v-row>
-        
-  
-    </v-card-text>
-
-  </v-card>
+    </template>
+  </i18n-card>
 </template>
 
 <script>
 export default {
-  name: "ContentsView",
-  computed: {
-    items() {
-      return [
-        { name: this.$t("Sheabutter"), value: "%" },
-        { name: this.$t("Aloe Vera Gel"), value: " 20% (Rein, ohne Zusätze)" },
-        { name: this.$t("Agavendicksaft"), value: " 5% " },
-        { name: this.$t("Glycerin"), value: "5%" },
-        { name: this.$t("Maisstärke"), value: " 3%" },
-        { name: this.$t("Carnaubawachs"), value: " 5%" },
-        { name: this.$t("Carotinoide"), value: " 1%" },
-        { name: this.$t("Zitronensäure"), value: "0,2% " },
-        { name: this.$t("Vitamin E-Öl"), value: "1%" },
-        { name: this.$t("Apfelextrakt Bio."), value: " 5%" },
-        { name: this.$t("Erdbeerpulver Bio ."), value: "4,8%" },
-      ];
-    },
-    headers() {
-      return [
-        {
-          value: "value",
-          title: this.$t("contents.table.headers.value.title"),
-          align : "end",
-        },
-        {
-          value: "name",
-          title: this.$t("contents.table.headers.name.title"),
-        },
-      ];
-    },
-  },
+  name: "ContentsPage",
+ 
 };
 </script>
 

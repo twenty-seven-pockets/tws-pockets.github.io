@@ -3,6 +3,7 @@ import routes from 'vue-auto-routing'
 import { createRouterLayout } from 'vue-router-layout'
 import Error404 from '@/components/ErrorView.vue'
 const RouterLayout = createRouterLayout(layout => {
+  console.debug(layout)
   return import('./layouts/' + layout + '.vue')
 })
 

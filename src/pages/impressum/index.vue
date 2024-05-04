@@ -1,54 +1,49 @@
 <template>
-  <v-card
-    align="center"
-    flat
-    class="bg-background"
-  >
-    <v-card-title>
-      {{ $t("impressum") }}
-    </v-card-title>
-    <v-card-text>
+  <i18n-card :path="i18nPath">
+    <template #body="{i18nBody}">
+      <v-card-title>{{i18nBody.title}}</v-card-title>
+      <v-card-text>
+
       <table>
         <tbody>
           <tr>
-            <td>Name und Anschrift</td>
+            <td>
+            {{i18nBody.nameAndAddresse}}</td>
             <td></td>
           </tr>
           <tr>
-            <td>Name und Anschrift</td>
+            <td>{{i18nBody.contactInformation}}</td>
             <td></td>
           </tr>
           <tr>
-            <td>KOntaktinformation</td>
+            <td>{{i18nBody.substitutes}}</td>
             <td></td>
           </tr>
           <tr>
-            <td>Vertretungsberechtigte Personen</td>
+            <td>{{i18nBody.registrationInformation}}</td>
             <td></td>
           </tr>
           <tr>
-            <td>Regestierungsinformationen</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Aufsichtsbehörde</td>
+            <td>{{i18nBody.agencies}}</td>
             <td></td>
           </tr>
         </tbody>
       </table>
-    </v-card-text>
+      </v-card-text>
     <v-card-subtitle> Haftungsausschluss </v-card-subtitle>
     <v-card-text>
       - Urheberrechtshinweise (Nutzung Bilder, Texte, Informationen)
     </v-card-text>
     <v-card-subtitle> Haftungsausschluss </v-card-subtitle>
     <v-card-text> - (keine Haftung für Inhalte externer Links) </v-card-text>
-  </v-card>
+    </template>
+
+  </i18n-card>
 </template>
 
 <script>
 export default {
-  name: "ImpressumView",
+  name: "ImpressumPage",
 };
 </script>
 

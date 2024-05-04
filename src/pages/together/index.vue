@@ -1,10 +1,11 @@
 <template>
-  <i18n-card :path="i18nPath"/>
+  <under-construction-card/>
 </template>
 
 <script>
-  export default {
-    name : "EnviromentView"
+
+  export default{
+    name : "TogetherPage"
     
   }
 </script>

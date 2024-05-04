@@ -1,13 +1,11 @@
 <template>
-  <v-container grid-list-xs>
-
-    
-  </v-container>
+  <div>
+    {{$route.params}}
+  </div>
 </template>
 
 <script>
   export default {
-    name : "ExperienceView"
     
   }
 </script>

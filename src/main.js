@@ -6,5 +6,10 @@ import router from './plugins/router'
 import i18n from './plugins/i18n'
 import vuetify from './plugins/vuetify'
 import store from './store'
+
+import i18nArticleFetcher from '@/mixins/i18nArticleFetcher';
+
 loadFonts()
-createApp(App).use(store).use(vuetify).use(i18n).use(router).mount('#app')
+createApp(App).use(store).use(vuetify).use(i18n).use(router)
+.mixin(i18nArticleFetcher)
+.mount('#app')

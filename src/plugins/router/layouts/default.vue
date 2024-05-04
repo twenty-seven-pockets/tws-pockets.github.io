@@ -51,6 +51,7 @@
 
     </v-fab>
     <v-main class="text-red" >
+        {{ text }}
           <router-view />
       </v-main>
   </v-layout>
@@ -61,9 +62,6 @@
 import { mapGetters } from "vuex";
 export default {
   name: "DefaultLayout",
-  data() {
-    return { t: "" };
-  },
   computed: {
     ...mapGetters("ui/sidemenu", ["items"]),
     languages(){return  this.$i18n.availableLocales},

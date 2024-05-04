@@ -3,17 +3,29 @@
     <v-card-title align="center">
       {{ $t("contents.card.title") }}
     </v-card-title>
+    <v-card-subtitle align="center" class="">
+    </v-card-subtitle>
     <v-card-text align="center">
+      <v-row justify="center">
+        <v-col cols="auto">
+          Die Inhaltsstoffe von Kussy-Lips werden achtsam und sorgfältig in einer deutschen Manufaktur hergestellt. 
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col>
           <v-data-table
             class="text-text bg-cardBackground"
             :items-per-page="-1"
             :items="items"
             :headers="headers"
             :style="{'width' : '50%'}"
-
+  
           >
             <template #bottom></template>
           </v-data-table>
+        </v-col>
+        </v-row>
+        
   
     </v-card-text>
 

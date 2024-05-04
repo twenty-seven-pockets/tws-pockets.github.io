@@ -2,7 +2,7 @@ v-bind:title="$t(title)"
 <template>
     <v-list-item v-if="!hasChildren"  nav density="compact"  
     >
-    <v-btn v-bind="{...$attrs}" width="100%" class="button-color">{{ $t(title) }}
+    <v-btn v-bind="{...$attrs}"  class="button-color">{{ $t(title) }}
         <v-tooltip v-if="tooltip" activator="parent" v-bind="mergeTooltipWithDefaults(tooltip)">
         </v-tooltip> 
         </v-btn>
@@ -66,9 +66,12 @@ export default {
 
 }
 </script>
+border-color:--var(menuButtonBorder);
+background-color:$menuButton;
 
 <style lang="css" scoped>
 .button-color {
-    border-color:#9b224c;
+    width : 100%;
 }
+
 </style>

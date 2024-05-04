@@ -1,10 +1,27 @@
 <template>
   <v-card flat class="bg-cardBackground text-text">
     <v-card-title align="center">
-      {{$t("productIdea")}}
+      {{$t('company.articles.productidee.title')}}
     </v-card-title>
     <v-card-text >
-      {{$t('productIdeaDescription')}}
+      <v-container>
+
+        <ul>
+          
+          <li>
+            {{$t('company.articles.productidee.punkt1')}}
+  
+        </li>
+        <li>
+          {{$t('company.articles.productidee.punkt2')}}
+          
+        </li>
+        <li>
+          {{$t('company.articles.productidee.punkt3')}}
+          
+        </li>
+      </ul>
+    </v-container>
     </v-card-text>
   </v-card>
 </template>

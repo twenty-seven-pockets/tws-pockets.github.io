@@ -52,12 +52,23 @@
       </v-row>
     </v-card-text>
   </v-card>
+  <v-card>
+    <markdown-container :markdown-string="texts.one"/>
+  </v-card>
 </template>
 
 <script>
+
+
 export default {
   name: "LandingPage",
+
   computed: {
+    texts(){
+      return {
+        'one' : `# asd`
+      }
+    },
     companyName() {
       return process.env.VUE_APP_COMPANY_NAME;
     },

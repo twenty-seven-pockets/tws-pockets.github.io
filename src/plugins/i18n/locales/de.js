@@ -1,3 +1,4 @@
+const listToObject = arr => Object.fromEntries(arr.map((e,i) => [i,e]))
 export default () => ({
   error : "{error} - Fehler",
   errors : {
@@ -32,6 +33,87 @@ export default () => ({
       "Gemeinsame Erlebnisse",
       "Ein Kuss der die Lippen erlebt",
     ],
+    // use this slot to store all sensible articles with a name here 
+    articles : {
+      unternehmensgeist : { 
+        title : 'Unternehmensgeist',
+        text :  `Aus der Perspektive vom Unternehmen "Kussy" leben wir in einer Welt, mit fast unbegreiflich vielen Facetten. Neben hoch technischen oder komplexen chemischen Prozessen die Teil dieser Gesellschaft sind, bietet auch schon die Natur selbst eine enorme Komplexität, mit deren Hilfe wir uns im Alltag befähigen können. Mit den Produkten von Kussy sollen die Vielseitigkeiten und Potenziale aus uns Menschen zum vorscheinen gebracht werden, ohne auf chemisch stark veränderte Produkte zurückzugreifen. Die Naturbelassenen Produkte begleiten sie bei der Gelegenheit neue Nuancen ihres Lebens zu erkunden und sich mit anderen Menschen an diesen zu erfreuen, während es ihre Individuellen Eigenschaften belebt. Gleichzeitig sollen die wirtschaftlichen Gewinne zu einem Anteil zur Verbesserung der umweltlichen Bedingungen genutzt werden. Beispiele hierfür finden Sie unter dem Reiter [Nachhaltigkeit].`
+      },
+      gruender : {
+        title : 'Gründer',
+        paragraph1 : `Hey Zusammen. Mein Name ist Henrik Weiß und ich bin der Gründer von Kussy. Nachdem Sie auf dieser Website schon etwas über die Grundsätze meines Unternehmes kennengelernt haben, möchte Ich Ihnen auch meine persönliche Perspektive kurz vorstellen.`,
+        paragraph2 : `Ich habe auf meinem Lebensweg soziale Arbeit studiert und dabei das Konzept des Empowerments kennenlernen dürfen. Dies beschreibt den Ansatz Menschen als Fähige Wesen zu betrachten, die mit entsprechenden Ressourcen immer am besten in der Lage sind sich zu verwirklichen. Diesen Gedanken möchte ich gerne mit meinem Produkt und Unternehmen in die Welt hinaus tragen. Meine Idee ist es Ihnen die Freiheit zu geben neue Seiten und Geschmäcker von sich und Ihrem Partner kennenzulernen.`
+      },
+      kooperation : {
+        title : "Kooperation",
+        table : {},
+      },
+      productidee : {
+        title : "Produktidee",
+        punkt1 : "Natürlichkeit soll sich in unserem Produkt wiederfinden. Sexprodukte verstecken sich, aber wir haben alle Sex. Es ist etwas natürliches und sollte auch so behandelt werden. Wir bieten ein Brückenprodukt für Menschen die einen Selbstbestimmten und natürlichen Start in die Erlebniswelt der Sexualität erfahren möchten. ",
+        punkt2 : "Wir helfen Ihnen mit dem Produkt dabei Ihre persönlichen Vorlieben zusammen mit Ihren individuellen Eigenschaften in Einklang zu bringen. Dies wird durch die Geschmacksnuancen und die multifunktionale Einsetzbarkeit gewährleistet, die sich nach ihren Vorstellungen erweitern lässt. ",
+        punkt3: "Schaffen sie mit unserem Produkt eine neue Erlebnisebene mit dem Körper ihres Partners oder ihrer Partnerin und einen Zugang zur natürlichen Sexualität. ohne künstliche Geschmacksstoffe oder Chemische Bestandteile.",
+      },
+      application : {
+        title : "Gebrauchshinweise",
+        subtitle : "Lesen Sie sorgfältig die Anweisungen und Warnhinweise auf dem Etikett oder der Verpackung des Produkts und befolgen Sie sie genau. Dies kann Informationen zur Anwendung, zur Menge, zur Häufigkeit der Anwendung und zur Sicherheit enthalten.",
+        list : listToObject ([       
+' Ablaufdatum beachten (Überprüfen Sie regelmäßig das Verfallsdatum des Produkts und verwenden Sie es nicht mehr, wenn es abgelaufen ist)',
+" Aufbewahrung nach dem Gebrauch (Verschließen Sie den Behälter oder die Verpackung des Produkts nach dem Gebrauch sorgfältig, um eine Kontamination zu verhindern. Lagern Sie das Produkt an einem sicheren Ort, der für Kinder oder Haustiere unzugänglich ist)",
+" Anwendungsmenge (Beginnen Sie mit einer kleinen Menge des Produkts und tragen Sie bei Bedarf mehr auf. Es ist einfacher, mehr Produkt hinzuzufügen, als zu viel aufzutragen und Überschuss zu entfernen)",
+" Anwednungsbereich (Tragen Sie das Produkt nur auf die dafür vorgesehenen Bereiche des Körpers auf)",
+" Nicht bei Hautiritationen verwenden (Verwenden Sie das Produkt nicht auf gereizter oder verletzter Haut. Warten Sie, bis Hautirritationen oder Wunden verheilt sind, bevor Sie das Produkt anwenden, um eine Verschlimmerung der Beschwerden zu vermeiden)",
+" Kombination mit anderen Produkten (Vermeiden Sie die gleichzeitige Verwendung mit anderen Gleitmitteln oder Produkten, da dies zu unerwünschten Reaktionen führen kann. Wenn Sie andere Produkte verwenden möchten, lesen Sie die Anweisungen sorgfältig durch und überprüfen Sie, ob sie kompatibel sind)",
+" Kompatibilität mit Kondomen (Überprüfen Sie, ob das Produkt kompatibel mit Latexkondomen ist, insbesondere wenn Sie es während des Geschlechtsverkehrs verwenden möchten. Einige Inhaltsstoffe können die Integrität von Latex beeinträchtigen und das Risiko eines Kondomversagens erhöhen. Wenn Sie unsicher sind, verwenden Sie stattdessen ein wasserbasiertes Gleitmittel, das ausdrücklich als kondomkompatibel gekennzeichnet ist)",
+" Nicht mit Silikonspielzeug verwenden (Vermeiden Sie die Verwendung von Produkten auf Silikonbasis mit Silikonsexspielzeug, da dies zu Beschädigungen des Spielzeugs führen kann. Wenn Sie Spielzeug verwenden, stellen Sie sicher, dass es mit wasserbasierten Gleitmitteln kompatibel ist)",
+" Reinigung (Reinigen Sie den Anwendungsbereich nach Gebrauch gründlich, um Rückstände des Produkts zu entfernen. Dies kann dazu beitragen, Hautirritationen zu vermeiden und die Hygiene zu gewährleisten)",
+" Reinigung von Spielzeug (Wenn Sie das Produkt in Verbindung mit Sexspielzeug verwenden, reinigen Sie das Spielzeug gründlich nach Gebrauch gemäß den Anweisungen des Herstellers. Einige Inhaltsstoffe können das Material von Sexspielzeugen beschädigen, wenn sie nicht ordnungsgemäß gereinigt werden)"  ,
+        ]),
+        footer : "Unser Unternehmen möchte nicht nur einen Verantwortungsvollen Umgang mit der Natur fördern, sondern auch mit dem Produkt und dem Thema Sexualität an sich."
+      },
+      storage : {
+        title : "Lagerung",
+        list : listToObject([
+
+"Temperatur (Lagern Sie das Produkt bei einer stabilen Raumtemperatur, vorzugsweise zwischen 15°C und 25°C. Vermeiden Sie extreme Hitze oder Kälte, da dies die Konsistenz und Stabilität der Inhaltsstoffe beeinträchtigen kann)",
+"Licht (Bewahren Sie das Produkt an einem kühlen, dunklen Ort auf und vermeiden Sie direkte Sonneneinstrahlung. Licht kann dazu führen, dass empfindliche Inhaltsstoffe schneller abgebaut werden und die Haltbarkeit des Produkts verkürzt wird)",
+"Luftdichtigkeit (Stellen Sie sicher, dass der Behälter oder die Verpackung luftdicht verschlossen ist, um zu verhindern, dass Luft eindringt und die Inhaltsstoffe oxidiert werden. Dies kann dazu beitragen, die Qualität des Produkts zu erhalten und eine Kontamination zu vermeiden)",
+"Hygiene (Achten Sie darauf, dass der Behälter oder die Verpackung sauber und frei von Verunreinigungen ist. Verwenden Sie bei Bedarf saubere Utensilien oder saubere Hände, um das Produkt zu entnehmen, um eine Kontamination zu vermeiden)",
+"Trennung Verhindern (Einige Produkte können sich bei längerer Lagerung trennen, insbesondere wenn sie verschiedene Phasen wie Öl und Wasser enthalten. Vor Gebrauch sollten Sie das Produkt gut schütteln oder umrühren, um eine gleichmäßige Mischung zu gewährleisten)",
+
+        ])
+      },
+      tolerance : {
+        title : "Vertraeglichkeit",
+        list : listToObject([
+"Allergien und Empfindlichkeiten (Überprüfen Sie die Inhaltsstoffliste sorgfältig auf potenzielle Allergene oder Inhaltsstoffe, auf die Sie empfindlich reagieren könnten. Wenn Sie bekanntermaßen allergisch gegen einen der Inhaltsstoffe sind, verwenden Sie das Produkt nicht)",
+'Erdbeere Apfel z.b ',
+"Empfehlung Patch Test  (Bevor Sie das Produkt großflächig anwenden, ist es ratsam, einen kleinen Hauttest durchzuführen, um sicherzustellen, dass Sie nicht allergisch auf einen der Inhaltsstoffe reagieren. Tragen Sie eine kleine Menge des Produkts auf eine unauffällige Stelle der Haut auf und warten Sie einige Stunden, um mögliche Reaktionen zu überprüfen.)",
+"PH Wert (Wichtiger Teilaspekt mit dem viele Frauen kämpfen, nicht passende Duschgele etc. In diesem Produkt extra für Ihre Bedürfnisse mit einem leicht sauren PH Wert von 4,5-5,5)"
+
+        ])
+      },
+      standards : {
+        title : "Zertifizierungsstandarts",
+        list : listToObject([
+          "COSMOS",
+ "NaTrue",
+ "ECOCERT"
+        ])
+      },
+      certificates  :{
+        title : "Zertifikate",
+        list : listToObject([
+          "ISO 22716 GMP für Kosmetika",
+ "Vegatarisch/Vegan Zertifizierung",
+ "EU-Bio-Siegel"
+        ])
+      },
+      test : { 
+        title : "Testergebnisse"
+      }
+
+    }
   },
   productIdea: "Produkt Idee",
   productIdeaDescription: `- Natürlichkeit soll sich in unserem Produkt wiederfinden. Sexprodukte verstecken sich, aber wir haben alle Sex. Es ist etwas natürliches und sollte auch so behandelt werden. Wir bieten ein Brückenprodukt für Menschen die einen Selbstbestimmten und natürlichen Start in die Erlebniswelt der Sexualität erfahren möchten. 

@@ -4,7 +4,7 @@
       <v-col >
         <v-card class="error bg-background" flat>
           <v-card-title>
-            {{$t('error', {error : 404})}}
+            {{$t('errors.title', {error : 404})}}
           </v-card-title>
           <v-card-text>
             {{ $t("errors.404", {route : $route.fullPath}) }}

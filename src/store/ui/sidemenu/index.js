@@ -3,7 +3,7 @@ export default {
   state: {
     items: [
       {
-        title: "menu.items.aboutUs.title",
+        title: "ui.menu.items.aboutUs.title",
         to: {name : "our-story"},
         prependIcon: "mdi-information-outline",
         'base-color': "menuInactive",
@@ -11,7 +11,7 @@ export default {
         color: "menuButton",
       },
       {
-        title: "menu.items.product.title",
+        title: "ui.menu.items.product.title",
         prependIcon: "mdi-bottle-tonic",
         to: "/product",
         'base-color': "menuInactive",
@@ -20,7 +20,7 @@ export default {
         color: "menuButton",
       },
       {
-        title: "menu.items.tests.title",
+        title: "ui.menu.items.tests.title",
         to: "/certifications",
         prependIcon: "mdi-file-document",
          class : "rounded-xl ",
@@ -37,7 +37,7 @@ export default {
 
       },
       {
-        title: "menu.items.conservation.title",
+        title: "ui.menu.items.conservation.title",
         to: "/conservation",
         prependIcon: "mdi-leaf",
         'base-color': "menuInactive",
@@ -47,7 +47,7 @@ export default {
 
       },
       {
-        title: "menu.items.news.title",
+        title: "ui.menu.items.news.title",
         // to: "/about",
         prependIcon: "mdi-information-outline",
         'base-color': "menuInactive",
@@ -57,15 +57,15 @@ export default {
         
       },
       // {
-      //   title: "menu.items.future.title",
+      //   title: "ui.menu.items.future.title",
       //   to: "/future",
       //   prependIcon: "mdi-calendar-month",
       // },
       // footer items
       {
         footer: true,
-        title: "menu.items.faq.title",
-        tooltip: "menu.items.faq.tooltip",
+        title: "ui.menu.items.faq.title",
+        tooltip: "ui.menu.items.faq.tooltip",
         to: "/additional/faq",
         size: "large",
         tile: true,
@@ -77,8 +77,8 @@ export default {
         size: "large",
         tile: true,
 
-        title: "menu.items.about.title",
-        tooltip: "menu.items.about.tooltip",
+        title: "ui.menu.items.about.title",
+        tooltip: "ui.menu.items.about.tooltip",
         to: "/impressum",
         icon: "mdi-information-outline",
         color: "secondaryButtonIconColor",

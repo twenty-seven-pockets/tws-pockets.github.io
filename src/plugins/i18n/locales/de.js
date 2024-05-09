@@ -1,11 +1,13 @@
 import company from "./de/company";
 import errors from "./de/errors";
 import ui from "./de/ui";
+import words from "./de/words";
 
 export default () => ({
   ui,
   errors,
   company,
+  words
 });
 
 

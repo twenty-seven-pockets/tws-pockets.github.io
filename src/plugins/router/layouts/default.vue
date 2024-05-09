@@ -1,5 +1,6 @@
 <template>
   <v-app>
+    <DisclaimerDialog/>
     <v-layout>
     <TheSidemenu :items="items" floating >
       <template #header>
@@ -59,9 +60,11 @@
 </template>
 
 <script>
+import DisclaimerDialog from "@/components/DisclaimerDialog.vue";
 import { mapGetters } from "vuex";
 export default {
   name: "DefaultLayout",
+  components : {DisclaimerDialog},
   computed: {
     ...mapGetters("ui/sidemenu", ["items"]),
     languages(){return  this.$i18n.availableLocales},

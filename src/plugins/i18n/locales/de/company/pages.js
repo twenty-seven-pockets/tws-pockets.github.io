@@ -6,6 +6,34 @@ export default {
       kissLips: "Ein Kuss der die Lippen erlebt",
     },
   },
+  // 
+  // together
+  // 
+  "/together/introduction": {
+    title: " Einleitung in das Thema",
+    paragraph1: `Die Produkte von **Kussy** bieten Ihnen Ressourcen gemeinsamen Erlebnissen neue Nuancen zu verleihen und diese mit persönlichen Ideen abzurunden.`,
+    paragraph2: `Wichtig für ein erfüllsames Abenteuer ist der verantwortungsvolle Umgang mit den Produkten und dem Thema Sexualität. Daher lesen Sie bitte vorher die Gebrauchshinweise. `,
+  },
+  "/together/application": {
+    title: " Wie Anwenden",
+    paragraph1: `Das Produkt **Kussy-Lips** ermöglicht jedem Menschen die eigenen Fantasien anzuregen. Im Folgenden werden wir Ihnen Ideen vorstellen, wie und wo Sie unser Produkt anwenden können.`,
+    paragraph2 : `Seien Sie mutig und bedacht. Finden Sie mit Ihrem Partner oder Ihrer Partnerin und **Kussy-Lips** heraus was Ihnen Beiden gefällt und fokussieren Sie sich auf individuelle Präferenzen.`  ,
+    subtitle: "Erste Ideen",
+    paragraph3 : `Der Einstieg mit unserem Produkt kann achtsam und geduldig erfolgen. Nehmen Sie sich Zeit um Ihrem Mitmenschen behutsam auf die neue Erfahrung einzustimmen. Lassen Sie Ihre Finger zusammen mit **Kussy-Lips** einen Erlebnispfad für ihr orales Erlebnis gestalten, welchen Sie danach mit Ihrer Zungenspitze erkunden können.`,
+    
+  },
+  "/together/location": {
+    title: " Wo Anwenden",
+    
+    subtitle: `**Kussy-Lips** bietet gemeinsamen Erlebnis vielfältige Möglichkeiten Ihren Reizen eine neue (Geschmacks-)Note zu verleihen.`,
+    list  : [
+      'Sie wollten sich schon immer mal den Hals oder Rücken Ihres Partners oder Ihrer Partnerin ausgiebig mit der Zunge erkunden ? ',
+'Ihnen schwebte schon immer der Gedanke vor die Brustwarzen ihres Beleiters oder Ihrer Begleiterin intensiv zu verwöhnen ?',
+'Spannend könnten auch lustvolle Küsse oder das Saugen an Klitoris oder Eichel sein.'
+    ],
+    footer : "Lassen Sie es mit Kussy-Lips zu einem vielschichtigen Erlebnis für alle werden und gestalten Sie mit Ihrem Gegenüber bleibende Erinnerungen."
+    
+  },
   // Our
   "/our/founders": {
     title: "Gründer",
@@ -157,13 +185,13 @@ export default {
       "Durchsuchen Sie hier Aktuelles und Neuigkeiten rund um unsere Produkte.",
     noData: "Leider haben wir aktuell keine Neuigkeiten für Sie.",
     list: [
-      //       {
-      //       title : "Website Eröffnung",
-      //       text : `Do sint nisi velit consectetur incididunt id voluptate. Aute laborum incididunt elit esse aute deserunt do dolore voluptate sit minim consequat irure esse. Occaecat cupidatat in fugiat aliquip dolor veniam ex est nostrud dolore Lorem. Dolor tempor in commodo eu officia fugiat ad dolor enim ipsum id qui ex aliquip.
-      // Magna velit elit sint sint occaecat dolor deserunt fugiat. Adipisicing excepteur in labore sint in sunt tempor ea labore. Dolor ea nisi cupidatat laboris tempor laboris ex commodo eu sunt dolore laborum magna est. Enim ullamco anim laboris cupidatat eu nulla ullamco proident aute deserunt pariatur cupidatat id. Exercitation ad sunt ad nulla. Fugiat consequat duis nostrud ex quis ad aliqua ullamco culpa nostrud velit.
-      // Consequat irure deserunt nisi elit in cillum incididunt sint laborum ut. Aliquip Lorem tempor enim labore reprehenderit mollit commodo deserunt deserunt tempor. Ut id in veniam aliqua incididunt aliquip adipisicing exercitation nostrud esse quis pariatur incididunt.
-      // Nulla occaecat eiusmod sunt anim deserunt. Esse id laborum ea sint Lorem labore aliqua exercitation laborum magna. Eiusmod qui laboris eiusmod in et pariatur quis laborum sunt consectetur commodo elit. Nulla dolor pariatur excepteur cillum sint non ea anim qui ullamco qui. Ipsum proident deserunt minim ullamco culpa ea nostrud elit.`
-      //     }
+            {
+            title : "Website Eröffnung",
+            text : `Do sint nisi velit consectetur incididunt id voluptate. Aute laborum incididunt elit esse aute deserunt do dolore voluptate sit minim consequat irure esse. Occaecat cupidatat in fugiat aliquip dolor veniam ex est nostrud dolore Lorem. Dolor tempor in commodo eu officia fugiat ad dolor enim ipsum id qui ex aliquip.
+      Magna velit elit sint sint occaecat dolor deserunt fugiat. Adipisicing excepteur in labore sint in sunt tempor ea labore. Dolor ea nisi cupidatat laboris tempor laboris ex commodo eu sunt dolore laborum magna est. Enim ullamco anim laboris cupidatat eu nulla ullamco proident aute deserunt pariatur cupidatat id. Exercitation ad sunt ad nulla. Fugiat consequat duis nostrud ex quis ad aliqua ullamco culpa nostrud velit.
+      Consequat irure deserunt nisi elit in cillum incididunt sint laborum ut. Aliquip Lorem tempor enim labore reprehenderit mollit commodo deserunt deserunt tempor. Ut id in veniam aliqua incididunt aliquip adipisicing exercitation nostrud esse quis pariatur incididunt.
+      Nulla occaecat eiusmod sunt anim deserunt. Esse id laborum ea sint Lorem labore aliqua exercitation laborum magna. Eiusmod qui laboris eiusmod in et pariatur quis laborum sunt consectetur commodo elit. Nulla dolor pariatur excepteur cillum sint non ea anim qui ullamco qui. Ipsum proident deserunt minim ullamco culpa ea nostrud elit.`
+          }
     ],
   },
   //
@@ -174,16 +202,16 @@ export default {
     placeholder : "Durchsuchen Sie unsere Tipps und Hinweise",
     noData : "Leider haben wir aktuelle keine weiteren Informationen dazu.",
     list: [
-      // {
-      //   title: "Magna mollit et consequat et aute?",
-      //   text: `Do sint nisi velit consectetur incididunt id voluptate. Aute laborum incididunt elit esse aute deserunt do dolore voluptate sit minim consequat irure esse. Occaecat cupidatat in fugiat aliquip dolor veniam ex est nostrud dolore Lorem. Dolor tempor in commodo eu officia fugiat ad dolor enim ipsum id qui ex aliquip.
+      {
+        title: "Magna mollit et consequat et aute?",
+        text: `Do sint nisi velit consectetur incididunt id voluptate. Aute laborum incididunt elit esse aute deserunt do dolore voluptate sit minim consequat irure esse. Occaecat cupidatat in fugiat aliquip dolor veniam ex est nostrud dolore Lorem. Dolor tempor in commodo eu officia fugiat ad dolor enim ipsum id qui ex aliquip.
       
-      // Magna velit elit sint sint occaecat dolor deserunt fugiat. Adipisicing excepteur in labore sint in sunt tempor ea labore. Dolor ea nisi cupidatat laboris tempor laboris ex commodo eu sunt dolore laborum magna est. Enim ullamco anim laboris cupidatat eu nulla ullamco proident aute deserunt pariatur cupidatat id. Exercitation ad sunt ad nulla. Fugiat consequat duis nostrud ex quis ad aliqua ullamco culpa nostrud velit.
+      Magna velit elit sint sint occaecat dolor deserunt fugiat. Adipisicing excepteur in labore sint in sunt tempor ea labore. Dolor ea nisi cupidatat laboris tempor laboris ex commodo eu sunt dolore laborum magna est. Enim ullamco anim laboris cupidatat eu nulla ullamco proident aute deserunt pariatur cupidatat id. Exercitation ad sunt ad nulla. Fugiat consequat duis nostrud ex quis ad aliqua ullamco culpa nostrud velit.
       
-      // Consequat irure deserunt nisi elit in cillum incididunt sint laborum ut. Aliquip Lorem tempor enim labore reprehenderit mollit commodo deserunt deserunt tempor. Ut id in veniam aliqua incididunt aliquip adipisicing exercitation nostrud esse quis pariatur incididunt.
+      Consequat irure deserunt nisi elit in cillum incididunt sint laborum ut. Aliquip Lorem tempor enim labore reprehenderit mollit commodo deserunt deserunt tempor. Ut id in veniam aliqua incididunt aliquip adipisicing exercitation nostrud esse quis pariatur incididunt.
       
-      // Nulla occaecat eiusmod sunt anim deserunt. Esse id laborum ea sint Lorem labore aliqua exercitation laborum magna. Eiusmod qui laboris eiusmod in et pariatur quis laborum sunt consectetur commodo elit. Nulla dolor pariatur excepteur cillum sint non ea anim qui ullamco qui. Ipsum proident deserunt minim ullamco culpa ea nostrud elit.`,
-      // },
+      Nulla occaecat eiusmod sunt anim deserunt. Esse id laborum ea sint Lorem labore aliqua exercitation laborum magna. Eiusmod qui laboris eiusmod in et pariatur quis laborum sunt consectetur commodo elit. Nulla dolor pariatur excepteur cillum sint non ea anim qui ullamco qui. Ipsum proident deserunt minim ullamco culpa ea nostrud elit.`,
+      },
     ],
   },
   "/impressum/impressum" : {

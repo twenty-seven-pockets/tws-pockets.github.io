@@ -1,5 +1,5 @@
 <template>
-  <div v-html="markdownToHtml" class="text-text bg-background"></div>
+  <div v-html="markdownToHtml" ></div>
 </template>
 
 <script>

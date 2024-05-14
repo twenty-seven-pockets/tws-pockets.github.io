@@ -1,8 +1,7 @@
 <template>
   <v-app>
-    <DisclaimerDialog/>
     <v-layout>
-    <TheSidemenu :items="items" floating >
+    <TheSidemenu  :items="items" >
       <template #header>
         <router-link :to="'/'">
 
@@ -20,6 +19,8 @@
         </router-link>
       </template>
     </TheSidemenu>
+    
+    <DisclaimerDialog/>
     <v-btn-toggle
     mandatory 
     v-model="$i18n.locale"
@@ -51,9 +52,13 @@
       </v-speed-dial>
 
     </v-fab>
-    <v-main class="text-red" >
-        {{ text }}
+    <v-main >
+        <v-container fluid>
+        <v-row justify='center'>
+        <v-col cols="auto">
           <router-view />
+        </v-col></v-row>
+        </v-container>
       </v-main>
   </v-layout>
   </v-app>
@@ -65,6 +70,11 @@ import { mapGetters } from "vuex";
 export default {
   name: "DefaultLayout",
   components : {DisclaimerDialog},
+  data() {
+    return {
+      menuHidden: true
+    }
+  },
   computed: {
     ...mapGetters("ui/sidemenu", ["items"]),
     languages(){return  this.$i18n.availableLocales},

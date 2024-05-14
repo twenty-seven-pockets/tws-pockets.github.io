@@ -1,9 +1,9 @@
 // Styles
 import '@mdi/font/css/materialdesignicons.css'
-import 'vuetify/styles'
 
 import colors from 'vuetify/util/colors'
-// import "@/styles/variables.scss";
+// import 'vuetify/styles'
+import "@/styles/settings.scss";
 
 // 
 import { VSpeedDial } from 'vuetify/labs/VSpeedDial'
@@ -19,7 +19,7 @@ export default createVuetify({
   },
   
   theme: {
-
+    
     themes: {
       light: {
         dark: false,
@@ -32,7 +32,7 @@ export default createVuetify({
           menuButton : "#ea95b2", 
           menuButtonBorder : "#9b224c",
           menuInactive : "#951d45",
-
+          test : "#00EE00",
           secondaryButtonIconColor : "#b95b7c", // social media, gemainsame erlebnisse, icon buttons im footer
           languageButton : "#9b224c", // 
 

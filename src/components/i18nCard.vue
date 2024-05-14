@@ -1,25 +1,47 @@
 <template>
-  <v-card class="bg-cardBackground text-text" align="center">
+  <!-- bg-cardBackground text-text -->
+  <v-card  align="center">
     <slot name="body" v-bind="{i18nBody}">
 
+     <slot name="title" v-bind="{i18nBody}"> 
     <v-card-title v-if="i18nBody.title?.length > 0">
-     <slot name="title" v-bind="{i18nBody}"> {{ i18nBody.title }}</slot>
+    
+      <MarkdownContainer v-if="withMarkdown" :markdown-string="i18nBody.title"/>
+        <span v-else>
+     {{ i18nBody.title }}
+        
+        </span>
     </v-card-title>
+     </slot>
+      <slot name="subtitle" v-bind="{i18nBody}">
     <v-card-subtitle v-if="i18nBody.subtitle?.length > 0">
-      <slot name="subtitle" v-bind="{i18nBody}">{{ i18nBody.subtitle }}</slot>
+      
+      <MarkdownContainer v-if="withMarkdown" :markdown-string="i18nBody.subtitle"/>
+        <span v-else>
+        {{i18nBody.subtitle}}
+        </span>
     </v-card-subtitle>
+      </slot>
     <v-card-text>
       <slot name="default" v-bind="{i18nBody}">
-
-      {{ i18nBody.text }}
+        <MarkdownContainer v-if="withMarkdown" :markdown-string="i18nBody.text"/>
+        <span v-else>
+        {{i18nBody.text}}
+        </span>
       </slot>
     </v-card-text>
     <v-card-text v-if="$slots?.footer || i18nBody.footer?.length > 0">
       <slot name="footer" v-bind="{i18nBody}">
+        <MarkdownContainer v-if="withMarkdown" :markdown-string="i18nBody.footer"/>
+        <span v-else>
         {{i18nBody.footer}}
+        </span>
       </slot>
     </v-card-text>
     </slot>
+    <v-card-actions>
+      <slot name="actions"/>
+    </v-card-actions>
   </v-card>
 </template>
 <script>
@@ -31,7 +53,8 @@ import {loadLocaleMessages} from '@/plugins/i18n'
       type : String,
       required : true,
       default : ""
-    }
+    },
+    withMarkdown : Boolean,
   },
   computed: {
     i18nBody(){

@@ -10,7 +10,7 @@ export default {
       future: { title: "In der Zukunft", tooltip: "" },
       about: { title: "Impressum", tooltip: "" },
       help: { title: "Impressum", tooltip: "" },
-      faq: { title: "Häufige Fragen", tooltip: "Häufige Fragen" },
+      faq: { title: "Hilfe", tooltip: "Häufige Fragen" },
     }
   }
 }

@@ -1,3 +1,6 @@
-@use "vuetify" with (
-  $body-font-family: "Comic Sans",
-  );
+@use 'vuetify' with (
+  $card-elevation: 1,
+  $button-card-actions-margin: .5rem,
+  $button-background: rgb(var(--v-theme-surface)),
+  $bottom-navigation-button-color: rgba(var(--v-theme-on-surface), var(--v-medium-emphasis-opacity)),
+);

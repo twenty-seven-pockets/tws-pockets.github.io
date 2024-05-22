@@ -49,7 +49,7 @@
       <v-row >
       <v-col cols="1" class="fill-height bg-cardBackground">
       <v-row>
-        <v-col>
+        <v-col >
         <v-img src="@/assets/plant1PNG/250/plant1_250.png"/>
         </v-col>
       </v-row>

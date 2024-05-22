@@ -5,6 +5,8 @@ export default {
       together: "Gemeinsame Erlebnisse",
       kissLips: "Ein Kuss der die Lippen erlebt",
     },
+    footer: `Die erotische essbare Körperbutter von Kussy ist ein naturbelassenes Produkt für die primäre Anwendung im sexuellen Kontext. Sie soll Ihnen eine einfach produzierte Butter ohne stark chemisch veränderte Inhaltsstoffe bieten, die nicht nur leicht aufzutragen und gut verträglich ist, sondern auch über Geschmacksnuancen verfügt, sodass Sie Ihre oralen Fantasien auf neue Ebenen erweitern können.`,
+    footer2 : `Endeckt eure verborgenen Nuancen`
   },
   // 
   // together
@@ -42,7 +44,12 @@ export default {
   },
   "/our/spirit": {
     title: "Unternehmensgeist",
-    text: `Aus der Perspektive vom Unternehmen "Kussy" leben wir in einer Welt, mit fast unbegreiflich vielen Facetten. Neben hoch technischen oder komplexen chemischen Prozessen die Teil dieser Gesellschaft sind, bietet auch schon die Natur selbst eine enorme Komplexität, mit deren Hilfe wir uns im Alltag befähigen können. Mit den Produkten von Kussy sollen die Vielseitigkeiten und Potenziale aus uns Menschen zum vorscheinen gebracht werden, ohne auf chemisch stark veränderte Produkte zurückzugreifen. Die Naturbelassenen Produkte begleiten sie bei der Gelegenheit neue Nuancen ihres Lebens zu erkunden und sich mit anderen Menschen an diesen zu erfreuen, während es ihre Individuellen Eigenschaften belebt. Gleichzeitig sollen die wirtschaftlichen Gewinne zu einem Anteil zur Verbesserung der umweltlichen Bedingungen genutzt werden. Beispiele hierfür finden Sie unter dem Reiter [Nachhaltigkeit].`,
+    text: `Aus der Perspektive vom Unternehmen **Kussy** leben wir in einer Welt vielen Facetten. Neben beeindruckenden hoch technischen oder vielschichtigen Prozessen, die Teil dieser Gesellschaft sind, bietet auch die Natur selbst eine enorme Komplexität. Diese möchte sich das Unternehmen von **Kussy** wertschätzen und gleichzeitig dazu nutzen uns Menschen zu befähigen.  
+
+    Das Ziel der Produkte von **Kussy** soll es sein die Potenziale und Nuancen aus uns Menschen zum Vorscheinen zu bringen, ohne auf chemisch stark veränderte Produkte zurückzugreifen. Die naturbelassenen Produkte begleiten Sie bei der Gelegenheit neue Seiten Ihres Lebens zu erkunden und sich mit anderen Menschen an diesen zu erfreuen, während es ihre individuellen Eigenschaften belebt.
+    
+    Wichtig ist für uns zudem ein Engagement für die Natur. Wir wollen unserer Lebensgrundlage etwas zurückgeben und zeitgleich Möglichkeiten in der Zukunft zu schaffen. Die wirtschaftlichen Gewinne sollen deshalb zu einem Anteil zur Verbesserung der lokalen umweltlichen Bedingungen genutzt werden. Beispiele hierfür finden Sie unter "Nachhaltigkeit".
+    `,
   },
   "/our/cooperations": {
     title: "Kooperation",

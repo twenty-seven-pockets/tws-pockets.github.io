@@ -1,26 +1,7 @@
 <template>
   <v-app>
-    <v-layout>
-    <TheSidemenu  :items="items" >
-      <template #header>
-        <router-link :to="'/'">
-
-        <v-row align="center" justify="center">
-          <v-col cols="auto" class="pr-0">
-            <v-img class='menu-icon' src="@/assets/logo.png"/>
-          </v-col>
-          <v-col cols="auto" class="pl-0">
-            <v-btn text flat class="bg-background">
-
-              {{ $t("company.names.0") }}
-            </v-btn>
-          </v-col>
-        </v-row>
-        </router-link>
-      </template>
-    </TheSidemenu>
-    
     <DisclaimerDialog/>
+
     <v-btn-toggle
     mandatory 
     v-model="$i18n.locale"
@@ -52,15 +33,37 @@
       </v-speed-dial>
 
     </v-fab>
+    <TheSidemenu  :items="items" >
+      <template #header>
+        <router-link :to="'/'">
+            <v-img class='menu-icon' src="@/assets/logo-mit-schriftzug.png"  />
+    
+    <!-- <v-img class='menu-icon' src="@/assets/logo-long.png" /> -->
+          
+        </router-link>
+      </template>
+    </TheSidemenu>
+    
     <v-main >
-        <v-container fluid>
-        <v-row justify='center'>
-        <v-col cols="auto">
+    <v-container  align="end" justify='space-between'>
+      <v-row >
+      <v-col cols="1" class="fill-height bg-cardBackground">
+      <v-row>
+        <v-col>
+        <v-img src="@/assets/plant1PNG/250/plant1_250.png"/>
+        </v-col>
+      </v-row>
+      </v-col>
+      <v-col>
           <router-view />
-        </v-col></v-row>
-        </v-container>
+      </v-col>
+      <v-col cols="1">
+      </v-col>
+      </v-row>
+      
+    </v-container>
       </v-main>
-  </v-layout>
+      
   </v-app>
 </template>
 
@@ -102,9 +105,11 @@ export default {
   right:0px;
 }
 .menu-icon {
-  max-height:50px;
-  min-width:50px;
+  padding:1px;
+  width:100%;
+
 }
+
 
 .social-button {
   position:fixed;

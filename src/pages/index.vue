@@ -1,36 +1,29 @@
 <template>
+  <v-container class="bg-red">
+  <v-row justify="center">
+    <v-spacer/>
+  <v-col  align="center" v-bind="{md : 8}">
   <i18n-card
     :path="i18nPath"
     align="center"
     flat
-    class="bg-background pt-2"
+    class="bg-red fill-height"
   >
     <template #body="{i18nBody}">
-    <v-card-title class="my-5"
+    <v-card-title 
       >
-      <v-row align="center">
+      <v-row align="center" justify='center' class="logo-container">
         
-        <v-col cols="6" align="end">
-          <v-row>
-
-            <v-spacer/>
-            <v-img src="@/assets/logo.png" max-width="150px"/>
-          </v-row>
-        </v-col>
-        <v-col cols="auto" class="text-h1 border-t-lg border-b-lg my-5 border-logoBorder" align="start">
-          {{ i18nBody.title }}
+        <v-col cols="12" align="center">
+            <v-img src="@/assets/logo-long.svg" max-height="20vh"/>
+          
+            
+          
         </v-col>
              </v-row>
             </v-card-title>
-    <v-card-subtitle
-    class="my-5"
-      ><span class="text-h3">{{
-        i18nBody.slogans?.wholeBody
-        
-      }}</span></v-card-subtitle
-    >
-    <v-card-title align="center" class="my-5"
-      ><v-btn
+    <v-card-title align="center" class="spacer-card" 
+      > <v-btn
         size="x-large"
         :to="{name : 'together'}"
         color="secondaryButtonIconColor"
@@ -40,24 +33,37 @@
           {{ i18nBody.slogans?.together }}</v-btn
       >
     </v-card-title>
-    <v-card-subtitle class="my-5"
-      ><span class="text-h3">
+    <v-card-subtitle
+      ><h3 >
         
-        {{ i18nBody.slogans?.kissLips }}</span
+  <i>       &bdquo;{{ i18nBody.slogans?.kissLips }}&rdquo;</i></h3
       ></v-card-subtitle
     >
-    <v-card-text>
-      <v-row>
-        <v-col>
+        <v-card-text >
+          <v-spacer/>
+          <div class="product-img shrink">
           <v-img
-            src="@/assets/product-logo.jpg"
+            contain
+            src="@/assets/verpackung.png"
             max-height="33vh"
+            min-height="33vh"
+            min-width="33vh"
           />
-        </v-col>
-      </v-row>
+          </div>
+        <v-spacer/>
+                </v-card-text>
+    <v-card class="bg-menuButton footer-card rounded-xl">
+    <v-card-text>
+      {{ i18nBody.footer }}
     </v-card-text>
+    <v-card-subtitle class="footer">
+    <b>{{ i18nBody.footer2 }}</b></v-card-subtitle>
+    </v-card>
   </template>
   </i18n-card>
+  </v-col>
+  <v-spacer/></v-row>
+  </v-container>
 </template>
 
 <script>
@@ -69,4 +75,27 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="css" scoped>
+.logo-container {
+  margin-top:5vh;
+
+}
+.spacer-card {
+  margin-top:5vh;
+  margin-bottom:5vh;
+}
+.footer-card {
+  width:80%;
+  margin:auto;
+  margin-top:2vh;
+}
+.footer {
+  margin-bottom:1vh;
+}
+
+.product-img {
+  border-radius: 50%;
+  overflow: hidden;
+  
+}
+</style>

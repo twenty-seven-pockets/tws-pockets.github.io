@@ -1,8 +1,12 @@
 <template>
   <!-- bg-cardBackground text-text -->
-  <v-card  align="center">
-    <slot name="body" v-bind="{i18nBody}">
+  <v-container class="bg-red">
+    <v-row>
+    <v-col>
+  <v-card  >
 
+  
+    <slot name="body" v-bind="{i18nBody}">
      <slot name="title" v-bind="{i18nBody}"> 
     <v-card-title v-if="i18nBody.title?.length > 0">
     
@@ -43,6 +47,8 @@
       <slot name="actions"/>
     </v-card-actions>
   </v-card>
+    </v-col></v-row>
+  </v-container>
 </template>
 <script>
 import {loadLocaleMessages} from '@/plugins/i18n'

@@ -12,34 +12,36 @@
     location="start"
     :permanent="!$vuetify.display.mobile"
     :temporary="$vuetify.display.mobile"
-    class="bg-menuBackground"
+    class="bg-menuBackground pa-0 ma-0"
+    appabsolute
   >
-    <div class="main-container fill-height"  fill-height>
-      <v-row class="main ma-0 pa-0">
-        <v-col cols="12">
-          <v-row class="header ma-0 pa-0">
+    <div class="main-container  fill-height"  fill-height>
+      <v-row class="main noMarginOrPadding">
+        <v-col cols="12" class="noMarginOrPadding" >
+          <v-row class="header noMarginOrPadding">
+        <v-col cols="12" class="header">
         <slot name="header">
           <v-row v-if="$slots.header" class="sidemenu__header ma-0 pa-0">
             <v-col> </v-col>
           </v-row>
-        </slot><v-col>
+        </slot>
           </v-col></v-row>
-          <v-row class="prepend-list ma-0 pa-0"
-            ><v-col
+          <v-row class="prepend-list ma-0 pa-0"  v-if="itemsToPrepend?.length > 0"
+            ><v-col  class="pa-0 ma-0"
               ><slot name="prepend" v-bind="{ items: itemsToPrepend }">
                 <v-list
                   :opened="lists.prepend"
                   collapse-icon="mdi-chevron-up"
                   expand-icon="mdi-chevron-down"
-                  class="bg-menuBackground"
+                  class="bg-menuBackground pa-0 ma-0"
                   ><sidemenu-entry
                     v-for="item in itemsToPrepend"
                     :key="item.id"
                     v-bind="item"
                   /> </v-list></slot></v-col
           ></v-row>
-          <v-row class="main-list ma-0 pa-0"
-            ><v-col>
+          <v-row class="main-list noMarginOrPadding my-5"
+            ><v-col class="noPadding">
               <slot name="default" v-bind="{ items: itemsInDefault }">
                 <v-list
                   :opened="lists.default"
@@ -55,6 +57,7 @@
           ></v-row>
         </v-col>
       </v-row>
+      <v-row></v-row>
       <v-row class="append ma-0 pa-0">
         <v-col cols="12" class="fill-height ma-0 pa-0">
           <v-row class="appended-list ma-0 pa-0">
@@ -233,10 +236,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.header {
-  height: 100px;
- 
-}
 .append {
   width: 100%;
   display: flex;
@@ -245,7 +244,10 @@ export default {
 .main {
   width: 100%;
   display: flex;
+  padding:0px;
+  margin:0px;
   flex-direction: column;
+  
 }
 .main-container {
   display: flex;
@@ -254,7 +256,10 @@ export default {
   height:95%;
   flex-direction: column;
 }
+.noPadding {
 
+  padding: 0px !important;
+}
 .noMarginOrPadding {
   margin: 0px !important;
   padding: 0px !important;

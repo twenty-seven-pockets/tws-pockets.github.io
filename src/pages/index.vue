@@ -93,9 +93,4 @@ export default {
   margin-bottom:1vh;
 }
 
-.product-img {
-  border-radius: 50%;
-  overflow: hidden;
-  
-}
 </style>

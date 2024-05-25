@@ -43,10 +43,10 @@
         </router-link>
       </template>
     </TheSidemenu>
-    
+
     <v-main >
-    <v-container  align="end" justify='space-between'>
-      <v-row >
+    <v-container  justify='space-between'>
+      <v-row>
       <v-col cols="1" class="fill-height bg-cardBackground">
       <v-row>
         <v-col >
@@ -58,6 +58,7 @@
           <router-view />
       </v-col>
       <v-col cols="1">
+        
       </v-col>
       </v-row>
       
@@ -109,7 +110,6 @@ export default {
   width:100%;
 
 }
-
 
 .social-button {
   position:fixed;

@@ -14,7 +14,7 @@ export default {
   "/together/introduction": {
     title: " Einleitung in das Thema",
     paragraph1: `Die Produkte von **Kussy** bieten Ihnen Ressourcen gemeinsamen Erlebnissen neue Nuancen zu verleihen und diese mit persönlichen Ideen abzurunden.`,
-    paragraph2: `Wichtig für ein erfüllsames Abenteuer ist der verantwortungsvolle Umgang mit den Produkten und dem Thema Sexualität. Daher lesen Sie bitte vorher die Gebrauchshinweise. `,
+    paragraph2: `Wichtig für ein erfüllsames Abenteuer ist der verantwortungsvolle Umgang mit den Produkten und dem Thema Sexualität. Daher lesen Sie bitte vorher die Gebrauchshinweise.`,
   },
   "/together/application": {
     title: " Wie Anwenden",

@@ -1,5 +1,5 @@
 <template>
-  <v-card class="rounded-xl pl-2 pt-2">
+  <v-card class="rounded-xl pl-2 pt-2" :to="href?href:null">
     <v-card-title primary-title>
       {{name}}
     </v-card-title>
@@ -14,6 +14,13 @@
 </template>
 
 <script>
+/**
+ * 
+ * Display a Partner with this card.
+ * 
+ * 
+ * 
+ */
   export default {
     props: {
       name: {
@@ -32,6 +39,10 @@
         type: String,
         default: ""
       },
+      href : {
+        type : String,
+        required : false
+      }
     },
     
   }

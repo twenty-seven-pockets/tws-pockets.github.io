@@ -1,8 +1,4 @@
 <template>
-  <!-- bg-cardBackground text-text -->
-  <v-container class="bg-red">
-    <v-row>
-    <v-col>
   <v-card  >
 
   
@@ -26,6 +22,7 @@
         </span>
     </v-card-subtitle>
       </slot>
+    <slot name="prependContent" v-bind="{i18nBody}" />
     <v-card-text>
       <slot name="default" v-bind="{i18nBody}">
         <MarkdownContainer v-if="withMarkdown" :markdown-string="i18nBody.text"/>
@@ -34,6 +31,7 @@
         </span>
       </slot>
     </v-card-text>
+    <slot name="appendContent" v-bind="{i18nBody}"/>
     <v-card-text v-if="$slots?.footer || i18nBody.footer?.length > 0">
       <slot name="footer" v-bind="{i18nBody}">
         <MarkdownContainer v-if="withMarkdown" :markdown-string="i18nBody.footer"/>
@@ -47,11 +45,14 @@
       <slot name="actions"/>
     </v-card-actions>
   </v-card>
-    </v-col></v-row>
-  </v-container>
 </template>
 <script>
 import {loadLocaleMessages} from '@/plugins/i18n'
+/**
+ * Workaround Component which returns the JSON object of the corresponding i18n path. 
+ * Use the default slot to access the i18n Object
+ * Use withMark
+ */
   export default {
     name : "i18nCard",
   props : {

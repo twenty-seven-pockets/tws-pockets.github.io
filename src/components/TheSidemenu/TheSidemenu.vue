@@ -8,12 +8,13 @@
     <v-icon>mdi-drag-vertical</v-icon>
   </v-fab> -->
   <v-navigation-drawer
+  v-model="state"
     :rail="rail"
     location="start"
     :permanent="!$vuetify.display.mobile"
     :temporary="$vuetify.display.mobile"
     class="bg-menuBackground pa-0 ma-0"
-    appabsolute
+    app 
   >
     <div class="main-container  fill-height"  fill-height>
       <v-row class="main noMarginOrPadding">
@@ -174,6 +175,8 @@
         </div>
       </v-row> -->
   </v-navigation-drawer>
+  <v-btn   icon  variant="plain"  @click="state = true"   class="drag-handle "><v-icon size="x-large" class="drag-icon" icon='mdi-drag-vertical-variant'/></v-btn>
+    
 </template>
 <script>
 // import SidemenuEntry from "./SidemenuEntry.vue";
@@ -187,13 +190,21 @@ export default {
   },
   data() {
     return {
+
       rail: false,
+      state : false,
       lists: {
         default: [],
         prepend: [],
         append: [],
       },
     };
+  },
+  watch : {
+    rail(value){
+        this.state = value;
+      
+    }
   },
   methods: {
     mergeTooltipOptionsWithDefaultTooltipOptions(opts) {
@@ -256,6 +267,20 @@ export default {
   height:95%;
   flex-direction: column;
 }
+
+.drag-icon i {
+  
+
+}
+.drag-handle {
+  position:fixed;
+  top:50%;
+  border-radius: 0;
+  left:0px;
+}
+
+
+
 .noPadding {
 
   padding: 0px !important;

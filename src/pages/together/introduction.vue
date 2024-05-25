@@ -17,8 +17,9 @@
           <v-btn
             tile
             text
+            append-icon="mdi-arrow-right"
             :to="{ name: 'additional' }"
-            >{{ $t("words.additional") }}</v-btn
+            >{{ $t("company.words.additional") }}</v-btn
           >
     <v-spacer/>
       </template

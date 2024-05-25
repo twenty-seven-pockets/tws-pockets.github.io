@@ -17,12 +17,18 @@
     </v-row>
     <v-row>
       <v-col>
-        <v-card>
-        <v-card-media>
-          <v-img
-            src="@/assets/product-logo.jpg"
+        <v-card  >
+        <v-card-text >
+        <v-container style="margin-top:20px;">
+        <v-row>
+          <v-col>
+            <v-img
+          src="@/assets/verpackung.png"
             max-height="33vh"
-          /></v-card-media>
+          />
+          </v-col>
+        </v-row></v-container>
+          </v-card-text>
         <v-card-actions><v-spacer/> <v-btn disabled variant="text">Kauf Mich!</v-btn></v-card-actions>
         </v-card>
       </v-col>

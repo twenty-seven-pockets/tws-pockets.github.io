@@ -11,6 +11,9 @@ export default {
     title : "Sensitive Content",
     text : "This page contains adult content. Are you sure you want to continue?"
   },
+  words : {
+    additional : "Nützliches"
+  },
   pages,
   
 }

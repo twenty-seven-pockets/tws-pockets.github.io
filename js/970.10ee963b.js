@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkKussy"]=self["webpackChunkKussy"]||[]).push([[970],{970:function(t,u,e){e.r(u),e.d(u,{default:function(){return i}});var n=e(6768);function r(t,u,e,r,s,a){return(0,n.uX)(),(0,n.CE)("div")}var s={name:"MultipleCards",computed:{text(){return this.$t(`company.pages['${this.$route.fullPath}']`)}}},a=e(1241);const c=(0,a.A)(s,[["render",r]]);var i=c}}]);
-//# sourceMappingURL=970.10ee963b.js.map

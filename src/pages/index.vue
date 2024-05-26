@@ -1,8 +1,7 @@
 <template>
-  <v-container class="bg-red">
-  <v-row justify="center">
-    <v-spacer/>
-  <v-col  align="center" v-bind="{md : 8}">
+  <!-- <v-container class="bg-red">
+  <v-row justify="center" align="center">
+  <v-col  align="center" > -->
   <i18n-card
     :path="i18nPath"
     align="center"
@@ -61,9 +60,9 @@
     </v-card>
   </template>
   </i18n-card>
-  </v-col>
-  <v-spacer/></v-row>
-  </v-container>
+  <!-- </v-col>
+  </v-row>
+  </v-container> -->
 </template>
 
 <script>

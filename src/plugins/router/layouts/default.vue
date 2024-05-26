@@ -1,6 +1,5 @@
 <template>
-  <v-app>
-    <DisclaimerDialog/>
+    <DisclaimerDialog v-if="false"/>
 
     <v-btn-toggle
     mandatory 
@@ -33,7 +32,7 @@
       </v-speed-dial>
 
     </v-fab>
-    <TheSidemenu  :items="items" >
+    <TheSidemenu  :items="items" class="sidemenu">
       <template #header>
         <router-link :to="'/'">
             <v-img class='menu-icon' src="@/assets/logo-mit-schriftzug.png"  />
@@ -43,29 +42,27 @@
         </router-link>
       </template>
     </TheSidemenu>
-
-    <v-main >
-    <v-container  justify='space-between'>
-      <v-row>
-      <v-col cols="1" class="fill-height bg-cardBackground">
-      <v-row>
-        <v-col >
-        <v-img src="@/assets/plant1PNG/250/plant1_250.png"/>
-        </v-col>
-      </v-row>
+    <v-main class="main-container fill-height" > 
+    
+      <v-row   justify="space-between">
+      <v-col cols="2" style="min-width:100px; max-height:85vh; align-content: end; " class="fill-height">
+        <v-img src="@/assets/plant1PNG/500/plant1_500.png" />
       </v-col>
-      <v-col>
+      <v-col cols="7" >
+      
           <router-view />
       </v-col>
-      <v-col cols="1">
-        
+      <v-col cols="2"  style="padding-top:20vh; min-width:100px; max-height:100%; position:relative ">
+      
+      <!-- <div class="branch"> -->
+        <v-img src="@/assets/plant2PNG/500/plant2_500.png" class="" />
+      <!-- </div> -->
       </v-col>
       </v-row>
       
-    </v-container>
+    
       </v-main>
       
-  </v-app>
 </template>
 
 <script>
@@ -93,29 +90,20 @@ export default {
 <style lang="css" scoped>
 .languageButton {
   position:fixed;
-
   top:0px;
   right:0px;
-  background-color: '#ff0000' !important
+  z-index:999;
 
 }
-
-.fabPosition {
-  position:fixed;
-  bottom:0px;
-  right:0px;
-}
-.menu-icon {
-  padding:1px;
-  width:100%;
-
-}
-
 .social-button {
   position:fixed;
   bottom:0px;
   right:0px;
   z-index:999;
 
+}
+.main-col {
+  overflow-y: scroll;
+  height: 100%;
 }
 </style>

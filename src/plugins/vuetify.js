@@ -30,6 +30,7 @@ export default createVuetify({
           background: "#f9ebeb", // webseiten hintergrund
           menuBackground : "#d8c0c8", // menu background
           menuButton : "#ea95b2", 
+          menuButtonActivated : "#9b224c", 
           menuButtonBorder : "#9b224c",
           menuInactive : "#951d45",
           test : "#00EE00",

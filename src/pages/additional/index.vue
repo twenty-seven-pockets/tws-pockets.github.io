@@ -1,17 +1,22 @@
 <template>
-    <v-container>
+    <div>
         <v-row>
             <v-col cols="12">
                 <Application/>
             </v-col>
+        <v-row>
+        </v-row>
             <v-col cols="12">
                 <Tolerance/>
             </v-col>
+        </v-row>
+        <v-row>
             <v-col cols="12">
                 <Storage/>
             </v-col>
+        
         </v-row>
-    </v-container>
+    </div>
 </template>
 
 <script>

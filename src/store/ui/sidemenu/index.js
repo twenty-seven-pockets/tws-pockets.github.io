@@ -7,6 +7,7 @@ export default {
         to: {name : "our"},
         prependIcon: "mdi-information-outline",
          class : "rounded-xl border-xl ",
+         tooltip : "About Us",
       },
       {
         title: "ui.menu.items.product.title",
@@ -47,7 +48,7 @@ export default {
         'base-color': "menuInactive",
         to: "/news",
         // color: "menuButton",
-        // baseColor: "red",
+        baseColor: "menuButtonBorder",
          class : "rounded-xl ",
         
       },

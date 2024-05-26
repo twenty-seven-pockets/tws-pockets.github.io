@@ -1,5 +1,5 @@
 <template>
-  <v-container >
+  <v-container align="center">
     <v-row>
       <v-col>
 

@@ -4,7 +4,7 @@
   
     <slot name="body" v-bind="{i18nBody}">
      <slot name="title" v-bind="{i18nBody}"> 
-    <v-card-title v-if="i18nBody.title?.length > 0">
+    <v-card-title v-if="i18nBody.title?.length > 0" align="center">
     
       <MarkdownContainer v-if="withMarkdown" :markdown-string="i18nBody.title"/>
         <span v-else>

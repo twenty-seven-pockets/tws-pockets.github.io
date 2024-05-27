@@ -1,9 +1,9 @@
 <template>
   <v-card  >
 
-  
+  <!-- Wraps the entire content of the card, except for the actions  -->
     <slot name="body" v-bind="{i18nBody}">
-     <slot name="title" v-bind="{i18nBody}"> 
+    <slot name="title" v-bind="{i18nBody}"> 
     <v-card-title v-if="i18nBody.title?.length > 0" align="center">
     
       <MarkdownContainer v-if="withMarkdown" :markdown-string="i18nBody.title"/>
@@ -41,9 +41,11 @@
       </slot>
     </v-card-text>
     </slot>
-    <v-card-actions>
-      <slot name="actions"/>
-    </v-card-actions>
+    <!-- Slot to add card actions  -->
+      <slot name="actions">
+    <!-- <v-card-actions>
+    </v-card-actions> -->
+    </slot>
   </v-card>
 </template>
 <script>
@@ -51,7 +53,10 @@ import {loadLocaleMessages} from '@/plugins/i18n'
 /**
  * Workaround Component which returns the JSON object of the corresponding i18n path. 
  * Use the default slot to access the i18n Object
- * Use withMark
+ * Use withMarkdown to wrap content in a markdown parser see MarkdownContainer
+ * 
+ * Not that efficient, loads ALL messages from the js file in plugins 
+ * 
  */
   export default {
     name : "i18nCard",

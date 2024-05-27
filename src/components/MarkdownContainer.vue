@@ -5,21 +5,21 @@
 <script>
 import markdownit from "markdown-it";
 
+// Simple Markdown Container that receives a markdown string,
+// parses the markdown using markdownit
+
 export default {
   name: "MarkdownContainer",
   props: {
     markdownString: {
       type: String,
-      default: "# asd",
+      default: "",
     },
   },
 
   computed: {
     md() {
       return markdownit({ html: true, linkify: true });
-    },
-    render() {
-      return this.md.render;
     },
     markdownToHtml() {
       return this.md.render(this.markdownString);

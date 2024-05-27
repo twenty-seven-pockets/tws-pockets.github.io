@@ -86,12 +86,7 @@ import {loadLocaleMessages} from '@/plugins/i18n'
     updateI18nObject(path){
       const p = path || this.i18nPath;
       const msgs = this.messages;
-      console.debug("i18nObject", {
-        path,
-        locale : this.$i18n.locale,
-        localeMsgs: msgs[this.$i18n.locale],
-        msgs
-      })
+      
       // return the value of the current locale and page
       // if all fails, return the key as string 
       this.i18nBody = msgs[this.$i18n.locale]?.company?.pages[p] 

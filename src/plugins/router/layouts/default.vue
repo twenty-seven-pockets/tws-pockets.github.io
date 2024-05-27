@@ -3,14 +3,14 @@
   <v-main class="main-container fill-height">
     <v-row justify="space-between" class="fill-height">
       <v-col cols="2" class="left-branch">
-        <v-img src="@/assets/plant1PNG/500/plant1_500.png" />
+        <!-- <v-img src="@/assets/plant1PNG/500/plant1_500.png" /> -->
       </v-col>
       <v-col cols="7">
         <router-view />
       </v-col>
-      <v-col cols="2" class="right-branch">
+      <v-col cols="2" >
         <!-- <div class="branch"> -->
-        <v-img src="@/assets/plant2PNG/500/plant2_500.png" class="" />
+        <v-img src="@/assets/plant2PNG/500/plant2_500.png" class="right-branch" />
         <!-- </div> -->
       </v-col>
     </v-row>
@@ -39,9 +39,10 @@ export default {
   align-content: end;
 }
 .right-branch {
-  padding-top: 20vh;
-  min-width: 100px;
+  top: 20vh;
+  right:2vw;
+  width: 15vw;
   max-height: 100%;
-  position: relative;
+  position: fixed;
 }
 </style>

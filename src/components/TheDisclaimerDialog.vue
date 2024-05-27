@@ -35,7 +35,7 @@
 
 <script>
 export default {
-  name: "DisclaimerDialog",
+  name: "TheDisclaimerDialog",
   data() {
     return {
       dialog: false,

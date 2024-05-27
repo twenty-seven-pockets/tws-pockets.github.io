@@ -57,7 +57,7 @@ import {loadLocaleMessages} from '@/plugins/i18n'
  * 
  */
   export default {
-    name : "i18nCard",
+    name : "I18nCard",
   props : {
     path : {
       type : String,

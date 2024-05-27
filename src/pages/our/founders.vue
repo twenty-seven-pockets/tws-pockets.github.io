@@ -21,10 +21,8 @@
 </template>
 
 <script>
-import i18nCard from '@/components/i18nCard.vue';
 // The i18nBody variable is provided by the i18n mixin in the mixins folder
 export default {
-  components: { i18nCard },
   name: "FoundersPage",
   
 };

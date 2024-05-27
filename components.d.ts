@@ -7,18 +7,18 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    AppButton: typeof import('./src/components/AppButton.vue')['default']
-    ContainerOfArticles: typeof import('./src/components/ContainerOfArticles.vue')['default']
-    DisclaimerDialog: typeof import('./src/components/DisclaimerDialog.vue')['default']
-    ErrorView: typeof import('./src/components/ErrorView.vue')['default']
-    I18nCard: typeof import('./src/components/i18nCard.vue')['default']
-    I18nCardWithList: typeof import('./src/components/i18nCardWithList.vue')['default']
-    MarkdownContainer: typeof import('./src/components/MarkdownContainer.vue')['default']
-    PartnerCard: typeof import('./src/components/PartnerCard.vue')['default']
+    ErrorView: typeof import('./src/components/cards/ErrorView.vue')['default']
+    I18nCard: typeof import('./src/components/I18nCard/I18nCard.vue')['default']
+    I18nCardWithList: typeof import('./src/components/I18nCard/I18nCardWithList.vue')['default']
+    MarkdownContainer: typeof import('./src/components/utils/MarkdownContainer.vue')['default']
+    PartnerCard: typeof import('./src/components/cards/PartnerCard.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SidemenuEntry: typeof import('./src/components/TheSidemenu/SidemenuEntry.vue')['default']
+    TheDisclaimerDialog: typeof import('./src/components/TheDisclaimerDialog.vue')['default']
+    TheLanguageToggle: typeof import('./src/components/utils/TheLanguageToggle.vue')['default']
     TheSidemenu: typeof import('./src/components/TheSidemenu/TheSidemenu.vue')['default']
-    UnderConstructionCard: typeof import('./src/components/UnderConstructionCard.vue')['default']
+    TheSocialContactMenu: typeof import('./src/components/utils/TheSocialContactMenu.vue')['default']
+    UnderConstructionCard: typeof import('./src/components/cards/UnderConstructionCard.vue')['default']
   }
 }

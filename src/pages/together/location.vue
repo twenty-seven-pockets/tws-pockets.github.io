@@ -1,5 +1,5 @@
 <template>
-  <i18n-card-with-list :path="i18nPath" with-markdown/>
+  <I18n-card-with-list :path="i18nPath" with-markdown />
 </template>
 
 <script>

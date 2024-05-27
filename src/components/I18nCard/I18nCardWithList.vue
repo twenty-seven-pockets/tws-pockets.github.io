@@ -28,11 +28,9 @@
   </i18n-card>
 </template>
 <script>
-import i18nCard from "./i18nCard.vue";
 export default {
-  components: { i18nCard },
   inheritAttrs : false,
-  name: "i18nCardWitList",
+  name: "I18nCardWitList",
   props : {
     withMarkdown : Boolean,
     path : String,

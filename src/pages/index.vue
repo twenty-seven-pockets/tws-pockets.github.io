@@ -6,7 +6,7 @@
     :path="i18nPath"
     align="center"
     flat
-    class="bg-red fill-height"
+    class="fill-height"
   >
     <template #body="{i18nBody}">
     <v-card-title 

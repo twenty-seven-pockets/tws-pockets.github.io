@@ -1,53 +1,40 @@
 <template>
-  <v-container
-    fill-height
-    class="fill-height"
-  >
-    <v-row
-      class="fill-height"
-      align="center"
-    >
-      <v-col>
         <v-card
-          class="error bg-cardBackground pa-2 fill-height"
+          class="error pa-2 "
           elevation="10"
         >
-          <v-container>
-            <v-row justify='space-between' class='flex-column'>
-              <v-col>
 
               <v-card-title class="mb-4">
-                {{ $t("errors.title", { error: 404 }) }}
+                {{ $t("errors.title", { error}) }}
               </v-card-title>
-              </v-col>
-              <v-col>
 
               <v-card-text>
-                {{ $t("errors.404", { route: $route.fullPath }) }}
+              <!-- Display Error message based on code -->
+                {{ $t(`errors.${code}`, { route: $route.fullPath }) }}
               </v-card-text>
-              </v-col>
-              <v-col>
-
               <v-card-actions >
-                <v-row justify="end">
-
+                <v-spacer/>
+                <!-- go back to home button -->
                 <v-btn :to="{ name: 'index' }" prepend-icon="mdi-arrow-left" size="x-large" class='rounded-xl px-10' variant="text">
                   {{ $t("errors.goBack") }}
                 </v-btn>
-                </v-row>
+                <v-spacer/>
               </v-card-actions>
-              </v-col>
-            </v-row>
-          </v-container>
-        </v-card>
-      </v-col>
-    </v-row>
-  </v-container>
+              </v-card>
 </template>
 
 <script>
 export default {
   name: "ErrorView",
+  layout : "VerticallyCenteredLayout",
+  props : {
+		/** The code of the Error
+		 */
+    error : {
+      type : [String, Number],
+      default : "404"
+    }
+  }
 };
 </script>
 
@@ -56,3 +43,13 @@ export default {
   min-height: 33vh;
 }
 </style>
+
+<docs lang="md">
+  Basic Error Display for wrong or forbidden routes.
+
+  ## Example 
+  ```jsx
+    <error-view :code="404"/>
+  ```
+
+</docs>

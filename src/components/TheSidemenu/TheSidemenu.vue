@@ -21,8 +21,8 @@
       <v-row class="main noMarginOrPadding">
         <v-col cols="12" class="noMarginOrPadding" >
           <v-row class="header noMarginOrPadding">
-        <v-col cols="12" class="header">
-        <slot name="header">
+        <v-col cols="12" class="noMarginOrPadding header" >
+        <slot name="header" v-bind="{rail}">
           <v-row v-if="$slots.header" class="sidemenu__header ma-0 pa-0">
             <v-col> </v-col>
           </v-row>

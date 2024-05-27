@@ -43,8 +43,6 @@
     </slot>
     <!-- Slot to add card actions  -->
       <slot name="actions">
-    <!-- <v-card-actions>
-    </v-card-actions> -->
     </slot>
   </v-card>
 </template>
@@ -68,16 +66,24 @@ import {loadLocaleMessages} from '@/plugins/i18n'
     },
     withMarkdown : Boolean,
   },
+  data() {
+    return {
+      i18nBody: {}
+    }
+  },
   computed: {
-    i18nBody(){
-      return this.i18nObject();
-    },
+    locale(){return this.$i18n.locale},
     messages(){
       return loadLocaleMessages();
     }
   },
+  watch : {
+    'locale'(){
+      this.updateI18nObject();
+    }
+  },
   methods: {
-    i18nObject(path){
+    updateI18nObject(path){
       const p = path || this.i18nPath;
       const msgs = this.messages;
       console.debug("i18nObject", {
@@ -88,7 +94,7 @@ import {loadLocaleMessages} from '@/plugins/i18n'
       })
       // return the value of the current locale and page
       // if all fails, return the key as string 
-      return msgs[this.$i18n.locale]?.company?.pages[p] 
+      this.i18nBody = msgs[this.$i18n.locale]?.company?.pages[p] 
       // otherwise return the fallback locale 
       || msgs[this.$i18n.fallbackLocale]?.company?.pages[p]
       // try the path in absolute 
@@ -98,6 +104,9 @@ import {loadLocaleMessages} from '@/plugins/i18n'
       || `${p}`
     },  
   },
+  beforeMount(){
+    this.updateI18nObject();
+  }
 
   }
 </script>

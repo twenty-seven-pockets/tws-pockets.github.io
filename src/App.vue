@@ -1,5 +1,5 @@
 <template>
-  <v-app style="max-width: 100vw;">
+  <v-app >
     <router-view />
   </v-app>
 </template>
@@ -11,3 +11,9 @@ export default {
   name: 'UI',
 }
 </script>
+<style lang="css">
+body {
+  margin:0px;
+  padding:0px;
+}
+</style>

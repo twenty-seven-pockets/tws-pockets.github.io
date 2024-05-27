@@ -2,7 +2,7 @@
 import '@mdi/font/css/materialdesignicons.css'
 
 import colors from 'vuetify/util/colors'
-// import 'vuetify/styles'
+import 'vuetify/styles' // #TODO #7 this is important and I forgot to include it hence the globale styles are now a bit off
 import "@/styles/settings.scss";
 
 // 

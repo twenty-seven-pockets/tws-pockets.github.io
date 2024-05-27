@@ -7,6 +7,8 @@
     transition="dialog-transition"
     full-width
     justifty="center"
+    persistent
+    
   >
     <v-container class="fill-height">
       <v-row justify="center">
@@ -16,13 +18,21 @@
             <v-card-text>{{ $t("company.disclaimer.text") }}</v-card-text>
             <v-card-actions>
               <v-row align="end" justify="space-around">
-                <v-col cols="auto"
-                  ><v-btn variant="text" tile href="http://www.google.com"
-                    >{{$t("words.leave")}}</v-btn
-                  ></v-col
+                <v-col
+                  ><v-btn width="100%" variant="text" tile href="http://www.google.com">{{
+                    $t("words.leave")
+                  }}</v-btn></v-col
                 >
-                <v-col cols="auto"
-                  ><v-btn variant="text" tile @click="agreed = true">{{$t('words.ok')}}</v-btn></v-col
+                <v-col
+                  ><v-btn
+                    variant="text"
+                    width="100%"
+                    tile
+                    @click="agreed = true; toggleDialog()"
+                    :color="agreed ? 'success' : ''"
+                    :append-icon="agreed ? 'mdi-check' : ''"
+                    >{{ $t("words.ok") }}</v-btn
+                  ></v-col
                 >
               </v-row>
             </v-card-actions>
@@ -36,25 +46,43 @@
 <script>
 export default {
   name: "TheDisclaimerDialog",
+  props: {
+    timeoutUntilDialogIsDisplayed: {
+      type: Number,
+      default: 1500,
+    },
+    timeoutAfterAgreed: {
+      type: Number,
+      default: 500,
+    },
+  },
   data() {
     return {
       dialog: false,
       agreed: false,
     };
   },
+  computed: {
+    storageKey() {
+      return process.env.VUE_APP_DISCLAIMER_STORAGE_KEY;
+    }
+  },
   watch: {
     agreed(value) {
-      if (this.agreed) {
-        this.dialog = false;
-        localStorage.setItem("kussy-disclaimer-agreed", value);
+      if (value) {
+        localStorage.setItem(this.storageKey, value);
       }
     },
   },
+  methods : {
+    toggleDialog(){
+      setTimeout(() => this.dialog = !this.dialog, this.dialog && this.agreed? this.timeoutAfterAgreed : this.timeoutUntilDialogIsDisplayed)
+    }
+  },
   beforeMount() {
-    this.agreed = localStorage.getItem("kussy-disclaimer-agreed") == "true";
-    console.log("", { a: this.agreed });
+    this.agreed = localStorage.getItem(process.env.VUE_APP_DISCLAIMER_STORAGE_KEY) == "true";
     if (!this.agreed) {
-      setTimeout(() => (this.dialog = true), 1500);
+      this.toggleDialog();
     }
   },
 };

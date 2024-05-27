@@ -4,7 +4,7 @@
   <!-- Wraps the entire content of the card, except for the actions  -->
     <slot name="body" v-bind="{i18nBody}">
     <slot name="title" v-bind="{i18nBody}"> 
-    <v-card-title v-if="i18nBody.title?.length > 0" align="center">
+    <v-card-title v-if="i18nBody.title?.length > 0" >
     
       <MarkdownContainer v-if="withMarkdown" :markdown-string="i18nBody.title"/>
         <span v-else>
@@ -23,7 +23,7 @@
     </v-card-subtitle>
       </slot>
     <slot name="prependContent" v-bind="{i18nBody}" />
-    <v-card-text>
+    <v-card-text align="start">
       <slot name="default" v-bind="{i18nBody}">
         <MarkdownContainer v-if="withMarkdown" :markdown-string="i18nBody.text"/>
         <span v-else>

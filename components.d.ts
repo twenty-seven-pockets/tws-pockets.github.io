@@ -8,8 +8,8 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     ErrorView: typeof import('./src/components/cards/ErrorView.vue')['default']
-    I18nCard: typeof import('./src/components/I18nCard/I18nCard.vue')['default']
-    I18nCardWithList: typeof import('./src/components/I18nCard/I18nCardWithList.vue')['default']
+    I18nCard: typeof import('./src/components/cards/I18nCard/I18nCard.vue')['default']
+    I18nCardWithList: typeof import('./src/components/cards/I18nCard/I18nCardWithList.vue')['default']
     MarkdownContainer: typeof import('./src/components/utils/MarkdownContainer.vue')['default']
     PartnerCard: typeof import('./src/components/cards/PartnerCard.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']

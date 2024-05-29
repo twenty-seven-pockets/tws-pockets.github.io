@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkKussy"]=self["webpackChunkKussy"]||[]).push([[346],{4902:function(n,t,u){u.r(t),u.d(t,{default:function(){return f}});var e=u(6399),r=u(6768);function s(n,t,u,s,a,c){const i=e.A;return(0,r.uX)(),(0,r.Wv)(i,{path:n.i18nPath},null,8,["path"])}var a={name:"EnviromentView"},c=u(1241);const i=(0,c.A)(a,[["render",s]]);var f=i}}]);
+//# sourceMappingURL=page-conservation-enviroment.c004c431.js.map

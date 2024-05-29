@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkKussy"]=self["webpackChunkKussy"]||[]).push([[799],{8415:function(n,u,e){e.r(u),e.d(u,{default:function(){return h}});var t=e(6399),a=e(6768);function r(n,u,e,r,s,c){const f=t.A;return(0,a.uX)(),(0,a.Wv)(f,{path:n.i18nPath},null,8,["path"])}var s={name:"IdeaPage"},c=e(1241);const f=(0,c.A)(s,[["render",r]]);var h=f}}]);
+//# sourceMappingURL=page-product-idea.cd2e65da.js.map

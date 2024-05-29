@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkKussy"]=self["webpackChunkKussy"]||[]).push([[482],{5673:function(n,u,e){e.r(u),e.d(u,{default:function(){return h}});var t=e(6399),r=e(6768);function a(n,u,e,a,s,c){const f=t.A;return(0,r.uX)(),(0,r.Wv)(f,{path:n.i18nPath},null,8,["path"])}var s={name:"SourcePage"},c=e(1241);const f=(0,c.A)(s,[["render",a]]);var h=f}}]);
+//# sourceMappingURL=page-conservation-source.78228143.js.map

@@ -29,7 +29,7 @@ export default {
           title: "ui.menu.items.aboutUs.title",
           to: { name: "our" },
           prependIcon: "mdi-information-outline",
-          class: "rounded-xl border-xl ",
+          class: "",
           tooltip: "About Us",
         },
         {
@@ -48,7 +48,7 @@ export default {
         },
         {
           prependIcon: "mdi-information-outline",
-          title: "Nützliches",
+          title: "ui.menu.items.further.title",
           to: "/additional",
           // 'base-color': "menuInactive",
           // color: "menuButton",
@@ -58,9 +58,7 @@ export default {
           title: "ui.menu.items.conservation.title",
           to: "/conservation",
           prependIcon: "mdi-leaf",
-          // 'base-color': "menuInactive",
-          // color: "menuButton",
-          class: "rounded-xl ",
+          'base-color': "menuInactive",
         },
         {
           title: "ui.menu.items.news.title",
@@ -68,32 +66,18 @@ export default {
           prependIcon: "mdi-information-outline",
           "base-color": "menuInactive",
           to: "/news",
-          // color: "menuButton",
-          baseColor: "menuButtonBorder",
+          
           class: "rounded-xl ",
         },
-        // {
-        //   title: "ui.menu.items.future.title",
-        //   to: "/future",
-        //   prependIcon: "mdi-calendar-month",
-        // },
-        // footer items
         {
           append: true,
           title: "ui.menu.items.faq.title",
           tooltip: "ui.menu.items.faq.tooltip",
           to: { name: "faqs" },
-          size: "large",
-          tile: true,
           prependIcon: "mdi-help-circle-outline",
-          color: "secondaryButtonIconColor",
-          // variant : "text"
         },
         {
           append: true,
-          size: "large",
-          tile: true,
-          color: "secondaryButtonIconColor",
 
           title: "ui.menu.items.about.title",
           tooltip: "ui.menu.items.about.tooltip",

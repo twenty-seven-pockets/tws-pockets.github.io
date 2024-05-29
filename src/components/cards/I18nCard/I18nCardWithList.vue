@@ -32,7 +32,7 @@ export default {
   inheritAttrs : false,
   name: "I18nCardWitList",
   props : {
-    withMarkdown : Boolean,
+    withMarkdown : {type : Boolean, default : true},
     path : String,
   }
 };

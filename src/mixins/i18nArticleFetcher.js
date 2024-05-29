@@ -5,7 +5,7 @@
 export default {
   computed: {
     i18nPath() {
-      const path = this.$props.path || this.$options.name.replace(/Page|View/,'').replace(/(.+[A-Z])/,"-$1").toLowerCase()
+      const path = this.$props.path || this.$options.name.replace(/Page|View/,'').replace(/(.+)([A-Z])/g,"$1-$2").toLowerCase()
       const route = this.$route.fullPath;
       if (path.startsWith('/')) return path;
       else {

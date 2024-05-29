@@ -6,11 +6,11 @@ export default {
       kissLips: "Ein Kuss der die Lippen erlebt",
     },
     footer: `Die erotische essbare Körperbutter von Kussy ist ein naturbelassenes Produkt für die primäre Anwendung im sexuellen Kontext. Sie soll Ihnen eine einfach produzierte Butter ohne stark chemisch veränderte Inhaltsstoffe bieten, die nicht nur leicht aufzutragen und gut verträglich ist, sondern auch über Geschmacksnuancen verfügt, sodass Sie Ihre oralen Fantasien auf neue Ebenen erweitern können.`,
-    footer2 : `Endeckt eure verborgenen Nuancen`
+    footer2: `Endeckt eure verborgenen Nuancen`,
   },
-  // 
+  //
   // together
-  // 
+  //
   "/together/introduction": {
     title: " Einleitung in das Thema",
     paragraph1: `Die Produkte von **Kussy** bieten Ihnen Ressourcen gemeinsamen Erlebnissen neue Nuancen zu verleihen und diese mit persönlichen Ideen abzurunden.`,
@@ -19,40 +19,48 @@ export default {
   "/together/application": {
     title: " Wie Anwenden",
     paragraph1: `Das Produkt **Kussy-Lips** ermöglicht jedem Menschen die eigenen Fantasien anzuregen. Im Folgenden werden wir Ihnen Ideen vorstellen, wie und wo Sie unser Produkt anwenden können.`,
-    paragraph2 : `Seien Sie mutig und bedacht. Finden Sie mit Ihrem Partner oder Ihrer Partnerin und **Kussy-Lips** heraus was Ihnen Beiden gefällt und fokussieren Sie sich auf individuelle Präferenzen.`  ,
+    paragraph2: `Seien Sie mutig und bedacht. Finden Sie mit Ihrem Partner oder Ihrer Partnerin und **Kussy-Lips** heraus was Ihnen Beiden gefällt und fokussieren Sie sich auf individuelle Präferenzen.`,
     subtitle: "Erste Ideen",
-    paragraph3 : `Der Einstieg mit unserem Produkt kann achtsam und geduldig erfolgen. Nehmen Sie sich Zeit um Ihrem Mitmenschen behutsam auf die neue Erfahrung einzustimmen. Lassen Sie Ihre Finger zusammen mit **Kussy-Lips** einen Erlebnispfad für ihr orales Erlebnis gestalten, welchen Sie danach mit Ihrer Zungenspitze erkunden können.`,
-    
+    paragraph3: `Der Einstieg mit unserem Produkt kann achtsam und geduldig erfolgen. Nehmen Sie sich Zeit um Ihrem Mitmenschen behutsam auf die neue Erfahrung einzustimmen. Lassen Sie Ihre Finger zusammen mit **Kussy-Lips** einen Erlebnispfad für ihr orales Erlebnis gestalten, welchen Sie danach mit Ihrer Zungenspitze erkunden können.`,
   },
   "/together/location": {
     title: " Wo Anwenden",
-    
+
     subtitle: `**Kussy-Lips** bietet gemeinsamen Erlebnis vielfältige Möglichkeiten Ihren Reizen eine neue (Geschmacks-)Note zu verleihen.`,
-    list  : [
-      'Sie wollten sich schon immer mal den Hals oder Rücken Ihres Partners oder Ihrer Partnerin ausgiebig mit der Zunge erkunden ? ',
-'Ihnen schwebte schon immer der Gedanke vor die Brustwarzen ihres Beleiters oder Ihrer Begleiterin intensiv zu verwöhnen ?',
-'Spannend könnten auch lustvolle Küsse oder das Saugen an Klitoris oder Eichel sein.'
+    list: [
+      "Sie wollten sich schon immer mal den Hals oder Rücken Ihres Partners oder Ihrer Partnerin ausgiebig mit der Zunge erkunden ? ",
+      "Ihnen schwebte schon immer der Gedanke vor die Brustwarzen ihres Beleiters oder Ihrer Begleiterin intensiv zu verwöhnen ?",
+      "Spannend könnten auch lustvolle Küsse oder das Saugen an Klitoris oder Eichel sein.",
     ],
-    footer : "Lassen Sie es mit Kussy-Lips zu einem vielschichtigen Erlebnis für alle werden und gestalten Sie mit Ihrem Gegenüber bleibende Erinnerungen."
-    
+    footer:
+      "Lassen Sie es mit Kussy-Lips zu einem vielschichtigen Erlebnis für alle werden und gestalten Sie mit Ihrem Gegenüber bleibende Erinnerungen.",
   },
   // Our
   "/our/founders": {
     title: "Founders",
-    paragraph1: `Hey Zusammen. Mein Name ist Henrik Weiß und ich bin der Gründer von Kussy. Nachdem Sie auf dieser Website schon etwas über die Grundsätze meines Unternehmes kennengelernt haben, möchte Ich Ihnen auch meine persönliche Perspektive kurz vorstellen.`,
+    text: `Hey there,
+
+I'm Henrik, the founder of **Kussy**.
+
+On my journey through life, I've come to embrace the concept of empowerment. It's about seeing each of us as capable beings, fully able to realize our potential when provided with the right resources. With my product and company, I aim to spread this idea far and wide. The focus is on giving you the freedom to explore new facets and flavors of yourself and your partner, all with the help of natural products.
+    
+Sending sunny regards,`,
     paragraph2: `Ich habe auf meinem Lebensweg soziale Arbeit studiert und dabei das Konzept des Empowerments kennenlernen dürfen. Dies beschreibt den Ansatz Menschen als Fähige Wesen zu betrachten, die mit entsprechenden Ressourcen immer am besten in der Lage sind sich zu verwirklichen. Diesen Gedanken möchte ich gerne mit meinem Produkt und Unternehmen in die Welt hinaus tragen. Meine Idee ist es Ihnen die Freiheit zu geben neue Seiten und Geschmäcker von sich und Ihrem Partner kennenzulernen.`,
+    footer: "Henrik Weiss",
   },
   "/our/spirit": {
-    title: "Unternehmensgeist",
-    text: `Aus der Perspektive vom Unternehmen **Kussy** leben wir in einer Welt vielen Facetten. Neben beeindruckenden hoch technischen oder vielschichtigen Prozessen, die Teil dieser Gesellschaft sind, bietet auch die Natur selbst eine enorme Komplexität. Diese möchte sich das Unternehmen von **Kussy** wertschätzen und gleichzeitig dazu nutzen uns Menschen zu befähigen.  
+    title: "Company Spirit",
+    text: `From Kussy's perspective, we inhabit a world of myriad facets. Beyond the impressive high-tech or complex processes that are part of our society, nature itself offers an immense complexity. Kussy values this complexity and seeks to harness it to empower humanity.
 
-    Das Ziel der Produkte von **Kussy** soll es sein die Potenziale und Nuancen aus uns Menschen zum Vorscheinen zu bringen, ohne auf chemisch stark veränderte Produkte zurückzugreifen. Die naturbelassenen Produkte begleiten Sie bei der Gelegenheit neue Seiten Ihres Lebens zu erkunden und sich mit anderen Menschen an diesen zu erfreuen, während es ihre individuellen Eigenschaften belebt.
-    
-    Wichtig ist für uns zudem ein Engagement für die Natur. Wir wollen unserer Lebensgrundlage etwas zurückgeben und zeitgleich Möglichkeiten in der Zukunft zu schaffen. Die wirtschaftlichen Gewinne sollen deshalb zu einem Anteil zur Verbesserung der lokalen umweltlichen Bedingungen genutzt werden. Beispiele hierfür finden Sie unter "Nachhaltigkeit".
-    `,
+The goal of Kussy's products is to bring out the potentials and nuances within us without resorting to heavily chemically altered products. These natural products accompany you as you explore new facets of your life and delight in sharing them with others, while enlivening your individual characteristics.
+
+Additionally, our commitment to nature is paramount. We aim to give back to our environment, while also creating opportunities for the future. Therefore, a portion of our profits is dedicated to improving local environmental conditions. Examples of this can be found under "Sustainability."`,
   },
   "/our/cooperations": {
     title: "Kooperation",
+    text: `At **Kussy**, we prioritize partnering with local small businesses and individuals.
+
+We take pride in working with these local partners to create high-quality products that support the local economy and are environmentally friendly`,
     partners: [
       {
         name: "Sample Partner",
@@ -66,27 +74,52 @@ export default {
   // Product
   //
   "/product/idea": {
-    title: "Produktidee",
-    list: [
-      "Natürlichkeit soll sich in unserem Produkt wiederfinden. Sexprodukte verstecken sich, aber wir haben alle Sex. Es ist etwas natürliches und sollte auch so behandelt werden. Wir bieten ein Brückenprodukt für Menschen die einen Selbstbestimmten und natürlichen Start in die Erlebniswelt der Sexualität erfahren möchten. ",
-      "Wir helfen Ihnen mit dem Produkt dabei Ihre persönlichen Vorlieben zusammen mit Ihren individuellen Eigenschaften in Einklang zu bringen. Dies wird durch die Geschmacksnuancen und die multifunktionale Einsetzbarkeit gewährleistet, die sich nach ihren Vorstellungen erweitern lässt. ",
-      "Schaffen sie mit unserem Produkt eine neue Erlebnisebene mit dem Körper ihres Partners oder ihrer Partnerin und einen Zugang zur natürlichen Sexualität. ohne künstliche Geschmacksstoffe oder Chemische Bestandteile.",
-    ],
+    title: "Productidea",
+    text: `The concept behind **Kussy-Lips** is rooted in naturalness. We're all individuals with needs, and for many of us, sex is a part of life. **Kussy-Lips** aims to offer people a product close to nature, allowing them to not only fulfill their needs but also refine them with new experiences.
+
+We want to provide a gateway product that offers people a self-determined and easy entry into the realm of their own desires and those of their partner. Our goal is to assist you in harmonizing personal preferences with individual characteristics, creating shared adventures.
+
+Together with the people around you and our product, create a new level of experience in natural sexuality`,
+    // list: [
+    //   "Natürlichkeit soll sich in unserem Produkt wiederfinden. Sexprodukte verstecken sich, aber wir haben alle Sex. Es ist etwas natürliches und sollte auch so behandelt werden. Wir bieten ein Brückenprodukt für Menschen die einen Selbstbestimmten und natürlichen Start in die Erlebniswelt der Sexualität erfahren möchten. ",
+    //   "Wir helfen Ihnen mit dem Produkt dabei Ihre persönlichen Vorlieben zusammen mit Ihren individuellen Eigenschaften in Einklang zu bringen. Dies wird durch die Geschmacksnuancen und die multifunktionale Einsetzbarkeit gewährleistet, die sich nach ihren Vorstellungen erweitern lässt. ",
+    //   "Schaffen sie mit unserem Produkt eine neue Erlebnisebene mit dem Körper ihres Partners oder ihrer Partnerin und einen Zugang zur natürlichen Sexualität. ohne künstliche Geschmacksstoffe oder Chemische Bestandteile.",
+    // ],
   },
   "/product/contents": {
-    title: "Inhaltsstoffe",
-    disclaimer:
-      " Die Inhaltsstoffe von Kussy-Lips werden achtsam und sorgfältig in einer deutschen Manufaktur hergestellt. ",
+    title: "Contents",
+    prepend:
+      "the following ingredients of Kussy-Lips product will be carefully combined in a local workshop:",
+    text: `
+
+
+100ml of Kussy-Lips Body Butter contain:
+
+| Ingredient    | Percentage | Additional Information |
+| ----------------- | ---------- | ---------------------- |
+| Shea Butter    | 50%    | Organic        |
+| Aloe Vera Gel   | 20%    | Pure, no additives   |
+| Agave Syrup    | 5%     |            |
+| Glycerin     | 5%     |            |
+| Carnauba Wax   | 5%     |            |
+| Apple Extract   | 5%     | Organic        |
+| Strawberry Powder | 4.8%    | Organic        |
+| Corn Starch    | 3%     |            |
+| Carotenoids    | 1%     |            |
+| Vitamin E Oil   | 1%     |            |
+| Citric Acid    | 0.2%    |            |`,
     table: {
-      headers : [{
-        value: "value",
-        title: "Anteil in %",
-        align : "end",
-      },
-      {
-        value: "name",
-        title: "Inhaltsstoff",
-      },],
+      headers: [
+        {
+          value: "value",
+          title: "Anteil in %",
+          align: "end",
+        },
+        {
+          value: "name",
+          title: "Inhaltsstoff",
+        },
+      ],
       items: [
         { name: "Sheabutter", value: "" },
         { name: "Aloe Vera Gel", value: " 20 (Rein, ohne Zusätze)" },
@@ -106,75 +139,132 @@ export default {
   // Certifications
   //
   "/certifications/standards": {
-    title: "Zertifizierungsstandarts",
+    title: "Certification Standards",
+    text : `For Kussy, ensuring responsible treatment of nature and people goes hand in hand with the conscientious production and distribution of Kussy-Lips. Therefore, open communication of test results is essential to us.
+
+The following standards, certificates, and test results are part of the product planning process and are taken into account in the creation of the final product of Kussy-Lips.
+
+Here's an overview of the standards, certificates, and test results we aim for
+`,
     list: ["COSMOS", "NaTrue", "ECOCERT"],
   },
   "/certifications/certificates": {
-    title: "Zertifikate",
+    title: "Certificates",
     list: [
-      "ISO 22716 GMP für Kosmetika",
-      "Vegatarisch/Vegan Zertifizierung",
-      "EU-Bio-Siegel",
+      "ISO 22716 GMP",
+      "Vegatarian/Vegan Certifications",
+      "EU-Bio-Seal",
     ],
-    footer: "Sample Footer",
   },
   // addtional information
   "/additional/tolerance": {
-    title: "Vertraeglichkeit",
-    list: [
-      "Allergien und Empfindlichkeiten (Überprüfen Sie die Inhaltsstoffliste sorgfältig auf potenzielle Allergene oder Inhaltsstoffe, auf die Sie empfindlich reagieren könnten. Wenn Sie bekanntermaßen allergisch gegen einen der Inhaltsstoffe sind, verwenden Sie das Produkt nicht)",
-      "Erdbeere Apfel z.b ",
-      "Empfehlung Patch Test  (Bevor Sie das Produkt großflächig anwenden, ist es ratsam, einen kleinen Hauttest durchzuführen, um sicherzustellen, dass Sie nicht allergisch auf einen der Inhaltsstoffe reagieren. Tragen Sie eine kleine Menge des Produkts auf eine unauffällige Stelle der Haut auf und warten Sie einige Stunden, um mögliche Reaktionen zu überprüfen.)",
-      "PH Wert (Wichtiger Teilaspekt mit dem viele Frauen kämpfen, nicht passende Duschgele etc. In diesem Produkt extra für Ihre Bedürfnisse mit einem leicht sauren PH Wert von 4,5-5,5)",
-    ],
+    title: "Tolerance",
+    text: `**Allergies and Sensitivities**
+
+Carefully check the ingredient list for potential allergens or ingredients you may be sensitive to. If you are known to be allergic to any of the ingredients, do not use the product.
+
+- For example, strawberry or apple extracts.
+
+**Patch Test Recommendation**
+
+Before applying the product extensively, it is advisable to perform a small patch test to ensure you are not allergic to any of the ingredients. Apply a small amount of the product to an inconspicuous area of the skin and wait for several hours to check for any reactions.
+
+**pH Value**
+
+An important aspect many women struggle with, such as unsuitable shower gels, etc. This product is tailored to your needs with a slightly acidic pH value of 4.5-5.5.
+`,
   },
   "/additional/storage": {
-    title: "Lagerung",
-    list: [
-      "Temperatur (Lagern Sie das Produkt bei einer stabilen Raumtemperatur, vorzugsweise zwischen 15°C und 25°C. Vermeiden Sie extreme Hitze oder Kälte, da dies die Konsistenz und Stabilität der Inhaltsstoffe beeinträchtigen kann)",
-      "Licht (Bewahren Sie das Produkt an einem kühlen, dunklen Ort auf und vermeiden Sie direkte Sonneneinstrahlung. Licht kann dazu führen, dass empfindliche Inhaltsstoffe schneller abgebaut werden und die Haltbarkeit des Produkts verkürzt wird)",
-      "Luftdichtigkeit (Stellen Sie sicher, dass der Behälter oder die Verpackung luftdicht verschlossen ist, um zu verhindern, dass Luft eindringt und die Inhaltsstoffe oxidiert werden. Dies kann dazu beitragen, die Qualität des Produkts zu erhalten und eine Kontamination zu vermeiden)",
-      "Hygiene (Achten Sie darauf, dass der Behälter oder die Verpackung sauber und frei von Verunreinigungen ist. Verwenden Sie bei Bedarf saubere Utensilien oder saubere Hände, um das Produkt zu entnehmen, um eine Kontamination zu vermeiden)",
-      "Trennung Verhindern (Einige Produkte können sich bei längerer Lagerung trennen, insbesondere wenn sie verschiedene Phasen wie Öl und Wasser enthalten. Vor Gebrauch sollten Sie das Produkt gut schütteln oder umrühren, um eine gleichmäßige Mischung zu gewährleisten)",
-    ],
+    title: "Storage",
+    text: `**Temperature** Store the product at a stable room temperature, preferably between 15°C and 25°C. Avoid extreme heat or cold as this may affect the consistency and stability of the ingredients.
+
+**Light** Keep the product in a cool, dark place, and avoid direct sunlight. Light exposure can cause sensitive ingredients to degrade faster, shortening the product's shelf life.
+
+**Airtight Seal** Ensure that the container or packaging is tightly sealed to prevent air from entering and oxidizing the ingredients. This can help maintain the quality of the product and prevent contamination.
+
+**Hygiene** Ensure that the container or packaging is clean and free from contaminants.
+Use clean utensils or clean hands when dispensing the product to avoid contamination.
+
+**Prevent Separation** Some products may separate during prolonged storage, especially if they contain different phases such as oil and water. Before use, shake or stir the product well to ensure an even mixture.
+`,
   },
   "/additional/application": {
-    title: "Gebrauchshinweise",
-    subtitle:
-      "Lesen Sie sorgfältig die Anweisungen und Warnhinweise auf dem Etikett oder der Verpackung des Produkts und befolgen Sie sie genau. Dies kann Informationen zur Anwendung, zur Menge, zur Häufigkeit der Anwendung und zur Sicherheit enthalten.",
-    list: [
-      " Ablaufdatum beachten (Überprüfen Sie regelmäßig das Verfallsdatum des Produkts und verwenden Sie es nicht mehr, wenn es abgelaufen ist)",
-      " Aufbewahrung nach dem Gebrauch (Verschließen Sie den Behälter oder die Verpackung des Produkts nach dem Gebrauch sorgfältig, um eine Kontamination zu verhindern. Lagern Sie das Produkt an einem sicheren Ort, der für Kinder oder Haustiere unzugänglich ist)",
-      " Anwendungsmenge (Beginnen Sie mit einer kleinen Menge des Produkts und tragen Sie bei Bedarf mehr auf. Es ist einfacher, mehr Produkt hinzuzufügen, als zu viel aufzutragen und Überschuss zu entfernen)",
-      " Anwednungsbereich (Tragen Sie das Produkt nur auf die dafür vorgesehenen Bereiche des Körpers auf)",
-      " Nicht bei Hautiritationen verwenden (Verwenden Sie das Produkt nicht auf gereizter oder verletzter Haut. Warten Sie, bis Hautirritationen oder Wunden verheilt sind, bevor Sie das Produkt anwenden, um eine Verschlimmerung der Beschwerden zu vermeiden)",
-      " Kombination mit anderen Produkten (Vermeiden Sie die gleichzeitige Verwendung mit anderen Gleitmitteln oder Produkten, da dies zu unerwünschten Reaktionen führen kann. Wenn Sie andere Produkte verwenden möchten, lesen Sie die Anweisungen sorgfältig durch und überprüfen Sie, ob sie kompatibel sind)",
-      " Kompatibilität mit Kondomen (Überprüfen Sie, ob das Produkt kompatibel mit Latexkondomen ist, insbesondere wenn Sie es während des Geschlechtsverkehrs verwenden möchten. Einige Inhaltsstoffe können die Integrität von Latex beeinträchtigen und das Risiko eines Kondomversagens erhöhen. Wenn Sie unsicher sind, verwenden Sie stattdessen ein wasserbasiertes Gleitmittel, das ausdrücklich als kondomkompatibel gekennzeichnet ist)",
-      " Nicht mit Silikonspielzeug verwenden (Vermeiden Sie die Verwendung von Produkten auf Silikonbasis mit Silikonsexspielzeug, da dies zu Beschädigungen des Spielzeugs führen kann. Wenn Sie Spielzeug verwenden, stellen Sie sicher, dass es mit wasserbasierten Gleitmitteln kompatibel ist)",
-      " Reinigung (Reinigen Sie den Anwendungsbereich nach Gebrauch gründlich, um Rückstände des Produkts zu entfernen. Dies kann dazu beitragen, Hautirritationen zu vermeiden und die Hygiene zu gewährleisten)",
-      " Reinigung von Spielzeug (Wenn Sie das Produkt in Verbindung mit Sexspielzeug verwenden, reinigen Sie das Spielzeug gründlich nach Gebrauch gemäß den Anweisungen des Herstellers. Einige Inhaltsstoffe können das Material von Sexspielzeugen beschädigen, wenn sie nicht ordnungsgemäß gereinigt werden)",
-    ],
-    footer:
-      "Unser Unternehmen möchte nicht nur einen Verantwortungsvollen Umgang mit der Natur fördern, sondern auch mit dem Produkt und dem Thema Sexualität an sich.",
+    title: "Usage",
+    text: `Please read the instructions and warnings on the label or packaging of the product carefully and follow them precisely. This may include information on application, quantity, frequency of use, and safety.
+
+**Check Expiry Date**
+
+Regularly check the expiry date of the product and do not use it if expired.
+
+**Storage After Use**
+
+After use, seal the container or packaging of the product carefully to prevent contamination. Store the product in a secure place inaccessible to children or pets.
+
+**Application Amount**
+
+Start with a small amount of the product and apply more if needed. It's easier to add more product than to apply too much and remove excess.
+
+**Application Area**
+
+Apply the product only to the designated areas of the body.
+
+**Do Not Use on Irritated Skin**
+
+Do not use the product on irritated or injured skin. Wait until skin irritations or wounds have healed before applying the product to avoid worsening the condition.
+
+**Combination with Other Products**
+
+Avoid simultaneous use with other lubricants or products, as this may lead to unwanted reactions. If you wish to use other products, read the instructions carefully and ensure compatibility.
+
+**Compatibility with Condoms**
+
+Check if the product is compatible with latex condoms, especially if you intend to use it during intercourse. Some ingredients may compromise the integrity of latex and increase the risk of condom failure. If unsure, use a water-based lubricant explicitly labeled as condom-compatible instead.
+
+**Do Not Use with Silicone Toys**
+
+Avoid using silicone-based products with silicone sex toys, as this may cause damage to the toys. If using toys, ensure they are compatible with water-based lubricants.
+
+**Cleaning**
+
+Thoroughly clean the application area after use to remove any product residue. This can help prevent skin irritation and ensure hygiene.
+
+**Cleaning Toys**
+
+If using the product with sex toys, clean the toys thoroughly after use according to the manufacturer's instructions. Some ingredients may damage sex toy materials if not properly cleaned.
+`,
+  },
+  "/additional/safe-spaces": {
+    title: "Sexual Safe Space",
+    text: `At Kussy, we aim not only to promote responsible treatment of nature but also of the product and the topic of sexuality itself. It's essential that everyone involved feels comfortable in a sexual adventure. If you or someone in your circle experiences difficulties feeling comfortable and safe in this context, please feel free to contact support services such as the [Federal Ministry for Family Affairs, Senior Citizens, Women, and Youth](https://www.bmfsfj.de/bmfsfj/themen/kinder-und-jugend/kinder-und-jugendschutz/schutz-vor-sexualisierter-gewalt#:~:text=Hilfe-Telefon%20Sexueller%20Missbrauch,00%20Uhr%20-%20kostenfrei%20und%20anonym) or [ProFamilia](https://www.profamilia.de/fuer-jugendliche/rechte-und-sexualitaet/sexuelle-gewalt).`,
   },
   //
   // conservation
   //
+  "/conservation/source": {
+    title: "Origin",
+    text: `In line with our responsibility towards nature and people, Kussy aims to use only local products or those from the EU, ensuring we are aware of the exact origin of the ingredients. Currently, we are in the process of planning our suppliers, so more detailed information will follow later.` 
+  },
   "/conservation/enviroment": {
-    title: "Umweltengagement",
-    text: `Bei unserer Firma liegt uns der Schutz unserer Umwelt am Herzen. Wir sind stolz darauf, ein Unternehmen zu sein, das sich aktiv für Nachhaltigkeit und Umweltschutz einsetzt. Unser Engagement reicht von der Auswahl unserer Lieferanten bis hin zu internen Betriebsabläufen, um sicherzustellen, dass wir unseren ökologischen Fußabdruck minimieren und einen positiven Beitrag zum Erhalt unseres Planeten leisten.
-    
-        Wir arbeiten eng mit unseren Lieferanten zusammen, um sicherzustellen, dass sie unsere Werte teilen und nachhaltige Praktiken in ihren Betrieben umsetzen. Dies umfasst die Verwendung umweltfreundlicher Anbaumethoden, faire Arbeitsbedingungen und den Schutz natürlicher Ressourcen.
-        
-        Darüber hinaus ergreifen wir interne Maßnahmen, um unseren Betrieb so umweltfreundlich wie möglich zu gestalten. Wir setzen auf erneuerbare Energien, minimieren Abfall und recyceln, wo immer es möglich ist. Unser Ziel ist es, nicht nur großartige Produkte anzubieten, sondern auch einen positiven Einfluss auf unsere Umwelt zu haben und eine nachhaltigere Zukunft für kommende Generationen zu fördern.`,
+    title: "Enviroment",
+    text: `The environment plays a significant role, especially in sustainability. In this context, implementing environmentally friendly production chains and ingredients is becoming increasingly important. Our company is committed to taking on this responsibility. We cooperate with companies based in Germany or the EU. This not only shortens the supply chains but also reduces the corresponding CO2 emissions.
+    `,
   },
   "/conservation/packaging": {
-    title: "Verpackungsmaterial",
-    text: `Unsere Verpackungsmaterialien wurden sorgfältig ausgewählt, um sowohl die Qualität unseres Produkts als auch die Umwelt zu schützen. Wir verwenden recycelbare Materialien, die leicht abbaubar sind und somit unsere Umweltbelastung minimieren. Durch die Auswahl dieser Materialien möchten wir sicherstellen, dass unsere Verpackungen am Ende ihres Lebenszyklus keinen negativen Einfluss auf die Umwelt haben.
-    
-        Darüber hinaus setzen wir uns aktiv dafür ein, den Einsatz von Plastik zu reduzieren. Wo immer möglich, verwenden wir alternative Materialien wie Glas, Pappe oder biologisch abbaubare Kunststoffe. Diese Materialien bieten nicht nur eine umweltfreundlichere Option, sondern tragen auch dazu bei, dass unsere Verpackungen langlebig und hochwertig sind.
-        
-        Wir glauben, dass eine nachhaltige Verpackung ein integraler Bestandteil unserer Bemühungen um Umweltschutz ist. Indem wir innovative Materialien verwenden und kontinuierlich unsere Verpackungsprozesse verbessern, streben wir danach, einen positiven Beitrag zur Reduzierung von Abfall und zur Erhaltung unserer Umwelt zu leisten.`,
+    title: "Packaging",
+    text: `Another aspect that creates a mindful and sustainable context is the design of the packaging for Kussy-Lips.
+
+We want these qualities to be reflected in the packaging as well. We aim to minimize the use of plastic, with the main focus being on glass for the container. Additionally, wood sourced from local production facilities will be used. The packaging will be completed with an iron clasp closure and a silicone sealing ring. Currently, we are still in the planning phase and aim to replace the silicone ring with a sustainable alternative.
+
+Planned components include:
+
+- Bamboo Wood (Phyllostachys edulis)
+
+- Glass
+
+- Silicone
+
+- Iron (Clasp)
+`,
   },
   "/conservation/production": {
     title: "Herstellung",
@@ -187,44 +277,42 @@ export default {
   // news
   //
   "/news/news": {
-    title: "Aktuelles und Neues",
+    title: "News and Announcements",
     placeholder:
-      "Durchsuchen Sie hier Aktuelles und Neuigkeiten rund um unsere Produkte.",
-    noData: "Leider haben wir aktuell keine Neuigkeiten für Sie.",
+      "Search our articles...",
+    noData: "There are currently no articles available here...",
     list: [
-            {
-            title : "Website Eröffnung",
-            text : `Do sint nisi velit consectetur incididunt id voluptate. Aute laborum incididunt elit esse aute deserunt do dolore voluptate sit minim consequat irure esse. Occaecat cupidatat in fugiat aliquip dolor veniam ex est nostrud dolore Lorem. Dolor tempor in commodo eu officia fugiat ad dolor enim ipsum id qui ex aliquip.
+      {
+        title: "Website Eröffnung",
+        text: `Do sint nisi velit consectetur incididunt id voluptate. Aute laborum incididunt elit esse aute deserunt do dolore voluptate sit minim consequat irure esse. Occaecat cupidatat in fugiat aliquip dolor veniam ex est nostrud dolore Lorem. Dolor tempor in commodo eu officia fugiat ad dolor enim ipsum id qui ex aliquip.
       Magna velit elit sint sint occaecat dolor deserunt fugiat. Adipisicing excepteur in labore sint in sunt tempor ea labore. Dolor ea nisi cupidatat laboris tempor laboris ex commodo eu sunt dolore laborum magna est. Enim ullamco anim laboris cupidatat eu nulla ullamco proident aute deserunt pariatur cupidatat id. Exercitation ad sunt ad nulla. Fugiat consequat duis nostrud ex quis ad aliqua ullamco culpa nostrud velit.
       Consequat irure deserunt nisi elit in cillum incididunt sint laborum ut. Aliquip Lorem tempor enim labore reprehenderit mollit commodo deserunt deserunt tempor. Ut id in veniam aliqua incididunt aliquip adipisicing exercitation nostrud esse quis pariatur incididunt.
-      Nulla occaecat eiusmod sunt anim deserunt. Esse id laborum ea sint Lorem labore aliqua exercitation laborum magna. Eiusmod qui laboris eiusmod in et pariatur quis laborum sunt consectetur commodo elit. Nulla dolor pariatur excepteur cillum sint non ea anim qui ullamco qui. Ipsum proident deserunt minim ullamco culpa ea nostrud elit.`
-          }
+      Nulla occaecat eiusmod sunt anim deserunt. Esse id laborum ea sint Lorem labore aliqua exercitation laborum magna. Eiusmod qui laboris eiusmod in et pariatur quis laborum sunt consectetur commodo elit. Nulla dolor pariatur excepteur cillum sint non ea anim qui ullamco qui. Ipsum proident deserunt minim ullamco culpa ea nostrud elit.`,
+      },
     ],
   },
   //
   // FAQ
   //
   "/faqs/faqs": {
-    title: "Häufige Fragen und Weiterführendes",
-    placeholder : "Durchsuchen Sie unsere Tipps und Hinweise",
-    noData : "Leider haben wir aktuelle keine weiteren Informationen dazu.",
+    title: "FAQs and further Information",
+    placeholder:
+      "Search our FAQs...",
+    noData: "There are currently no FAQs available here...",
     list: [
       {
-        title: "Magna mollit et consequat et aute?",
-        text: `Do sint nisi velit consectetur incididunt id voluptate. Aute laborum incididunt elit esse aute deserunt do dolore voluptate sit minim consequat irure esse. Occaecat cupidatat in fugiat aliquip dolor veniam ex est nostrud dolore Lorem. Dolor tempor in commodo eu officia fugiat ad dolor enim ipsum id qui ex aliquip.
-      
-      Magna velit elit sint sint occaecat dolor deserunt fugiat. Adipisicing excepteur in labore sint in sunt tempor ea labore. Dolor ea nisi cupidatat laboris tempor laboris ex commodo eu sunt dolore laborum magna est. Enim ullamco anim laboris cupidatat eu nulla ullamco proident aute deserunt pariatur cupidatat id. Exercitation ad sunt ad nulla. Fugiat consequat duis nostrud ex quis ad aliqua ullamco culpa nostrud velit.
-      
-      Consequat irure deserunt nisi elit in cillum incididunt sint laborum ut. Aliquip Lorem tempor enim labore reprehenderit mollit commodo deserunt deserunt tempor. Ut id in veniam aliqua incididunt aliquip adipisicing exercitation nostrud esse quis pariatur incididunt.
-      
-      Nulla occaecat eiusmod sunt anim deserunt. Esse id laborum ea sint Lorem labore aliqua exercitation laborum magna. Eiusmod qui laboris eiusmod in et pariatur quis laborum sunt consectetur commodo elit. Nulla dolor pariatur excepteur cillum sint non ea anim qui ullamco qui. Ipsum proident deserunt minim ullamco culpa ea nostrud elit.`,
+        title: "When is the Product Coming?",
+        text: `Currently, "Kussy-Lips" is still in the final stages of development, ensuring a safe and sustainable product for you and your partner to experience in a new, natural way. Unfortunately, we cannot provide precise information on the release date at this time. As soon as firm dates for production and delivery become available, they will be published on the website.`,
+      },
+      {
+        title: "Where Can I Contact Kussy?",
+        text: `You can reach us through our contact information provided in the Impressum section of our website. Additionally, feel free to connect with us on social media for updates and engagement.`,
       },
     ],
   },
-  "/impressum/impressum" : {
-    title : "Impressum",
-    nameAndAddresse : "Name und Anschrift",
-    contactInformation : "Kontaktdaten",
-    
-  }
+  "/impressum/impressum": {
+    title: "Impressum",
+    nameAndAddresse: "Name und Anschrift",
+    contactInformation: "Kontaktdaten",
+  },
 };

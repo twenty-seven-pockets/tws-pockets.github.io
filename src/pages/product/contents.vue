@@ -1,6 +1,6 @@
 <template>
   <i18n-card :path="i18nPath">
-    <template #default="{i18nBody}">
+    <!-- <template #default="{i18nBody}">
       <v-row justify="center">
         <v-col cols="auto">
          {{i18nBody.disclaimer}}
@@ -20,7 +20,7 @@
           </v-data-table>
         </v-col>
         </v-row>
-    </template>
+    </template> -->
   </i18n-card>
 </template>
 

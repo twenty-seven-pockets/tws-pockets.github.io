@@ -1,6 +1,11 @@
 <template>
-    <i18n-card :path="i18nPath">
-      <template #default="{i18nBody}">
+    <i18n-card :path="i18nPath" with-markdown>
+    <!-- <template #appendContent="{i18nBody}"> 
+      
+        {{ i18nBody }}
+      
+    </template> -->
+      <!-- <template #default="{i18nBody}">
 
             <v-row>
               <v-col><p>
@@ -15,7 +20,7 @@
               <v-col>
               </v-col>
             </v-row>
-      </template>
+      </template> -->
     </i18n-card>
       
 </template>

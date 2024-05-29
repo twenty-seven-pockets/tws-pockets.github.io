@@ -6,7 +6,7 @@ export default {
         title: "ui.menu.items.aboutUs.title",
         to: {name : "our"},
         prependIcon: "mdi-information-outline",
-         class : "rounded-xl border-xl ",
+         class : "rounded-xl ",
          tooltip : "About Us",
       },
       {

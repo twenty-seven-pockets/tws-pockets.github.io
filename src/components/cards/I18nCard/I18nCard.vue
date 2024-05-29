@@ -22,21 +22,35 @@
         </span>
     </v-card-subtitle>
       </slot>
-    <slot name="prependContent" v-bind="{i18nBody}" />
+    <slot name="prependContent" v-bind="{i18nBody}" >
+    <v-card-text align="start" v-if="i18nBody.prepend?.length > 0">
+      <v-container>
+      <MarkdownContainer v-if="withMarkdown" :markdown-string="i18nBody.prepend"/>
+        <span v-else>
+        {{i18nBody.prepend}}
+        </span>
+      </v-container>
+    </v-card-text>
+    </slot>
     <v-card-text align="start">
+      <v-container>
+      <v-row>
+      <v-col>
       <slot name="default" v-bind="{i18nBody}">
         <MarkdownContainer v-if="withMarkdown" :markdown-string="i18nBody.text"/>
         <span v-else>
         {{i18nBody.text}}
         </span>
       </slot>
+      </v-col></v-row>
+      </v-container>
     </v-card-text>
     <slot name="appendContent" v-bind="{i18nBody}"/>
-    <v-card-text v-if="$slots?.footer || i18nBody.footer?.length > 0">
+    <v-card-text v-if="$slots?.footer || i18nBody.footer?.length > 0 || i18nBody.append?.length > 0">
       <slot name="footer" v-bind="{i18nBody}">
-        <MarkdownContainer v-if="withMarkdown" :markdown-string="i18nBody.footer"/>
+        <MarkdownContainer v-if="withMarkdown" :markdown-string="i18nBody.footer || i18nBody.append"/>
         <span v-else>
-        {{i18nBody.footer}}
+        {{i18nBody.footer || i18nBody.append}}
         </span>
       </slot>
     </v-card-text>
@@ -64,7 +78,7 @@ import {loadLocaleMessages} from '@/plugins/i18n'
       required : true,
       default : ""
     },
-    withMarkdown : Boolean,
+    withMarkdown : {type : Boolean, default : true},
   },
   data() {
     return {
@@ -86,7 +100,14 @@ import {loadLocaleMessages} from '@/plugins/i18n'
     updateI18nObject(path){
       const p = path || this.i18nPath;
       const msgs = this.messages;
-      
+      console.debug(`Checking for i18n Value ${p}`, { local : msgs[this.$i18n.locale]?.company?.pages[p] ,
+      // otherwise return the fallback locale 
+       fallbacklLocale : msgs[this.$i18n.fallbackLocale]?.company?.pages[p],
+      // try the path in absolute 
+       global : msgs[this.$i18n.locale][`${p}`] ,
+      // try the path in absolute in fallback locale 
+       fallbackGlobal : msgs[this.$i18n.fallbackLocale][p],
+       })
       // return the value of the current locale and page
       // if all fails, return the key as string 
       this.i18nBody = msgs[this.$i18n.locale]?.company?.pages[p] 

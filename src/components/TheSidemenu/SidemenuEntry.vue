@@ -3,26 +3,36 @@
     exact
     nav
     density="compact"
-    :class="{'custom-look': true,  'bg-menuButton' : true, margin : !$props.rail, marginRail : $props.rail}"
+    :class="{
+      'custom-look': true,
+      'bg-menuButton': true,
+      margin: !$props.rail,
+      marginRail: $props.rail,
+      'rounded-xl': true,
+    }"
     active-color="menuButtonActivated"
     base-color="menuButtonBorder"
     justify="space-between"
     border="xl"
     :to="$attrs.to"
-  > 
-  <template #prepend>
-    <v-list-item-icon>
-  <v-icon :icon="$attrs.icon || $attrs.prependIcon"/>
-    </v-list-item-icon>
-  </template>
-  <template #title v-if="!rail">
-    
-    {{ $attrs.title }}
-    
-  </template>
-  
-        <v-tooltip v-if="tooltip" activator="parent" v-bind="mergeTooltipWithDefaults(tooltip)">
-        </v-tooltip> 
+  >
+    <template #prepend>
+      
+        <v-icon :icon="$attrs.icon || $attrs.prependIcon" />
+      
+    </template>
+    <template #title v-if="!rail">
+    <span class="text-body-1 ">
+      {{ $t($attrs.title) }}
+    </span>
+    </template>
+
+    <v-tooltip
+      v-if="tooltip"
+      activator="parent"
+      v-bind="mergeTooltipWithDefaults(tooltip)"
+    >
+    </v-tooltip>
     <!-- <v-btn v-show="!rail" v-bind="{...$attrs, }"  class="button-color rounded-pill" style="width:85%">{{ $t($attrs.title) }}
         </v-btn> -->
   </v-list-item>
@@ -84,15 +94,18 @@ border-color:--var(menuButtonBorder); background-color:$menuButton;
   border-width: thin;
 }
 .margin {
-    margin-left: 15px;
-    margin-right: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 .marginRail {
-    margin-left: 5px;
-    margin-right: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .custom-look {
   border-color: var(---menuBorderButton);
-  border: 1px solid;
+  border: 1px solid !important;
+  padding: auto;
+  left:0px;
+  right:0px;
 }
 </style>

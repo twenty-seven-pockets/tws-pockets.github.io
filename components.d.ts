@@ -12,6 +12,7 @@ declare module 'vue' {
     I18nCardWithList: typeof import('./src/components/cards/I18nCard/I18nCardWithList.vue')['default']
     MarkdownContainer: typeof import('./src/components/utils/MarkdownContainer.vue')['default']
     PartnerCard: typeof import('./src/components/cards/PartnerCard.vue')['default']
+    RibbonComponent: typeof import('./src/components/utils/RibbonComponent.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SidemenuEntry: typeof import('./src/components/TheSidemenu/SidemenuEntry.vue')['default']

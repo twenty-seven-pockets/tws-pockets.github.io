@@ -13,17 +13,15 @@
     
   </template>
   <template #default="{i18nBody}">
-        <v-container >
         <v-row justify="center">
           <v-col cols="auto">
             <ul>
-              <li v-for="item in i18nBody?.list" :key="item.id">
+              <li v-for="item in i18nBody?.list" :key="item.id" class="py-1">
                 {{ item }}
               </li>
             </ul>
           </v-col>
         </v-row>
-      </v-container>
       </template>
   </i18n-card>
 </template>

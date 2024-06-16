@@ -104,8 +104,8 @@
           </v-row>
         </v-col>
     <v-btn   icon  variant="plain"  @click="rail = !rail"   :class="{'drag-handle': true} "><v-icon size="x-large" class="drag-icon" icon='mdi-drag-vertical-variant'/></v-btn>
-    <div class="branch">
-    <v-img src="@/assets/plant1PNG/250/plant1_250.png" />
+    <div class="branch" v-if="!$vuetify.display.mobile">
+    <v-img src="@/assets/plant1_1000.png" />
     </div>
       </v-row>
     </div></v-navigation-drawer>
@@ -230,6 +230,8 @@ export default {
 .branch {
   position:absolute;
   left:100%;
+  padding-left: 0px;
+  margin-left: 0px;
   bottom:15%;
   width:15vw;
   height:auto;  

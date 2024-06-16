@@ -8,11 +8,11 @@ export default {
     together : "Gemeinsame Erlebnisse",
     kissLips : "Ein Kuss der die Lippen erlebt",
   },disclaimer : {
-    title : "Sensitive Content",
-    text : "This page contains adult content. Are you sure you want to continue?"
+    title : "Sensible Inhalte!",
+    text : "Diese Webseite enthält Inhalte!"
   },
   words : {
-    additional : "Nützliches"
+    additional : "Gebrauchshinweise"
   },
   pages,
   

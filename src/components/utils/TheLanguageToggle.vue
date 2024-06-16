@@ -4,7 +4,7 @@
     v-model="$i18n.locale"
     density="compact"
     color="languageButton"
-    class="languageButton"
+    :class="(absolute)?'languageButton':''"
   >
     <v-btn
       v-for="(lang, i) in languages"
@@ -23,6 +23,10 @@
   export default {
     name : "TheLanguageToggle",
     props: {
+      absolute : {
+        type : Boolean,
+        default : true,
+      },
       modelValue: {
         type: String,
         required : false,

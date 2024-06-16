@@ -40,15 +40,16 @@
     >
         <v-card-text >
           <v-spacer/>
-          <div class="product-img shrink">
+          <ribbon-component text="Coming Soon">
+          <div >
           <v-img
             contain
             src="@/assets/verpackung.png"
-            max-height="33vh"
-            min-height="33vh"
-            min-width="33vh"
+            height="50vh"
+            
           />
           </div>
+          </ribbon-component>
         <v-spacer/>
                 </v-card-text>
     <v-card class="bg-menuButton footer-card rounded-xl">
@@ -58,6 +59,17 @@
     <v-card-subtitle class="footer">
     <b>{{ i18nBody.footer2 }}</b></v-card-subtitle>
     </v-card>
+  </template>
+  <template #actions>
+    <v-card-actions>
+      <v-row>
+      <v-spacer/>
+      <v-col>
+    <v-btn :to="'/product'">Zum Produkt</v-btn>
+      </v-col>
+      <v-spacer/>
+      </v-row>
+    </v-card-actions>
   </template>
   </i18n-card>
   <!-- </v-col>

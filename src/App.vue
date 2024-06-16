@@ -78,7 +78,6 @@ export default {
         },
         {
           append: true,
-
           title: "ui.menu.items.about.title",
           tooltip: "ui.menu.items.about.tooltip",
           to: { name: "impressum" },

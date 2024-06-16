@@ -1,10 +1,11 @@
 <template>
     <i18n-card :path="i18nPath" with-markdown>
-    <!-- <template #appendContent="{i18nBody}"> 
+    <template #appendContent="{}"> 
+    <v-avatar size="x-large">
+      <v-img src="@/assets/founder.jpg"/>
+    </v-avatar>
       
-        {{ i18nBody }}
-      
-    </template> -->
+    </template>
       <!-- <template #default="{i18nBody}">
 
             <v-row>

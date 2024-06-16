@@ -5,7 +5,7 @@
               class='my-5'>
         <template #header v-if="i18nBody.list?.length > 0">
           <v-row justify="center">
-            <v-col v-bind="{md : 6}">
+            <v-col v-bind="{md : 10}">
               <v-text-field prepend-inner-icon="mdi-magnify" :placeholder="i18nBody.placeholder" v-model="search"/>
             </v-col>
           </v-row>

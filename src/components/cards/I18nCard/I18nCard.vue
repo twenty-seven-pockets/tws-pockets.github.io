@@ -1,5 +1,5 @@
 <template>
-  <v-card  >
+  <v-card  class="px-5">
 
   <!-- Wraps the entire content of the card, except for the actions  -->
     <slot name="body" v-bind="{i18nBody}">

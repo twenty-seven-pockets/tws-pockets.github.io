@@ -156,6 +156,14 @@ Here's an overview of the standards, certificates, and test results we aim for
       "EU-Bio-Seal",
     ],
   },
+  "/certifications/tests": {
+    title: "Certificates",
+    list: [
+      "ISO 22716 GMP",
+      "Vegatarian/Vegan Certifications",
+      "EU-Bio-Seal",
+    ],
+  },
   // addtional information
   "/additional/tolerance": {
     title: "Tolerance",

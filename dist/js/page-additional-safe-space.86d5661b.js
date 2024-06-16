@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkKussy"]=self["webpackChunkKussy"]||[]).push([[879],{7059:function(n,e,u){u.r(e),u.d(e,{default:function(){return h}});var a=u(6399),t=u(6768);function s(n,e,u,s,r,c){const f=a.A;return(0,t.uX)(),(0,t.Wv)(f,{path:n.i18nPath},null,8,["path"])}var r={name:"SafeSpacesPage"},c=u(1241);const f=(0,c.A)(r,[["render",s]]);var h=f}}]);
-//# sourceMappingURL=page-additional-safe-space.86d5661b.js.map

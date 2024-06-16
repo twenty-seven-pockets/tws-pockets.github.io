@@ -17,6 +17,7 @@
     </v-row>
     <v-row>
       <v-col>
+      <ribbon-component :text="$t('company.comingSoon')">
         <v-card  >
         <v-card-text >
         <v-container style="margin-top:20px;">
@@ -31,6 +32,7 @@
           </v-card-text>
         <v-card-actions><v-spacer/> <v-btn disabled variant="text">Kauf Mich!</v-btn></v-card-actions>
         </v-card>
+      </ribbon-component>
       </v-col>
     </v-row>
   </v-container>

@@ -9,7 +9,7 @@
     >
       <v-col>
         <v-card
-          class="error bg-cardBackground pa-2 fill-height"
+          class="error  pa-2 fill-height"
           elevation="10"
         >
           <v-container>

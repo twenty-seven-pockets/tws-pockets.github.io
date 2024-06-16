@@ -2,11 +2,12 @@
   <!-- <v-container class="bg-red">
   <v-row justify="center" align="center">
   <v-col  align="center" > -->
+          <ribbon-component text="Coming Soon">
   <i18n-card
     :path="i18nPath"
     align="center"
     flat
-    class="fill-height"
+    class="fill-height "
   >
     <template #body="{i18nBody}">
     <v-card-title 
@@ -25,7 +26,7 @@
       > <v-btn
         size="x-large"
         :to="{name : 'together'}"
-        color="secondaryButtonIconColor"
+        color="action-button-color"
         append-icon="mdi-arrow-right"
         rounded="xl"
         >
@@ -40,7 +41,6 @@
     >
         <v-card-text >
           <v-spacer/>
-          <ribbon-component text="Coming Soon">
           <div >
           <v-img
             contain
@@ -49,10 +49,9 @@
             
           />
           </div>
-          </ribbon-component>
         <v-spacer/>
                 </v-card-text>
-    <v-card class="bg-menuButton footer-card rounded-xl">
+    <v-card class="footer-card rounded-xl">
     <v-card-text>
       {{ i18nBody.footer }}
     </v-card-text>
@@ -65,13 +64,14 @@
       <v-row>
       <v-spacer/>
       <v-col>
-    <v-btn :to="'/product'">Zum Produkt</v-btn>
+    <v-btn :to="'/product'" color="action-button-color">Zum Produkt</v-btn>
       </v-col>
       <v-spacer/>
       </v-row>
     </v-card-actions>
   </template>
   </i18n-card>
+</ribbon-component>
   <!-- </v-col>
   </v-row>
   </v-container> -->
@@ -87,6 +87,10 @@ export default {
 </script>
 
 <style lang="css" scoped>
+.product-card-background {
+  /* background:#ea95b2; */
+  
+}
 .logo-container {
   margin-top:5vh;
 

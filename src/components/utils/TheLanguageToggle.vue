@@ -3,8 +3,8 @@
     mandatory
     v-model="$i18n.locale"
     density="compact"
-    color="languageButton"
-    :class="(absolute)?'languageButton':''"
+    color="language-toggle-color"
+    :class="{'position-top-right':absolute}"
   >
     <v-btn
       v-for="(lang, i) in languages"
@@ -62,7 +62,7 @@
 
 <style lang="css" scoped>
 
-.languageButton {
+.position-top-right {
   position: fixed;
   top: 0px;
   right: 0px;

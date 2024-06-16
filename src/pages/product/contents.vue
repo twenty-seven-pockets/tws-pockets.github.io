@@ -1,16 +1,16 @@
 <template>
-  <i18n-card :path="i18nPath" align="" style="text-align:center;">
+  <i18n-card :path="i18nPath"  >
   <template #default="{i18nBody}">
     <v-container>
       <v-row align="center" justify="center">
         <v-col cols="12">
-  <MarkdownContainer align="center" :markdown-string="i18nBody.text"/>
+  <MarkdownContainer align="center" :markdown-string="i18nBody.text" />
   </v-col>
   </v-row>
       <v-row align="center" justify="center">
         <v-col cols="10">
           <v-data-table
-            class="bg-cardBackground"
+            class="bg-card-background text-card-text-color"
             :items-per-page="-1"
             :items="i18nBody.table.items"
             :headers="i18nBody.table.headers"

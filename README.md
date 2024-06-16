@@ -1,4 +1,4 @@
-# ui
+#**** ui
 
 
 # TODO
@@ -13,8 +13,10 @@
 ### Sidemenu
   - [ ] TODO drag handle in brief mappen lasche 
   - [ ] TODO Tooltips mit Unterpunkten aus denm container
-  - [ ] TODO die letzten zwei Menüpunkte waren anders gestalte 
+  - [X] TODO die letzten zwei Menüpunkte waren anders gestalte 
   - [ ] TODO #4 open menu button missing in smartphone view
+
+
 ### Pages:
   - /together
     - [ ] Button auf /together zentrieren und mehr padding 
@@ -33,29 +35,3 @@
   - [X] ~~FIXME #6 spacing faqs~~
 
 
-
-
-
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

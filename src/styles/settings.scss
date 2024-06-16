@@ -1,8 +1,8 @@
 @use 'vuetify/settings' with (
-  $card-background: #d8c0c8,
-  $card-elevation: 10,
-  $button-background: #ea95b2,
-  
+  $application-background:#f9ebeb,
+  $navigation-drawer-background:#d8c0c8, 
+  $card-elevation: 10, // the default card elevation
+  $card-background: #d8c0c8, // the default card background
 );
 
 

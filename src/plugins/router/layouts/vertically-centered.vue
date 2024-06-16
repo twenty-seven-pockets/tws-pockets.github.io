@@ -1,6 +1,6 @@
 <template>
   <v-main class="main-container">
-    <v-row justify="space-between" class="bg-cardBackground fill-height">
+    <v-row justify="space-between" class="fill-height">
       <v-col
         cols="2"
         style="min-width: 100px; max-height: 85vh; align-content: end"
@@ -8,7 +8,7 @@
       >
         <v-img src="@/assets/plant1PNG/500/plant1_500.png" />
       </v-col>
-      <v-col cols="7" class="fill-height bg-cardBackground main-col" align="center">
+      <v-col cols="7" class="fill-height main-col" align="center">
         <router-view />
       </v-col>
       <v-col

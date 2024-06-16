@@ -5,7 +5,7 @@
        <v-col cols="2" class="left-branch" >
         <!-- <v-img src="@/assets/plant1PNG/500/plant1_500.png" /> -->
       </v-col> 
-      <v-col :cols="$vuetify.display.mobile?10:7">
+      <v-col :cols="$vuetify.display.mobile?10:7" class="mt-2">
         <router-view />
       </v-col>
       <v-col cols="2"  v-if="!$vuetify.display.mobile" class="pr-0 mr-0">

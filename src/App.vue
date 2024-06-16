@@ -2,8 +2,8 @@
   <v-app>
     <the-language-toggle />
     <the-disclaimer-dialog />
-    <the-social-contact-menu />
-    <the-sidemenu :items="items" class="sidemenu">
+    <the-social-contact-menu color="action-button-color"/>
+    <the-sidemenu :items="stylizedItems" class="sidemenu">
       <template #header="{}">
         <router-link :to="'/'">
           <v-fade-transition
@@ -28,26 +28,28 @@ export default {
         {
           title: "ui.menu.items.aboutUs.title",
           to: { name: "our" },
-          prependIcon: "mdi-information-outline",
-          class: "",
-          tooltip: "About Us",
-        },
-        {
-          title: "ui.menu.items.product.title",
-          prependIcon: "mdi-bottle-tonic",
+          prependIcon: "GameIconsHand",
+          hasCustomIconComponent : true,
+          tooltip: ``,
+          },
+          {
+            title: "ui.menu.items.product.title",
+            prependIcon: "HealthiconsMouth",
+            hasCustomIconComponent : true,
           to: "/product",
-          class: "rounded-xl ",
         },
         {
           title: "ui.menu.items.tests.title",
           to: "/certifications",
-          prependIcon: "mdi-file-document",
+          prependIcon: "IcOutlineMedication",
+          hasCustomIconComponent : true,
           class: "rounded-xl border",
           // 'base-color': "menuInactive",
           // color: "menuButton",
         },
         {
-          prependIcon: "mdi-information-outline",
+          prependIcon: "IcOutlineTask",
+          hasCustomIconComponent : true,
           title: "ui.menu.items.further.title",
           to: "/additional",
           // 'base-color': "menuInactive",
@@ -56,14 +58,16 @@ export default {
         },
         {
           title: "ui.menu.items.conservation.title",
+          hasCustomIconComponent : true,
           to: "/conservation",
-          prependIcon: "mdi-leaf",
+          prependIcon: "EntypoLeaf",
           'base-color': "menuInactive",
         },
         {
           title: "ui.menu.items.news.title",
           // to: "/about",
-          prependIcon: "mdi-information-outline",
+          prependIcon: "FluentMegaphoneLoud20Filled",
+          hasCustomIconComponent : true,
           "base-color": "menuInactive",
           to: "/news",
           
@@ -85,6 +89,20 @@ export default {
         },
       ],
     };
+  },
+  computed: {
+    stylizedItems(){
+      return this.items.map((item,idx,arr) => ({
+        ...item,
+        class : {
+          ...(item.class||{}),
+          'rounded-xl' : true,
+          'border-lg' : true,
+          'bg-menu-button-background' : (idx < arr.length - 2)?true:false,
+          'bg-menu-button-background-alternate' : (idx >= arr.length - 2)?true:false,
+        }
+      }))
+    }
   },
 };
 </script>

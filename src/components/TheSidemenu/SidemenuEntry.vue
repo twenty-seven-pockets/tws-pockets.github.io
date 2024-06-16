@@ -3,28 +3,19 @@
     exact
     nav
     density="compact"
-    :class="{
-      'custom-look': true,
-      'bg-menuButton': true,
-      margin: !$props.rail,
-      marginRail: $props.rail,
-      'rounded-xl': true,
-    }"
-    active-color="menuButtonActivated"
-    base-color="menuButtonBorder"
+    :class="listItemClasses"
     justify="space-between"
-    border="xl"
     :to="$attrs.to"
   >
     <template #prepend>
-      
-        <v-icon :icon="$attrs.icon || $attrs.prependIcon" />
-      
+      <v-icon v-if="!hasCustomIconComponent" :icon="$attrs.icon || $attrs.prependIcon" />
+      <component v-else :is="$attrs.icon || $attrs.prependIcon" class="mr-5"/>
     </template>
     <template #title v-if="!rail">
-    <span class="text-body-1 ">
-      {{ $t($attrs.title) }}
-    </span>
+      {{ $attrs.icon }}
+      <span class="text-body-1">
+        {{ $t($attrs.title) }}
+      </span>
     </template>
 
     <v-tooltip
@@ -32,6 +23,9 @@
       activator="parent"
       v-bind="mergeTooltipWithDefaults(tooltip)"
     >
+    <markdown-container :markdown-string="tooltip"/>
+
+    
     </v-tooltip>
     <!-- <v-btn v-show="!rail" v-bind="{...$attrs, }"  class="button-color rounded-pill" style="width:85%">{{ $t($attrs.title) }}
         </v-btn> -->
@@ -46,6 +40,8 @@ export default {
     rail: Boolean,
     tooltip: [String, Object],
     value: Boolean,
+    class: [String, Object, Array],
+    hasCustomIconComponent : Boolean,
   },
   emits: ["input"],
   data() {
@@ -76,8 +72,30 @@ export default {
         return this.state && !this.$props.rail;
       },
     },
-    hasChildren() {
-      return this.$props.children?.length > 0;
+    listItemClasses() {
+      let classes = {
+        margin: !this.$props.rail,
+        marginRail: this.$props.rail,
+        "rounded-xl": false,
+      };
+      const parseArrayOfClassNames = (arr) =>
+        arr.reduce((obj, item) => {
+          obj[item] = true;
+          return obj;
+        }, {});
+      if (typeof this.$props.class === "string") {
+        return { ...classes, ...parseArrayOfClassNames(this.$props.class.split(" ")) };
+      }
+
+      if (Array.isArray(this.$props.class)) {
+        return { ...classes, ...parseArrayOfClassNames(this.$props.class) };
+      }
+      if (typeof this.$props.class == "object") {
+        return { ...classes, ...this.$props.class };
+      }
+      return {
+        ...classes,
+      };
     },
   },
 };
@@ -85,14 +103,14 @@ export default {
 border-color:--var(menuButtonBorder); background-color:$menuButton;
 
 <style lang="scss" scoped>
-.button-color {
-  left: 0px;
-  right: 0px;
-  margin: auto;
-  padding: auto;
-  border-color: #9b224c;
-  border-width: thin;
-}
+// .button-color {
+//   left: 0px;
+//   right: 0px;
+//   margin: auto;
+//   padding: auto;
+//   border-color: #9b224c;
+//   border-width: thin;
+// }
 .margin {
   margin-left: 15px;
   margin-right: 15px;
@@ -101,11 +119,11 @@ border-color:--var(menuButtonBorder); background-color:$menuButton;
   margin-left: 5px;
   margin-right: 5px;
 }
-.custom-look {
-  border-color: var(---menuBorderButton);
-  border: 1px solid !important;
-  padding: auto;
-  left:0px;
-  right:0px;
-}
+// .custom-look {
+//   border-color: var(---menuBorderButton);
+//   border: 1px solid !important;
+//   padding: auto;
+//   left: 0px;
+//   right: 0px;
+// }
 </style>

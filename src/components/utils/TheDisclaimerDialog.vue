@@ -15,7 +15,7 @@
       <v-row justify="center">
         <v-col cols="auto">
           <v-card min-height="50vh" min-width="66vw" class="flex-card">
-            <v-toolbar density="compact" class="bg-cardBackground"><v-spacer/><the-language-toggle/></v-toolbar>
+            <v-toolbar density="compact"><v-spacer/><the-language-toggle/></v-toolbar>
             <v-card-title>{{ $t("company.disclaimer.title") }}</v-card-title>
             <v-card-text>{{ $t("company.disclaimer.text") }}</v-card-text>
             <v-card-actions>

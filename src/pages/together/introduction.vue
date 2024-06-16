@@ -19,7 +19,7 @@
           <v-col>
             <v-btn
               size="large"
-              color="secondaryButtonIconColor"
+              color="action-button-color"
               append-icon="mdi-arrow-right"
               rounded="xl"
               :to="{ name: 'additional' }"

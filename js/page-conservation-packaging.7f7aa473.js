@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkKussy"]=self["webpackChunkKussy"]||[]).push([[574],{4180:function(n,u,t){t.r(u),t.d(u,{default:function(){return f}});var a=t(6399),e=t(6768);function r(n,u,t,r,s,c){const i=a.A;return(0,e.uX)(),(0,e.Wv)(i,{path:n.i18nPath},null,8,["path"])}var s={name:"PackagingView"},c=t(1241);const i=(0,c.A)(s,[["render",r]]);var f=i}}]);
-//# sourceMappingURL=page-conservation-packaging.7f7aa473.js.map

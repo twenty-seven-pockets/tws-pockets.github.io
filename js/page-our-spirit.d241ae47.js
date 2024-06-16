@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkKussy"]=self["webpackChunkKussy"]||[]).push([[147],{1249:function(n,t,a){a.r(t),a.d(t,{default:function(){return h}});var u=a(6399),e=a(6768);function r(n,t,a,r,c,s){const i=u.A;return(0,e.uX)(),(0,e.Wv)(i,{path:n.i18nPath,"with-markdown":""},null,8,["path"])}var c={name:"SpiritPage"},s=a(1241);const i=(0,s.A)(c,[["render",r],["__scopeId","data-v-8cb3c27c"]]);var h=i}}]);
-//# sourceMappingURL=page-our-spirit.d241ae47.js.map

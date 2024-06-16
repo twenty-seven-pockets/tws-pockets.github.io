@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkKussy"]=self["webpackChunkKussy"]||[]).push([[157],{424:function(n,t,u){u.r(t),u.d(t,{default:function(){return h}});var a=u(6399),e=u(6768);function r(n,t,u,r,s,c){const i=a.A;return(0,e.uX)(),(0,e.Wv)(i,{path:n.i18nPath,"with-markdown":""},null,8,["path"])}var s={name:"ApplicationPage"},c=u(1241);const i=(0,c.A)(s,[["render",r]]);var h=i}}]);
-//# sourceMappingURL=page-additional-application.55933da7.js.map

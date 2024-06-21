@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkKussy"]=self["webpackChunkKussy"]||[]).push([[41],{1349:function(e,n,u){u.r(n),u.d(n,{default:function(){return f}});var r=u(6768);function s(e,n,u,s,t,a){return(0,r.uX)(),(0,r.CE)("div")}var t={name:"TestPage"},a=u(1241);const c=(0,a.A)(t,[["render",s]]);var f=c}}]);
+//# sourceMappingURL=page-conservation-results.4f965a97.js.map

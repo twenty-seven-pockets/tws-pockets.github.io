@@ -12,7 +12,7 @@ export default {
   "/index": {
     slogans: {
       wholeBody: "Natural whole Body Experience",
-      together: "Gemeinsame Erlebnisse",
+      together: "Experiencing Togetherness",
       kissLips: "Ein Kuss der die Lippen erlebt",
     },
     footer: `Die erotische essbare Körperbutter von Kussy ist ein naturbelassenes Produkt für die primäre Anwendung im sexuellen Kontext. Sie soll Ihnen eine einfach produzierte Butter ohne stark chemisch veränderte Inhaltsstoffe bieten, die nicht nur leicht aufzutragen und gut verträglich ist, sondern auch über Geschmacksnuancen verfügt, sodass Sie Ihre oralen Fantasien auf neue Ebenen erweitern können.`,

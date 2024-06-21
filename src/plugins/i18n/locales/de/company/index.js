@@ -14,6 +14,9 @@ export default {
   words : {
     additional : "Gebrauchshinweise"
   },
+  productTeaserDisclaimer : "Fiktiver Produktteaser",
+  buyMe : "Kauf Mich!",
+  comingSoon : "Bald Verfügbar",
   pages,
   
 }

@@ -69,9 +69,6 @@
               <slot name="append" v-bind="{ items: itemsToAppend }">
                 <v-list
                   :opened="lists.append"
-                  collapse-icon="mdi-chevron-up"
-                  expand-icon="mdi-chevron-down"
-                  class="bg-menuBackground"
                   :rail="rail"
                   ><sidemenu-entry
                     v-for="item in itemsToAppend"
@@ -90,10 +87,10 @@
                 icon
                 tile
                 flat
-                color="menuBackground"
                 :size="item.size"
+              
               >
-                <v-icon :color="item.color" :size="item.size">{{ item.icon }}</v-icon>
+                <v-icon    color="blue" :size="item.size" >{{ item.icon }}</v-icon>
                 <v-tooltip
                   v-if="item?.tooltip"
                   v-bind="mergeTooltipOptionsWithFooterTooltipOptions(item.tooltip)"

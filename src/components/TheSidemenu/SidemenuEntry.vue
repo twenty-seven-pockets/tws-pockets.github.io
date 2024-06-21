@@ -8,12 +8,12 @@
     :to="$attrs.to"
   >
     <template #prepend>
-      <v-icon v-if="!hasCustomIconComponent" :icon="$attrs.icon || $attrs.prependIcon" />
+      <v-icon v-if="!hasCustomIconComponent" :icon="$attrs.icon || $attrs.prependIcon" color="menu-button-icon-color-alternate" />
       <component v-else :is="$attrs.icon || $attrs.prependIcon" class="mr-5"/>
     </template>
     <template #title v-if="!rail">
       {{ $attrs.icon }}
-      <span class="text-body-1">
+      <span :class="{'text-body-1'  : true, 'text-menu-item-text-color' : !$props.append, 'text-menu-item-text-color-alternate' : $props.append }">
         {{ $t($attrs.title) }}
       </span>
     </template>

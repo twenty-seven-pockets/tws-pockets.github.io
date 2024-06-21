@@ -1,7 +1,7 @@
 <template>
   <i18n-card :path="i18nPath"  >
   <template #default="{i18nBody}">
-    <v-container>
+    <v-container >
       <v-row align="center" justify="center">
         <v-col cols="12">
   <MarkdownContainer align="center" :markdown-string="i18nBody.text" />

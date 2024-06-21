@@ -10,6 +10,14 @@ module.exports = defineConfig({
       }),
       new VuetifyPlugin({styles : {configFile : "./src/styles/settings.scss"}})
     ],
+    module : {
+      rules : [
+        {
+          test : /\.md$/,
+use : ['raw-loader']
+        }
+      ]
+    }
     // module: {
     //   rules: [
     //     // SASS has different line endings than SCSS

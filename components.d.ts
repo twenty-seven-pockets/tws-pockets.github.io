@@ -17,6 +17,7 @@ declare module 'vue' {
     IcOutlineMedication: typeof import('./src/components/utils/icons/IcOutlineMedication.vue')['default']
     IcOutlineTask: typeof import('./src/components/utils/icons/IcOutlineTask.vue')['default']
     MarkdownContainer: typeof import('./src/components/utils/MarkdownContainer.vue')['default']
+    MarkdownContent: typeof import('./src/components/utils/MarkdownContent.vue')['default']
     MingcuteArrowRightFill: typeof import('./src/components/utils/icons/MingcuteArrowRightFill.vue')['default']
     PartnerCard: typeof import('./src/components/cards/PartnerCard.vue')['default']
     RibbonComponent: typeof import('./src/components/utils/RibbonComponent.vue')['default']

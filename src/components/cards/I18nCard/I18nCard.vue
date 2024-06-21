@@ -3,7 +3,7 @@
     <!-- Wraps the entire content of the card, except for the actions  -->
     <slot name="body" v-bind="{ i18nBody }">
       <slot name="title" v-bind="{ i18nBody }">
-        <v-card-title v-if="i18nBody.title?.length > 0" align="center">
+        <v-card-title v-if="i18nBody.title?.length > 0" align="center" class="text-card-title-color">
           <MarkdownContainer v-if="withMarkdown" :markdown-string="i18nBody.title" />
           <span v-else>
             {{ i18nBody.title }}
@@ -11,7 +11,11 @@
         </v-card-title>
       </slot>
       <slot name="subtitle" v-bind="{ i18nBody }">
-        <v-card-subtitle v-if="i18nBody.subtitle?.length > 0">
+        <v-card-subtitle
+          v-if="i18nBody.subtitle?.length > 0"
+          class="text-card-subtitle-color text-lg"
+          style="white-space: normal; word-wrap: break-word"
+        > 
           <MarkdownContainer v-if="withMarkdown" :markdown-string="i18nBody.subtitle" />
           <span v-else>
             {{ i18nBody.subtitle }}
@@ -32,8 +36,7 @@
           </v-container>
         </v-card-text>
       </slot>
-      <v-card-text align="center" 
-      class="text-card-text-color">
+      <v-card-text align="center" class="text-card-text-color">
         <v-container>
           <v-row>
             <v-col>
@@ -52,7 +55,7 @@
         v-if="
           $slots?.footer || i18nBody.footer?.length > 0 || i18nBody.append?.length > 0
         "
-          class="text-card-text-color"
+        class="text-card-text-color"
       >
         <slot name="footer" v-bind="{ i18nBody }">
           <MarkdownContainer

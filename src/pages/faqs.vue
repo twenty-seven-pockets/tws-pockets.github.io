@@ -15,8 +15,8 @@
             <v-col v-for="(item, index) in items" :key="index">
               <v-card  >
                 
-                <v-card-title>{{ item.raw.title }}</v-card-title>
-                <v-card-text align="start">{{ item.raw.text }}</v-card-text>
+                <v-card-title class="text-card-title-color">{{ item.raw.title }}</v-card-title>
+                <v-card-text align="start" class="text-card-text-color">{{ item.raw.text }}</v-card-text>
               </v-card>
               </v-col>
           </v-row>

@@ -2,17 +2,8 @@
   <v-container align="center" class="fill-height">
     <v-row justify="center">
       <v-col>
-        <packaging />
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col>
-        <sourcing />
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col>
-        <production />
+      <markdown-content content-path="conservation"/>
+        <!-- <sourcing />
       </v-col>
     </v-row>
     <v-row>
@@ -20,17 +11,21 @@
         <enviroment />
       </v-col>
     </v-row>
+    <v-row>
+      <v-col>
+        <packaging /> -->
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
 <script>
-import enviroment from "./enviroment";
-import sourcing from "./source.vue";
-import production from "./production";
-import packaging from "./packaging";
+// import enviroment from "./enviroment";
+// import sourcing from "./source.vue";
+// import packaging from "./packaging";
 export default {
   name: "SustainabilityView",
-  components: { enviroment, production, packaging, sourcing },
+  // components: { enviroment, packaging, sourcing },
 };
 </script>
 

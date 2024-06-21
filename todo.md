@@ -5,30 +5,29 @@
 
 ### Internationalization
   - [X] TODO language Settings in sensitive content dialog 
-  - [ ] add language for remaining entries
-    - [ ] dialog
-    - [ ] TODO #2 finalize i18n texts 
+  - [X] add language for remaining entries
+    - [X] dialog
+    - [X] TODO #2 finalize i18n texts 
 
 - [ ] Link to Kussy.me Domain 
 
 
 ### Sidemenu
   - [ ] TODO drag handle in brief mappen lasche 
-  - [X] TODO Tooltips mit Unterpunkten aus denm container
-    - zu tooltip texten umgestaltet
+  - [ ] TODO Tooltips mit Unterpunkten aus denm container
   - [X] TODO die letzten zwei Menüpunkte waren anders gestalte 
   - [ ] TODO #4 open menu button missing in smartphone view
 ### Pages:
   - /together
     - [X] Button auf /together zentrieren und mehr padding 
-    - [ ] bei /together noch die englischen übersetzung einfügen
+    - [X] bei /together noch die englischen übersetzung einfügen
   
   - /impressum
     - [ ] content
 
 - /Hauptseite
-- [ ] Text ändert sich nicht bei Deutsch English Wechsel 
-- [X] Produktbild: Ausgegraute Bildunterschrift: Fiktiver Produktteaser
+- [X] Text ändert sich nicht bei Deutsch English Wechsel 
+- [X] Produktbild: Ausgegraute Bildunterschrift: 
 - [X]  Produktbeschreibung: (Textfarbe anpassen #9b224c)
 
 - /Gemeinsame Erlebnisse 
@@ -37,27 +36,33 @@
 - // Wo Anwenden 
 - [X] Oberer Satz nicht vollständig lesbar und falsche Farbe (#9b224c)
 - // Aussicht auf das Produkt
-- [ ] Coming Soon Banner ohne company. 
+- [X] Coming Soon Banner ohne company. 
 - [X] Kauf mich Button Zentralisieren Ausgrauen (ggf. Coming Soon Darüber legen irgendwie?)
 - [X] Bildunterschrift einfügen: Fiktiver Produktteaser 
 
 
 - /Über uns
 - //Unternehmensgeist
-- [ ] (Textfarbe anpassen #9b224c)
+- [X] (Textfarbe anpassen #9b224c)
 - // Gründer 
-- [ ] (Textfarbe anpassen #9b224c)
+- [X] (Textfarbe anpassen #9b224c)
 - [ ] Text Links Foto Rechts, näheres in Kosmetisches
 - //Kooperationen
-- [ ] (Textfarbe anpassen #9b224c)
+- [X] (Textfarbe anpassen #9b224c)
 - [ ] Hervorgehobene Felder innerhalb des Kooperation Feldes (Herstellung des Produkts, Verpackungshersteller, Fotos, Website, Firmen Logo Design)
+  - [ ] Kooperationskarte für folgende Karten erstellen
+    - Produktherstellung
+    - Verpackungsherstellung
+    - Fotograph
+    - Webseiten Design
+    - Firmen Logo Design
 
 
 - /Produkt 
 - //Produktidee
-- [ ] (Textfarbe anpassen #9b224c)
+- [X] (Textfarbe anpassen #9b224c)
 - // Inhaltsstoffe 
-- [ ] (Textfarbe anpassen #9b224c)
+- [X] (Textfarbe anpassen #9b224c)
 
 
 - /Nützliches
@@ -73,25 +78,25 @@
 - [X] (Textfarbe anpassen #9b224c)
 
 - /Zertifikation
-- [ ] Neuen Block  ohne Überschrift Einfügen auf dem nur der Text steht, danach folgende Aufteilung
-- [ ] 1. Feld: Angestrebte Standards (Cosmos etc.) 
-- [ ] 2. Feld Angestrebte Zertifikate(Iso22716 etc.) 
-- [ ] 3. Feld: Angestrebte Testergebnisse.
-- [ ] 3. Feld auch mit zwei abgehobenen Einzelbestandteilen. (Anwendung und Produktqualität)
-- [ ] (Textfarbe anpassen #9b224c)
+- [X] Neuen Block  ohne Überschrift Einfügen auf dem nur der Text steht, danach folgende Aufteilung
+- [X] 1. Feld: Angestrebte Standards (Cosmos etc.) 
+- [X] 2. Feld Angestrebte Zertifikate(Iso22716 etc.) 
+- [X] 3. Feld: Angestrebte Testergebnisse.
+- [X] 3. Feld auch mit zwei abgehobenen Einzelbestandteilen. (Anwendung und Produktqualität)
+- [X] (Textfarbe anpassen #9b224c)
 
 - /Nachhaltigkeit 
-- [ ] Englische Überschrift ändern in Environment oder so 
+- [X] Englische Überschrift ändern in Environment oder so 
 - [X] Reihenfolge der Kästen ändern. (1. Herkunft, 2. Umwelt, 3. Verpackung)
 - [X] Herstellungskasten herausnehmen(weil an anderer Stelle)
 - [X] (Textfarbe anpassen #9b224c)
 - // Verpackung 
 - [X] (Textfarbe anpassen #9b224c)
-- [ ] Auflistung der Einzelpunkte näher Zusammen und mehr Abstand zum Textfeld
+- [x] Auflistung der Einzelpunkte näher Zusammen und mehr Abstand zum Textfeld
 
 - /Ankündigungen 
 - [X] (Textfarbe anpassen #9b224c)
-- [ ] 2 Kästen Einfügen im Suchfenster. (1. Coming Soon, gleicher wie bei FAQ Release, mit den jeweiligen Unterpunkten Release und Produktteaser. 2. Spendenvorhaben mit den Unterpunkten, Bielefelder Wald, WWF, EuroNatur und Waldlokal )
+- [X] 2 Kästen Einfügen im Suchfenster. (1. Coming Soon, gleicher wie bei FAQ Release, mit den jeweiligen Unterpunkten Release und Produktteaser. 2. Spendenvorhaben mit den Unterpunkten, Bielefelder Wald, WWF, EuroNatur und Waldlokal )
 
 - /Impressum 
 - [X] (Textfarbe anpassen #9b224c)
@@ -102,25 +107,25 @@
 
 
 - /Hilfe 
-- [ ] (Textfarbe anpassen #9b224c)
+- [X] (Textfarbe anpassen #9b224c)
 
 
 - /Share Funktion 
-- [ ] Ausklappbaren Share Funktionen sind noch nicht farbig
+- [X] Ausklappbaren Share Funktionen sind noch nicht farbig
 
 
 ### Kosmetisches: 
   - [ ] TODO #1 fix share button  menu positioning
-  - [ ] abstand auf index seite zum bottom y
-  - [ ] bild auf index seite als teaser/beispiel andeuten
+  - [X] abstand auf index seite zum bottom ypS
+  - [X] bild auf index seite als teaser/beispiel andeuten
   - [X] ~~FIXME #3 color scheme of language buttons is broken~~
   - [X] ~~TODO comming soon banner at the edge~~
   - [X] ~~Zentrierung der Tabelle bei Inahltstoffe~~
   - [X] ~~FIXME #5 impressum spacing~~
   - [X] ~~FIXME #6 spacing faqs~~
-  - [ ] Farbe von Coming Soon Banner ändern #9b224c
+  - [X] Farbe von Coming Soon Banner ändern #9b224c
   - [ ] Bilder Anpassen: Sidemenue oben eventuell Verkleinern, Hauptbild Design eventuell Größer ? Gründer Foto rechts im Kasten (halb so groß wie text und zentralisiert in der Rechten Hälfe)
-- [ ] Textfarbe: Ein kuss der die Lippen erlebt (Hauptseite, Unter dem Design, #9b224c)
+- [X] Textfarbe: Ein kuss der die Lippen erlebt (Hauptseite, Unter dem Design, #9b224c)
  
 
 ### Formatierung (Halbes Fenster, Handy)

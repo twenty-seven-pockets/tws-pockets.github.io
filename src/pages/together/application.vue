@@ -11,10 +11,10 @@
           <p>
           <MarkdownContainer :markdown-string="i18nBody.paragraph2"/>
           </p>
-          <v-card-subtitle><v-row class="py-5"><v-spacer/><v-col>
+          <v-card-title class="text-black"><v-row class="py-5"><v-spacer/><v-col>
           {{i18nBody.subtitle}}
           </v-col><v-spacer/></v-row>
-          </v-card-subtitle>
+          </v-card-title>
           <p>
           <MarkdownContainer :markdown-string="i18nBody.paragraph3"/>
           </p>

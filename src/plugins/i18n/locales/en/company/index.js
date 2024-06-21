@@ -5,7 +5,7 @@ export default {
   name : "Kussy",
   slogans : {
     wholeBody : "Natural whole Body Experience",
-    together : "Gemeinsame Erlebnisse",
+    together : "Experiencing Togetherness",
     kissLips : "Ein Kuss der die Lippen erlebt",
   },disclaimer : {
     title : "Sensitive Content",
@@ -14,6 +14,9 @@ export default {
   words : {
     additional : "Nützliches"
   },
+  productTeaserDisclaimer : "Fictional Productteaser",
+  buyMe : "Buy me!",
+  comingSoon : "Coming Soon",
   pages,
   
 }

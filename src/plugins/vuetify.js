@@ -33,27 +33,32 @@ export default createVuetify({
           'card-background' : "#d8c0c8",
           // $card-elevation: 10, // the default card elevation
           "card-text-color" : "#9b224c",
+          'card-title-color'  : "#9b224c", 
+          'card-subtitle-color'  : "#9b224c", 
           'menu-button-background'  : "#ea95b2", 
+          'coming-soon-color' : "#9b224c",
           // 'menu-button-border-color'  : "#ea95b2",  // UNUSED UNIMPLEMENTED
           'menu-button-background-alternate'  : "#b95b7c", 
           // 'menu-button-border-color-alternate'  : "#ea95b2",  // UNUSED UNIMPLEMENTED
-          // 'menu-button-icon-color'  : "#ea95b2",  // UNUSED
-          // 'menu-button-icon-color-alternate'  : "#ea95b2",  // UNUSED
+          'menu-button-icon-color'  : "#9b224c",  // 
+          'menu-button-icon-color-alternate'  : "#ffffff",  // UNUSED
+          'menu-item-text-color'  : "#9b224c",  // UNUSED
+          'menu-item-text-color-alternate'  : "#ea95b2",  // UNUSED
           'action-button-color' : '#b95b7c',
           'language-toggle-color' : '#9b2224c',
           
-
-            // OLD VALUES
-            // logoBorder : "#000000",
-            // primary: colors.red.darken1, // #E53935
-            // secondary: colors.red.lighten4, // #FFCDD2
+          
+          // OLD VALUES
+          // logoBorder : "#000000",
+          // primary: colors.red.darken1, // #E53935
+          // secondary: colors.red.lighten4, // #FFCDD2
           // menuButtonActivated : "#9b224c", 
           // menuButtonBorder : "#9b224c",
           // menuInactive : "#951d45",
           // test : "#00EE00",
           // secondaryButtonIconColor : "#b95b7c", // social media, gemainsame erlebnisse, icon buttons im footer
           
-
+          
           // productText : "#9b224c",
           // primary : "#9b224c",
         },

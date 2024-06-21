@@ -1,26 +1,27 @@
 <template>
 
 <v-container>
-        <v-row>
-            <v-col cols="12">
-                <standards/>
+        <v-row align="center">
+            <v-col cols="auto">
+            <markdown-content content-path="certifications"/>
+                <!-- <standards/> -->
                 
             </v-col>
             <v-col col="12">
-                <certificates/>
+                <!-- <certificates/> -->
             </v-col>
             </v-row>
             </v-container>
 </template>
 
 <script>
-import Certificates from './certificates.vue';
-import Standards from './standards.vue';
+// import Certificates from './certificates.vue';
+// import Standards from './standards.vue';
 
     export default {
     name: "CertificationsIndex",
     
-    components: { Standards, Certificates }
+    // components: { Standards, Certificates }
 }
 </script>
 

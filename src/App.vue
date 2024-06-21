@@ -2,7 +2,7 @@
   <v-app>
     <the-language-toggle />
     <the-disclaimer-dialog />
-    <the-social-contact-menu color="action-button-color"/>
+    <the-social-contact-menu />
     <the-sidemenu :items="stylizedItems" class="sidemenu">
       <template #header="{}">
         <router-link :to="'/'">
@@ -61,14 +61,12 @@ export default {
           hasCustomIconComponent : true,
           to: "/conservation",
           prependIcon: "EntypoLeaf",
-          'base-color': "menuInactive",
         },
         {
           title: "ui.menu.items.news.title",
           // to: "/about",
           prependIcon: "FluentMegaphoneLoud20Filled",
           hasCustomIconComponent : true,
-          "base-color": "menuInactive",
           to: "/news",
           
           class: "rounded-xl ",

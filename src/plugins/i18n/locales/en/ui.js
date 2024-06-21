@@ -2,7 +2,7 @@ export default {
   menu : {
     items : {
       aboutUs: { title: "About us", tooltip: "" },
-      conservation: { title: "Conservation", tooltip: "" },
+      conservation: { title: "Sustainibility", tooltip: "" },
       news: { title: "News", tooltip: "" },
       further: { title: "Additonal", tooltip: "" },
       tests: { title: "Certificates", tooltip: "" },

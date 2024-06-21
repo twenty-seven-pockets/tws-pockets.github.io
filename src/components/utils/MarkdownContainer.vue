@@ -1,5 +1,5 @@
 <template>
-  <vue-markdown :source="markdownString"  :options="options" class="markdown-container"></vue-markdown>
+  <vue-markdown :source="markdownString"  :options="options" class="markdown-container" ></vue-markdown>
   <!-- <div v-html="markdownToHtml" class="markdown-container"/> -->
 </template>
 

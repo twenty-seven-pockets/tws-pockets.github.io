@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkKussy"]=self["webpackChunkKussy"]||[]).push([[296],{3777:function(u,n,r){r.r(n),r.d(n,{default:function(){return i}});var e=r(6768),s=r(4232);function t(u,n,r,t,a,c){return(0,e.uX)(),(0,e.CE)("div",null,(0,s.v_)(u.$route.params),1)}var a={},c=r(1241);const f=(0,c.A)(a,[["render",t]]);var i=f}}]);
-//# sourceMappingURL=page-news-id.386943da.js.map

@@ -1,21 +1,62 @@
 export default {
-  
   //
   // news
   //
   "/news/news": {
-    title: "Aktuelles und Neues",
-    placeholder:
-      "Durchsuchen Sie hier Aktuelles und Neuigkeiten rund um unsere Produkte.",
-    noData: "Leider haben wir aktuell keine Neuigkeiten für Sie.",
+    title: "Announcements and News",
+    placeholder: "Search entries...",
+    noData: "There are currently no news...",
     list: [
+      {
+        title: "When will the product be available?",
+        icon : "NewsClockCardIcon",
+        text: `Currently, **Kussy-Lips** is still in the final stages of development, ensuring a safe and sustainable product for you to experience with your partner in a new, natural way. Unfortunately, we cannot provide precise information on the release date at this time. As soon as firm dates for production and delivery become available, they will be published on the website.`,
+      },
+      {
+        title: "Produktteaser ",
+        icon : "NewsTeaserCardIcon",
+        text: `Tastes vary, and at Kussy, we embrace that diversity. After the initial release featuring the double flavor of strawberry and apple, we'll be introducing more flavors. If you have ideas or suggestions, feel free to reach out to us through our social media channels. We always look forward to lively exchanges.`,
+      },
+      {
+        title: "Planned Donations",
+        icon : "NewsDonationsCardIcon",
+        text: `Depending on the profits generated, **Kussy** sees a need to participate in environmentally beneficial projects, especially in our local community. Below are some ideas we'd like to introduce. If you have any ideas yourself, feel free to share them with us on social media. 
+
+# Possible Recipients
+
+- [Bielefeld Wald](https://service.bielefeld.de/detail/-/vr-bis-detail/dienstleistung/125620/show#:~:text=Verfahrensablauf,Spenden%20Sie%20ein%20Stück%20Wald!&text=Spenden%20bis%20zu%20300%2C00,und%20auch%20eine%20Urkunde%20zu.)
+- [WWF](https://www.wwf.de/amazonas?gad_source=1&gclid=EAIaIQobChMIiLTQsa7LhQMVKkBBAh0QewGCEAAYASAAEgJcavD_BwE)
+- [EuroNatur](https://www.wwf.de/amazonas?gad_source=1&gclid=EAIaIQobChMIiLTQsa7LhQMVKkBBAh0QewGCEAAYASAAEgJcavD_BwE)
+- [WaldLokal](https://www.wwf.de/amazonas?gad_source=1&gclid=EAIaIQobChMIiLTQsa7LhQMVKkBBAh0QewGCEAAYASAAEgJcavD_BwE)
+        
+        `,
+        data: {
+          links: [
             {
-            title : "Website Eröffnung",
-            text : `Do sint nisi velit consectetur incididunt id voluptate. Aute laborum incididunt elit esse aute deserunt do dolore voluptate sit minim consequat irure esse. Occaecat cupidatat in fugiat aliquip dolor veniam ex est nostrud dolore Lorem. Dolor tempor in commodo eu officia fugiat ad dolor enim ipsum id qui ex aliquip.
-      Magna velit elit sint sint occaecat dolor deserunt fugiat. Adipisicing excepteur in labore sint in sunt tempor ea labore. Dolor ea nisi cupidatat laboris tempor laboris ex commodo eu sunt dolore laborum magna est. Enim ullamco anim laboris cupidatat eu nulla ullamco proident aute deserunt pariatur cupidatat id. Exercitation ad sunt ad nulla. Fugiat consequat duis nostrud ex quis ad aliqua ullamco culpa nostrud velit.
-      Consequat irure deserunt nisi elit in cillum incididunt sint laborum ut. Aliquip Lorem tempor enim labore reprehenderit mollit commodo deserunt deserunt tempor. Ut id in veniam aliqua incididunt aliquip adipisicing exercitation nostrud esse quis pariatur incididunt.
-      Nulla occaecat eiusmod sunt anim deserunt. Esse id laborum ea sint Lorem labore aliqua exercitation laborum magna. Eiusmod qui laboris eiusmod in et pariatur quis laborum sunt consectetur commodo elit. Nulla dolor pariatur excepteur cillum sint non ea anim qui ullamco qui. Ipsum proident deserunt minim ullamco culpa ea nostrud elit.`
-          }
+              title: "Bielefeld Wald",
+              href: ["", "https://www.bielefeld.de/node/7933"],
+            },
+            {
+              title: "WWF",
+              href: [
+                "https://www.wwf.de/amazonas?gad_source=1&gclid=EAIaIQobChMIiLTQsa7LhQMVKkBBAh0QewGCEAAYASAAEgJcavD_BwE",
+              ],
+            },
+            {
+              title: "EuroNatur",
+              href: [
+                "https://www.wwf.de/amazonas?gad_source=1&gclid=EAIaIQobChMIiLTQsa7LhQMVKkBBAh0QewGCEAAYASAAEgJcavD_BwE",
+              ],
+            },
+            {
+              title: "Waldlokal",
+              href: [
+                "https://www.wwf.de/amazonas?gad_source=1&gclid=EAIaIQobChMIiLTQsa7LhQMVKkBBAh0QewGCEAAYASAAEgJcavD_BwE",
+              ],
+            },
+          ],
+        },
+      },
     ],
   },
-}
+};

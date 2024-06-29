@@ -1,0 +1,2 @@
+
+Das Unternehmen **Kussy** möchte nicht nur achtsame und wertschätzende Erlebnisse ermöglichen, sondern sich selbst auch entsprechend Verhalten. Achtsamkeit gegenüber der Umwelt und Nachhaltigkeit sind relevante Themen, denen wir uns bewusst stellen wollen. 

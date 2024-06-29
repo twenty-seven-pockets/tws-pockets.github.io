@@ -23,7 +23,7 @@
       activator="parent"
       v-bind="mergeTooltipWithDefaults(tooltip)"
     >
-    <markdown-container :markdown-string="tooltip"/>
+    {{ $t(tooltip) }}
 
     
     </v-tooltip>

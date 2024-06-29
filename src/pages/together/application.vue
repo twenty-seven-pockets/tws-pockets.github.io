@@ -5,7 +5,8 @@
     <template #default="{ i18nBody }">
       <v-row>
         <v-col
-          ><p>
+          >
+          <p>
           <MarkdownContainer :markdown-string="i18nBody.paragraph1"/>
           </p>
           <p>

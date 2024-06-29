@@ -17,9 +17,10 @@
             size="x-large"
             :to="{ name: 'together' }"
             color="action-button-color"
-            append-icon="mdi-arrow-right"
             rounded="xl"
           >
+            <template #append>
+            <MingcuteArrowRightFill color="white"/></template>
             {{ i18nBody.slogans?.together }}</v-btn
           >
         </v-card-title>
@@ -33,7 +34,9 @@
           <div>
             <figure>
               <v-img src="@/assets/verpackung.png" height="50vh" />
-              <figcaption align="center" style="opacity:.3; font-weight:bold;">{{$t('company.productTeaserDisclaimer')}}</figcaption>
+              <figcaption align="center" style="opacity: 0.3; font-weight: bold">
+                {{ $t("company.productTeaserDisclaimer") }}
+              </figcaption>
             </figure>
           </div>
           <v-spacer />
@@ -52,7 +55,9 @@
           <v-row>
             <v-spacer />
             <v-col>
-              <v-btn :to="'/product'" color="action-button-color">Zum Produkt</v-btn>
+              <v-btn :to="'/product'" color="action-button-color">{{
+                $t("company.pages./index.productButton")
+              }}</v-btn>
             </v-col>
             <v-spacer />
           </v-row>

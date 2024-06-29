@@ -3,29 +3,22 @@
     <v-row>
       <v-col>
 
-        <idea/>
+        <markdown-card-with-icon path="product/idea" custom-icon="ProductIdeaCardIcon"/>
       </v-col>
     </v-row>
     <v-row>
       <v-col>
-        <contents/>
+        <markdown-card-with-icon path="product/content" custom-icon="ProductContentCardIcon"/>
 
       </v-col>
     </v-row>
 
-    <v-col cols="12" justify='center' align='center'>
-
-      
-    </v-col>
   </v-container>
 </template>
 
 <script>
-import contents from './contents'
-import idea from './idea'
   export default {
     name : "ProductIndexView",
-    components : {contents,idea}
     
   }
 </script>

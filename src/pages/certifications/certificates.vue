@@ -1,4 +1,5 @@
 <template>
+            <markdown-content content-path="certifications/certificates"/>
     <i18n-card-with-list :path="i18nPath"/>
 </template>
 

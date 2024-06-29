@@ -2,24 +2,28 @@
     <div align="center" >
         <v-row>
             <v-col cols="12">
-            <markdown-content content-path="additional"/>
-                <!-- <Application/>
+            <markdown-card-with-icon path="additional/application" custom-icon="AdditionalApplicationCardIcon"/>
+            <!-- <markdown-content content-path="additional"/> -->
+                 <!-- <Application/> -->
             </v-col>
         <v-row>
         </v-row>
             <v-col cols="12">
-                <Tolerance/>
+                <!-- <Tolerance/> -->
+                <markdown-card-with-icon path="additional/toxicity" custom-icon="AdditionalToxicityCardIcon"/>
             </v-col>
         </v-row>
         <v-row>
             <v-col cols="12">
-                <Storage/>
+                <!-- <Storage/> -->
+                <markdown-card-with-icon path="additional/storage" custom-icon="AdditionalStorageCardIcon"/>
             </v-col>
         
         </v-row>
         <v-row>
             <v-col cols="12">
-                <SafeSpace/> -->
+                <!-- <SafeSpace/>  -->
+                <markdown-card-with-icon path="additional/safespaces" custom-icon="AdditionalSafespacesCardIcon"/>
             </v-col>
         
         </v-row>

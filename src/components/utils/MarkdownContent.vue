@@ -1,5 +1,7 @@
 <template>
+    <slot name="default" v-bind="{page, render}">
     <div v-html="page.html" class="text-card-text-color markdown-content-loader"  align="center"/>
+    </slot>
 </template>
 
 <script>
@@ -20,6 +22,14 @@ export default {
       default: "",
       required: false,
     },
+    options: {
+       type : Object,
+       default : ()=>({'skip-first-heading' : false}),
+       required : false,
+    // validator: (prop) => {
+    //     return true
+    // }
+    },
   },
   data() {
     return {
@@ -32,6 +42,7 @@ export default {
     };
   },
   computed: {
+    path(){return this.$props.contentPath.split('#')[0]}
     // md() {
     //   return new MarkdownIt();
     // },
@@ -42,7 +53,7 @@ export default {
       this.refreshContent();
     },
     "page.content"(value) {
-      this.page.html = this.md.render(`${value}`);
+      this.render(value)
     },
   },
   methods: {
@@ -55,14 +66,14 @@ export default {
       }
 
       this.page = this.$content(
-        this.$props.contentPath || this.$router.currentRoute.fullPath
+        this.path || this.$router.currentRoute.fullPath
       );
     },
     createRenderer() {
       const md = new MarkdownIt({
-        linkify : true
+        linkify : true,
+        html : true,
       });
-
       md.renderer.rules.heading_open = function (tokens, idx, options, env, self) {
         console.log("Opening Heading", { token: tokens[idx] });
         if (tokens[idx].tag === "h1") {
@@ -93,6 +104,7 @@ export default {
       md.renderer.rules.paragraph_open = function (tokens, idx, options, env, self) {
         // if (tokens[idx].tag === "h1") {
         tokens[idx].tag = "div";
+        
         tokens[idx].attrJoin("class", "v-card-text");
         // }
         return self.renderToken(tokens, idx, options);
@@ -107,6 +119,11 @@ export default {
       this.md = md;
       return md;
     },
+    render(value){
+      
+      this.page.html = this.md.render(`${value || this.page.content}`);
+      return this.page.html;
+    }
   },
   beforeMount() {
     this.createRenderer();

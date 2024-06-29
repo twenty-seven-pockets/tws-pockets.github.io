@@ -35,6 +35,7 @@ export default createVuetify({
           "card-text-color" : "#9b224c",
           'card-title-color'  : "#9b224c", 
           'card-subtitle-color'  : "#9b224c", 
+          'card-icon-color'  : "#9b224c", 
           'menu-button-background'  : "#ea95b2", 
           'coming-soon-color' : "#9b224c",
           // 'menu-button-border-color'  : "#ea95b2",  // UNUSED UNIMPLEMENTED

@@ -13,8 +13,12 @@ export default {
       },
       {
         title: "Wo kann ich Kussy-Kontaktieren?",
-        text: `
-        Impressum + Social Media `,
+        text: `        
+- Email: www.kussy.me
+- Instagramm: https://www.instagram.com/kussy_lips/
+- Twitter (X): https://twitter.com/Kussy_Lips
+- Tik Tok: https://www.tiktok.com/@kussy_lips
+`,
       },
     ],
   },}

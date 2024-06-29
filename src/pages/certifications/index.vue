@@ -2,12 +2,15 @@
 
 <v-container>
         <v-row align="center">
-            <v-col cols="auto">
-            <markdown-content content-path="certifications"/>
-                <!-- <standards/> -->
+            <v-col cols="auto" align="center">
+            <MarkdownCardWithIcon path="certifications/index" />
                 
             </v-col>
-            <v-col col="12">
+            <v-col col="12" align="center">
+            <MarkdownCardWithIcon path="certifications/certificates" custom-icon="CertificatesCardIcon"/>
+            </v-col>
+            <v-col col="12" align="center">
+            <MarkdownCardWithIcon path="certifications/tests" custom-icon="TestsCardIcon"/>
                 <!-- <certificates/> -->
             </v-col>
             </v-row>

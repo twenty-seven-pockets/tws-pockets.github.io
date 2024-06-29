@@ -1,0 +1,5 @@
+
+# Sexueller Safespace  
+
+Unser Unternehmen **Kussy** möchte nicht nur einen verantwortungsvollen Umgang mit der Natur fördern, sondern auch mit dem Produkt und dem Thema Sexualität an sich. Es ist essenziell, dass sich alle Beteiligten in einem sexuellen Abenteuer wohl fühlen. Solltest Du oder jemand in deinem Umfeld Schwierigkeiten haben sich wohl und sicher in diesem Kontext zu fühlen, kontaktiere gerne Hilfestellen wie z.b das [das Bundesministerium für  Familie, Senioren, Frauen und Jugend](https://www.bmfsfj.de/bmfsfj/themen/kinder-und-jugend/kinder-und-jugendschutz/schutz-vor-sexualisierter-gewalt#:~:text=Hilfe-Telefon%20Sexueller%20Missbrauch,00%20Uhr%20-%20kostenfrei%20und%20anonym)
+oder [ProFamilia](https://www.profamilia.de/fuer-jugendliche/rechte-und-sexualitaet/sexuelle-gewalt)

@@ -1,10 +1,12 @@
 <template>
   <i18n-card :path="i18nPath" class="text-card-text-color">
     <template #body="{i18nBody}" >
-      <v-card-title class="text-black">{{i18nBody.title}}</v-card-title>
+      <v-card-title >{{i18nBody.title}}</v-card-title>
       <v-card-text 
+      align="center"
       >
 
+      <ImpressumCardIcon width="33%" height="auto"/>
       <table>
         <tbody>
           <tr>

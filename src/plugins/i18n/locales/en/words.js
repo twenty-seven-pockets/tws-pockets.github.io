@@ -1,4 +1,5 @@
 export default {
   leave : "Verlassen",
-  "ok" : "ok"
+  "ok" : "ok",
+  'instructions' : 'Useage Instructions'
 }

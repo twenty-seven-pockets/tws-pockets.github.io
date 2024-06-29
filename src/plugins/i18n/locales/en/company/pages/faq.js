@@ -8,13 +8,18 @@ export default {
     noData : "Leider haben wir aktuelle keine weiteren Informationen dazu.",
     list: [
       {
-        title: "Wann kommt das Produkt?",
-        text: `Bisher befindet sich das Produkt "Kussy-Lips" noch in den letzten Schritten der Entwicklung, um Ihnen am Ende ein Sicheres und Nachhaltiges Produkt zu gewährleisten, mit dem Sie sich und Ihren Partner auf eine neue natürliche Weise erleben können. Genauere Informationen zum Erscheinungsdatum können wir Ihren daher zu diesem Zeitpunkt noch nicht bereitstellen. Sobald feste Termine für die Lieferung und Produktion kalkulierbar sind, werden diese auf der Website veröffentlicht. `,
+        title: "When is the Product Coming?",
+        text: `Currently, **Kussy-Lips** is still in the final stages of development, ensuring a safe and sustainable product for you and your partner to experience in a new, natural way. Unfortunately, we cannot provide precise information on the release date at this time. As soon as firm dates for production and delivery become available, they will be published on the website.`,
       },
       {
-        title: "Wo kann ich Kussy-Kontaktieren?",
-        text: `
-        Impressum + Social Media `,
+        title: "Where Can I Contact **Kussy**?",
+        text: `You can reach us through our contact information provided in the Impressum section of our website. Additionally, feel free to connect with us on social media for updates and engagement.
+
+- Email: www.kussy.me
+- Instagramm: https://www.instagram.com/kussy_lips/
+- Twitter (X): https://twitter.com/Kussy_Lips
+- Tik Tok: https://www.tiktok.com/@kussy_lips
+`,
       },
     ],
   },}

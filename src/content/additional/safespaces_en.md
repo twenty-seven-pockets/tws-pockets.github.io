@@ -1,0 +1,4 @@
+
+# Sexual Safe Space 
+At Kussy, we aim not only to promote responsible treatment of nature but also of the product and the topic of sexuality itself. It's essential that everyone involved feels comfortable in a sexual adventure. If you or someone in your circle experiences difficulties feeling comfortable and safe in this context, please feel free to contact support services such as [the Federal Ministry for Family Affairs, Senior Citizens, Women, and Youth ](https://www.bmfsfj.de/bmfsfj/themen/kinder-und-jugend/kinder-und-jugendschutz/schutz-vor-sexualisierter-gewalt#:~:text=Hilfe-Telefon%20Sexueller%20Missbrauch,00%20Uhr%20-%20kostenfrei%20und%20anonym)
+or [ProFamilia](https://www.profamilia.de/fuer-jugendliche/rechte-und-sexualitaet/sexuelle-gewalt)

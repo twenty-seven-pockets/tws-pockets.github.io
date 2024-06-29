@@ -1,6 +1,18 @@
 <template>
   <v-container grid-list-xs align="center">
-    <markdown-content :content-path="'our'"/>
+    <v-row>
+    <v-col>
+    <markdown-card-with-icon path="our/spirit" custom-icon="OurSpiritCardIcon"/>
+    </v-col></v-row>
+    <v-row>
+    <v-col>
+    
+    <markdown-card-with-icon path="our/founders" custom-icon="OurFoundersCardIcon"/>
+    </v-col></v-row>
+    <v-row>
+    <v-col>
+    <markdown-card-with-icon path="our/cooperations" custom-icon="OurCooperationsCardIcon"/>
+    </v-col></v-row>
     <!-- <v-row>
       <v-col> <spirit /> </v-col
     ></v-row>

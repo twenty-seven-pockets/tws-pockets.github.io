@@ -4,7 +4,7 @@
   icon
   color="action-button-color"
 >
-  <v-tooltip activator="parent">$t("Follow us on...")</v-tooltip>
+  <v-tooltip activator="parent">{{$t("phrases.followUs")}}</v-tooltip>
   <v-icon> mdi-share </v-icon>
   <v-speed-dial activator="parent">
     <v-btn

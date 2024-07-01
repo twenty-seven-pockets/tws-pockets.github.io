@@ -12,5 +12,14 @@ export default {
       help: { title: "Help", tooltip: "" },
       faq: { title: "Help", tooltip: "Häufige Fragen" },
     }
-  }
+  },
+  
+  buttons : {
+    goToProductButton : 'Go to Product',
+    goToAdditional : "Instructions",
+    goToConservation : "Sustainibility",
+    confirm : "Ok",
+    leave : "Leave",
+    dismiss : "Dismiss"
+  },
 }

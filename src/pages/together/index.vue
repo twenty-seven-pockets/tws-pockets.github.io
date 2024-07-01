@@ -16,7 +16,7 @@
                 :to="'additional'"
               >
                 <template #append> <MingcuteArrowRightFill color="white" /></template
-                >{{ $t("words.instructions") }}</v-btn
+                >{{ $t("ui.buttons.goToAdditional") }}</v-btn
               >
               <v-spacer />
             </v-card-text>
@@ -43,16 +43,19 @@
     </v-row>
     <v-row>
       <v-col>
-        <ribbon-component :text="$t('company.comingSoon')">
+        <ribbon-component :text="$t('phrases.comingSoon')">
           <v-card>
             <v-card-text>
               <v-container style="margin-top: 20px">
                 <v-row>
                   <v-col>
                     <figure>
-                      <v-img src="@/assets/verpackung.png" max-height="33vh" />
+                      <v-img
+                        src="@/assets/pictures/teasers/packaging.png"
+                        max-height="33vh"
+                      />
                       <figcaption align="center" style="font-weight: bold; opacity: 0.3">
-                        {{ $t("company.productTeaserDisclaimer") }}
+                        {{ $t("phrases.disclaimers.teaserImage") }}
                       </figcaption>
                     </figure>
                   </v-col>
@@ -61,15 +64,7 @@
             </v-card-text>
             <v-card-actions
               ><v-spacer />
-              <v-btn
-                variant="outlined"
-                :color="isHoveringButton ? 'card-b' : 'action-button-color'"
-                @mouseenter="isHoveringButton = true"
-                @mouseleave="isHoveringButton = false"
-              >
-                {{ !isHoveringButton ? $t("company.buyMe") : $t("company.comingSoon") }}
-              </v-btn>
-
+              <HoverButton :mouseonlabel="$t('phrases.comingSoon')" :mouseofflabel="$t('phrases.buyMe')"/>
               <v-spacer
             /></v-card-actions>
           </v-card>

@@ -2,7 +2,7 @@
     <i18n-card :path="i18nPath" with-markdown>
     <template #appendContent="{}"> 
     <v-avatar size="x-large">
-      <v-img src="@/assets/founder.jpg"/>
+      <!-- <v-img src="@/assets/founder.jpg"/> -->
     </v-avatar>
       
     </template>

@@ -36,11 +36,14 @@ import ImpressumCardIcon from '@/components/utils/icons/ImpressumCardIcon.vue'
 import TogetherIntroductionCardIcon from '@/components/utils/icons/TogetherIntroductionCardIcon.vue'
 import TogetherWhereCardIcon from '@/components/utils/icons/TogetherWhereCardIcon.vue'
 import TogetherHowCardIcon from '@/components/utils/icons/TogetherHowCardIcon.vue'
+import HenrikFounderCard from '@/components/cards/founders/HenrikFounderCard.vue'
+
 loadFonts()
 createApp(App)
 // .use(store)
 .use(vuetify).use(i18n).use(router)
 .use(content)
+.component('HenrikFounderCard',HenrikFounderCard)
 .component('SustainibilityPackagingCardIcon',SustainibilityPackagingCardIcon)
 .component('TogetherWhereCardIcon',TogetherWhereCardIcon)
 .component('TogetherHowCardIcon',TogetherHowCardIcon)

@@ -10,7 +10,7 @@
             @transitionend="largeImageIsFading = false"
             @transitionstart="largeImageIsFading = true"
           >
-            <v-img class="menu-icon" src="@/assets/logo-mit-schriftzug.png" />
+            <v-img class="menu-icon" src="@/assets/logos/name-with-second-line.png" />
           </v-fade-transition>
         </router-link>
       </template>

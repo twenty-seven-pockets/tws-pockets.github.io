@@ -17,10 +17,6 @@ Die Herstellung des Produkts **Kussy-Lips** wird voraussichtlich in einer lokale
 
 Die Verpackungsherstellung des Produkts **Kussy-Lips** soll in einer lokalen Firma in Deutschland erfolgen. Sobald nähere Informationen zur Verfügung stehen, werden diese hier entsprechend angepasst.
 
-
-
-###### Fotos
-
-Fotograf: Lukas 
-Email: w.lukas60@yahoo.de
-Instagram: https://www.instagram.com/night_vsn/
+- Fotograf: Lukas 
+- Email: w.lukas60@yahoo.de
+- Instagram: https://www.instagram.com/night_vsn/

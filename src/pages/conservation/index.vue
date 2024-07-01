@@ -26,13 +26,12 @@
         <!-- <packaging />  -->
       </v-col>
     </v-row>
-    <v-row>
+    <!-- <v-row>
       <v-col>
         <markdown-card-with-icon path="sustainibility/production"/>
 
-        <!-- <packaging />  -->
       </v-col>
-    </v-row>
+    </v-row> -->
   </v-container>
 </template>
 

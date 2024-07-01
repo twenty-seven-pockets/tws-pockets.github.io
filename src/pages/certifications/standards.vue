@@ -7,7 +7,7 @@
         name : "StandardsView",
         computed : {
             items(){
-                return new Array(3).fill(0).map((ele,idx) => this.$t(`company.articles.standards.list.${idx}`))
+                return new Array(3).fill(0).map((ele,idx) => this.$t(`articles.standards.list.${idx}`))
             }
         }
         

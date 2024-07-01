@@ -1,8 +1,8 @@
 <template>
   
   <v-main class="main-container fill-height">
-    <v-row justify="space-between" class="fill-height">
-       <v-col cols="2" class="left-branch" >
+    <v-row justify="space-around" class="fill-height">
+       <v-col cols="2" class="left-branch" v-if="!$vuetify.display.mobile">
         <!-- <v-img src="@/assets/plant1PNG/500/plant1_500.png" /> -->
       </v-col> 
       <v-col :cols="$vuetify.display.mobile?10:7" class="mt-2">
@@ -10,7 +10,7 @@
       </v-col>
       <v-col cols="2"  v-if="!$vuetify.display.mobile" class="pr-0 mr-0">
         <div class="branch"  >
-        <v-img src="@/assets/plant2_1000.png" class="right-branch" />
+        <v-img src="@/assets/ui/branches/right.png" class="right-branch" />
         </div>
       </v-col>
     </v-row>

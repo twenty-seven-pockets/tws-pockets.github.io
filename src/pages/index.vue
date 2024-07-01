@@ -2,13 +2,13 @@
   <!-- <v-container class="bg-red">
   <v-row justify="center" align="center">
   <v-col  align="center" > -->
-  <ribbon-component :text="$t('company.comingSoon')">
+  <ribbon-component :text="$t('phrases.comingSoon')">
     <i18n-card :path="i18nPath" align="center" flat class="fill-height">
       <template #body="{ i18nBody }">
         <v-card-title>
           <v-row align="center" justify="center" class="logo-container">
             <v-col cols="12" align="center">
-              <v-img src="@/assets/logo-long.svg" max-height="20vh" />
+              <v-img src="@/assets/logos/logo-with-large-name.png" max-height="20vh" />
             </v-col>
           </v-row>
         </v-card-title>
@@ -33,9 +33,9 @@
           <v-spacer />
           <div>
             <figure>
-              <v-img src="@/assets/verpackung.png" height="50vh" />
+              <v-img src="@/assets/pictures/teasers/packaging.png" height="50vh" />
               <figcaption align="center" style="opacity: 0.3; font-weight: bold">
-                {{ $t("company.productTeaserDisclaimer") }}
+                {{ $t("phrases.disclaimers.teaserImage") }}
               </figcaption>
             </figure>
           </div>
@@ -55,9 +55,8 @@
           <v-row>
             <v-spacer />
             <v-col>
-              <v-btn :to="'/product'" color="action-button-color">{{
-                $t("company.pages./index.productButton")
-              }}</v-btn>
+              <HoverButton :mouseonlabel="$t('phrases.comingSoon')" :mouseofflabel="$t('phrases.buyMe')"/>
+
             </v-col>
             <v-spacer />
           </v-row>

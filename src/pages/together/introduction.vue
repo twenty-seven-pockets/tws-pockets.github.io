@@ -23,7 +23,7 @@
               append-icon="mdi-arrow-right"
               rounded="xl"
               :to="{ name: 'additional' }"
-              >{{ $t("company.words.additional") }}</v-btn
+              >{{ $t("ui.buttons.goToAdditional") }}</v-btn
             >
           </v-col>
           <v-spacer />

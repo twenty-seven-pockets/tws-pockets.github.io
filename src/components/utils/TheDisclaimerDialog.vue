@@ -30,7 +30,7 @@
                     tile
                     href="http://www.google.com"
                     @click="leaving = true"
-                    >{{ $t("words.leave") }}</v-btn
+                    >{{ $t("ui.buttons.leave") }}</v-btn
                   ></v-col
                 >
                 <v-col
@@ -44,7 +44,7 @@
                     "
                     :color="agreed ? 'success' : ''"
                     :append-icon="agreed ? 'mdi-check' : ''"
-                    >{{ $t("words.ok") }}</v-btn
+                    >{{ $t("ui.buttons.confirm") }}</v-btn
                   ></v-col
                 >
               </v-row>

@@ -1,31 +1,57 @@
 <template>
-  <v-container grid-list-xs align="center">
+  <v-container>
     <v-row>
-    <v-col>
-    <markdown-card-with-icon path="our/spirit" custom-icon="OurSpiritCardIcon"/>
-    </v-col></v-row>
-    <v-row>
-    <v-col>
-    
-    <markdown-card-with-icon path="our/founders" custom-icon="OurFoundersCardIcon"/>
-    </v-col></v-row>
-    <v-row>
-    <v-col>
-    <markdown-card-with-icon path="our/cooperations" custom-icon="OurCooperationsCardIcon"/>
-    </v-col></v-row>
-    <!-- <v-row>
-      <v-col> <spirit /> </v-col
-    ></v-row>
-    <v-row>
-      <v-col>
-        <founders />
-      </v-col>
+      <v-col cols="12">
+      <v-card>
+        <markdown-card-with-icon
+          path="our/spirit"
+          custom-icon="OurSpiritCardIcon"
+          flat
+        /> 
+        <v-card-text>
+        <v-row justify="center"><v-col cols="auto">
+          <v-btn
+            size="x-large"
+            :to="{ name: 'together' }"
+            color="action-button-color"
+            rounded="xl"
+          >
+            <template #append>
+            <MingcuteArrowRightFill color="white"/></template>
+            {{$t('ui.buttons.goToConservation')}}</v-btn
+          >
+        </v-col></v-row>
+        </v-card-text>
+      </v-card>
+        </v-col
+    >
     </v-row>
     <v-row>
       <v-col>
-        <cooperations />
+        <v-card>
+          <v-card-text>
+    <v-row align='center'>
+      <v-col >
+            <markdown-content content-path="our/founders" />
       </v-col>
-    </v-row> -->
+
+      <v-col :cols="$vuetify.display.mobile?'12':'6'" >
+            <henrik-founder-card />
+        
+       </v-col>
+    </v-row>
+          </v-card-text>
+        </v-card>
+       
+       </v-col>
+    </v-row>
+    <v-row>
+      <v-col>
+        <markdown-card-with-icon
+          path="our/cooperations"
+          custom-icon="OurCooperationsCardIcon"
+        /> </v-col
+    ></v-row>
   </v-container>
 </template>
 

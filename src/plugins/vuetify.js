@@ -47,7 +47,8 @@ export default createVuetify({
           'menu-item-text-color-alternate'  : "#ea95b2",  // UNUSED
           'action-button-color' : '#b95b7c',
           'language-toggle-color' : '#9b2224c',
-          
+          'tooltip-background-color' : '#b95b7c', // check settings.scss
+          'surface' : '#d8c0c8',
           
           // OLD VALUES
           // logoBorder : "#000000",

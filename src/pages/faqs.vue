@@ -12,8 +12,10 @@
                 v-model="search"
               />
             </v-col>
+            </v-row>
+            <v-row>
             <v-col>
-              <FAQCardIcon width="100%" height="auto" />
+              <FAQCardIcon width="15%" height="auto" />
             </v-col>
           </v-row>
         </template>

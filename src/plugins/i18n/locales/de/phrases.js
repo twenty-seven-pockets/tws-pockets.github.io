@@ -1,7 +1,7 @@
 // Contains commonly used phrases throughout the website
 
 export default {
-  followUs : "Besuchenen Sie uns auf ...", 
+  followUs : "Besuchen Sie uns auf ...", 
   buyMe : "Kauf Mich!",
   comingSoon : "Bald Verfügbar",
   disclaimers : {

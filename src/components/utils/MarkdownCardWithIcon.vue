@@ -1,11 +1,11 @@
 <template>
   <!-- <markdown-content :content-path="path">
       <template #default="{page, render}"> -->
-  <v-card class="bg-card-background text-card-text-color mt-5" align="center" >
+  <v-card class="bg-card-background text-card-text-color mt-5" align="center">
     <v-card-title>
       <v-row justify="center" align="center">
-        <v-col cols="12" class="text-h4">
-          <span v-html="render(title)" ></span>
+        <v-col cols="12">
+          <span v-html="render(title)"></span>
         </v-col>
         <v-col cols="12">
           <component
@@ -34,7 +34,7 @@
 // Simple Markdown Container that receives a markdown string,
 // parses the markdown using markdownit
 import MarkdownIt from "markdown-it";
-import implicitFigures from 'markdown-it-image-figures'
+import implicitFigures from "markdown-it-image-figures";
 
 export default {
   name: "MarkdownCardWithIcon",
@@ -63,13 +63,13 @@ export default {
       const md = new MarkdownIt({ linkify: true, html: true });
       md.renderer.rules.image = (tokens, idx, options, env, self) => {
         const token = tokens[idx];
-        const srcIndex = token.attrIndex('src');
+        const srcIndex = token.attrIndex("src");
         const src = token.attrs[srcIndex][1];
-        
-        console.log('asd', {src})
+
+        console.log("asd", { src });
         const resolvedSrc = require(`@/assets/${src}`);
-        token.attrSet('src', resolvedSrc);
-        token.attrSet('width','50%' );
+        token.attrSet("src", resolvedSrc);
+        token.attrSet("width", "50%");
         return self.renderToken(tokens, idx, options);
       };
       md.use(implicitFigures);
@@ -88,6 +88,58 @@ export default {
         // }
         return self.renderToken(tokens, idx, options);
       };
+
+      md.renderer.rules.table_open = function (tokens, idx, options, env, self) {
+        console.debug("Table");
+        return "<div class='align-center  v-table v-theme--light v-table--density-default text-card-text-color'><div class='v-table__wrapper'>" + self.renderToken(tokens, idx, options);
+      };
+      md.renderer.rules.table_close = function (tokens, idx, options, env, self) {
+        console.debug("Table");
+        return self.renderToken(tokens, idx, options) + "</div></div>"
+      };
+
+      md.renderer.rules.thead_open = function (tokens, idx, options, env, self) {
+        return self.renderToken(tokens, idx, options);
+      };
+
+      md.renderer.rules.thead_close = function (tokens, idx, options, env, self) {
+        return self.renderToken(tokens, idx, options);
+      };
+
+      md.renderer.rules.tbody_open = function (tokens, idx, options, env, self) {
+        
+        tokens[idx].attrJoin("class", "v-table__tbody");
+        return self.renderToken(tokens, idx, options)
+      };
+
+      // md.renderer.rules.tbody_close = function (tokens, idx, options, env, self) {
+      //   return self.renderToken(tokens, idx, options) + "</tbody>";
+      // };
+
+      md.renderer.rules.tr_open = function (tokens, idx, options, env, self) {
+        tokens[idx].attrJoin("class", "v-table__tr");
+        return self.renderToken(tokens, idx, options)
+      };
+      
+      md.renderer.rules.th_open = function (tokens, idx, options, env, self) {
+        
+        
+        tokens[idx].attrJoin("class", "v-table__th");
+        
+        return self.renderToken(tokens, idx, options) + "</td>";
+      
+      };
+
+      md.renderer.rules.th_close = function (tokens, idx, options, env, self) {
+        return self.renderToken(tokens, idx, options) + "</th>";
+      };
+
+      md.renderer.rules.td_open = function (tokens, idx, options, env, self) {
+        tokens[idx].attrJoin("class", "v-table__td");
+        return self.renderToken(tokens, idx, options)
+      };
+
+
       return md;
     },
     page() {
@@ -110,7 +162,6 @@ export default {
   },
 };
 </script>
-
 
 <style>
 ul li {

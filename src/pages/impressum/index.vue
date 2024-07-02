@@ -1,5 +1,6 @@
 <template>
-  <i18n-card :path="i18nPath" class="text-card-text-color">
+  <MarkdownCardWithIcon path="impressum" custom-icon="ImpressumCardIcon"/>
+  <!-- <i18n-card :path="i18nPath" class="text-card-text-color">
     <template #body="{i18nBody}" >
       <v-card-title >{{i18nBody.title}}</v-card-title>
       <v-card-text 
@@ -41,7 +42,7 @@
     <v-card-text> - (keine Haftung für Inhalte externer Links) </v-card-text>
     </template>
 
-  </i18n-card>
+  </i18n-card> -->
 </template>
 
 <script>

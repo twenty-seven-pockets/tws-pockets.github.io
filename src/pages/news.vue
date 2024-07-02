@@ -12,8 +12,9 @@
                       :placeholder="i18nBody.placeholder"
                     />
                   </v-col>
-                  <v-col cols="2">
-                  <fluent-megaphone-loud20-filled height="inherit" width="auto"/>
+                  </v-row><v-row justify="center">
+                  <v-col >
+                  <fluent-megaphone-loud20-filled height="auto" width="15%"/>
                   </v-col>
                 </v-row>
               </template>

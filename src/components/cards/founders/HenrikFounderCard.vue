@@ -1,7 +1,7 @@
 <template>
   <figure >
   <v-img  src="@/assets/pictures/founders/Henrik Weiss.png" />
-  <figcaption align="center">Henrik Weiss</figcaption>
+  <figcaption align="center">Henrik Weiß</figcaption>
   </figure>
 </template>
 

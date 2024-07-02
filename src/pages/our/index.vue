@@ -36,7 +36,9 @@
               </v-col>
 
               <v-col :cols="$vuetify.display.mobile ? '12' : '6'">
-                <henrik-founder-card />
+                <v-container>
+                  <henrik-founder-card />
+                </v-container>
               </v-col>
             </v-row>
           </v-card-text>
@@ -52,20 +54,37 @@
             flat
           />
           <v-card-text>
-            <v-row justify="space-around" align="end">
-              <v-col >
-                <markdown-card-with-icon path="our/cooperations/logos" />
+          <v-container>
+            <v-row justify="space-around"  align="start" class="fill-height" >
+              <v-col class="" cols="6">
+                <markdown-card-with-icon
+                  path="our/cooperations/packaging"
+                  class="fill-height"
+                />
               </v-col>
-              <v-col>
-                <markdown-card-with-icon path="our/cooperations/product" />
-              </v-col>
-              <v-col >
-                <markdown-card-with-icon path="our/cooperations/packaging" />
-              </v-col>
-              <v-col >
-                <markdown-card-with-icon path="our/cooperations/pictures" />
+              <v-col class=" fill-height" cols="6">
+                <markdown-card-with-icon
+                  path="our/cooperations/product"
+                  class="fill-height"
+                />
               </v-col>
             </v-row>
+            <v-row class="pb-5">
+              <v-col cols="6">
+                <markdown-card-with-icon
+                  path="our/cooperations/pictures"
+                  class="fill-height"
+                />
+              </v-col>
+              <v-col cols="6">
+                <markdown-card-with-icon
+                  path="our/cooperations/logos"
+                  class="fill-height"
+                />
+              </v-col>
+            </v-row>
+          </v-container>
+          
           </v-card-text>
         </v-card> </v-col
     ></v-row>

@@ -6,10 +6,16 @@
       </v-col>
       </v-row><v-row>
       <v-col align="center">
-        <MarkdownCardWithIcon
-          path="certifications/certificates"
-          custom-icon="CertificatesCardIcon"
+        <v-card >
+          <v-card-text>
+          <CertificatesCardIcon width="15%" height="auto"/>
+        <MarkdownContent
+        flat
+         content-path="certifications/certificates"
+          
         />
+          </v-card-text>
+        </v-card>
       </v-col>
       </v-row><v-row>
       <v-col  align="center">

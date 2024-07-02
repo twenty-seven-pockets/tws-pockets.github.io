@@ -1,4 +1,4 @@
-# Firmen Logo Design
+# Logo Design
 
 Designerin: Knuffsheep 
 Email: knuffsheep@gmail.com

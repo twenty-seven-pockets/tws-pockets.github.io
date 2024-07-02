@@ -12,10 +12,11 @@
                       :placeholder="i18nBody.placeholder"
                     />
                   </v-col>
-                  </v-row><v-row justify="center">
+                  <!-- </v-row><v-row justify="center">
                   <v-col >
                   <fluent-megaphone-loud20-filled height="auto" width="15%"/>
                   </v-col>
+                 -->
                 </v-row>
               </template>
               <template #default="{ items }">

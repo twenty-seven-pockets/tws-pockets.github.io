@@ -5,8 +5,8 @@
 - Henrik Weiß 
 - Email: Kussy@gmx.de
 
-### Disclaimers
-- keine Haftung für Inhalte externer Links
+### Disclaimer
+- no liability for the content of external links
 
 ### Copyright Info
-- Bildgenerierung: [DALL-E 3](https://openai.com/index/dall-e-3/)
+- Image Generation [DALL-E 3](https://openai.com/index/dall-e-3/)

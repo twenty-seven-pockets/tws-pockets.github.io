@@ -1,16 +1,16 @@
 
-# Angestrebte Testergebnisse
+# Target Test Results
 The following are the test results targeted by **Kussy**. Once current results are available, they will be posted here.
 
 
-##### Anwendung
+##### Application
 
-- Verträglichkeitsstudien 
-- Dermatologische Tests 
-- Toxikologische Tests 
+- Compatibility Studies
+- Dermatological Tests
+- Toxicological Tests
 
-##### Produktqualität
+##### Product Quality
 
-- Stabilitätsstudien 
-- Mikrobiologische Tests
-- Chemische Reaktionen
+- Stability Studies
+- Microbiological Tests
+- Chemical Reactions
